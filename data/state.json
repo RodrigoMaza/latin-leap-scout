@@ -376,7 +376,8 @@
   "7333fb5e620b",
   "2fbd38cfd480",
   "899444622924",
-  "0da41c326ec0"
+  "0da41c326ec0",
+  "96b766a2b847"
  ],
  "pending": [],
  "runs": [
@@ -458,6 +459,20 @@
     "laburencom"
    ],
    "pipeline": 2,
+   "priority": 0
+  },
+  {
+   "date": "2026-10-23",
+   "articles": 1,
+   "extracted": 0,
+   "candidates": 0,
+   "evaluated": 0,
+   "qualified": 0,
+   "remention": 0,
+   "cost_usd": 0.001,
+   "searches": 0,
+   "new_keys": [],
+   "pipeline": 0,
    "priority": 0
   }
  ]
