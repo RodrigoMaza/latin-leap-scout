@@ -117,7 +117,7 @@ def main() -> None:
         st = json.loads((tmp / "data" / "state.json").read_text())
         assert st["runs"][-1]["evaluated"] == 0, st["runs"][-1]
         data = json.loads((tmp / "data.json").read_text())
-        assert data["kpis"]["calificadas_30d"] == 3
+        assert data["kpis"]["pipeline_30d"] == 3 and data["kpis"]["prioridad_30d"] == 3, data["kpis"]
         print("OK — pipeline completo:", sorted(names))
         print("   costo simulado por corrida: US$", st["runs"][0]["cost_usd"])
         print((tmp / "reports" / "latest.md").read_text()[:300])

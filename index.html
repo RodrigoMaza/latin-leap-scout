@@ -56,7 +56,7 @@ h2{font-size:15px;margin:0 0 12px;font-weight:600}
 .btn{font:inherit;font-size:14px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;text-decoration:none;white-space:nowrap}
 .btn:hover{border-color:var(--ink)}
 .count{color:var(--muted);font-size:13px;margin-left:auto}
-table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+table{width:100%;table-layout:fixed;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;font-weight:500;padding:10px 12px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
 td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
 tr.r{cursor:pointer}
@@ -74,13 +74,13 @@ tr:last-child td{border-bottom:0}
 .a-descartar{background:var(--bad-soft);color:var(--bad)}
 .pf{background:var(--accent-soft);color:var(--ink);margin-left:6px}
 .detail td{background:var(--bg);padding:18px}
-.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.dgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
 .dgrid h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 6px;font-weight:500}
 .dgrid p{margin:0 0 12px}
 .pts{display:grid;grid-template-columns:110px 1fr 46px;gap:6px 10px;align-items:center;font-size:13px}
 .pts .track{height:8px;background:var(--line);border-radius:8px;overflow:hidden}
 .pts .track i{display:block;height:100%;background:var(--ink);border-radius:8px}
-.links a{display:block;font-size:13px;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.links a{display:block;font-size:13px;color:var(--ink);overflow-wrap:anywhere;margin-bottom:4px}
 .msg{white-space:pre-wrap;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
 .how{margin-top:28px;grid-template-columns:repeat(5,1fr)}
 .step .n{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted)}
@@ -93,6 +93,8 @@ footer{margin-top:24px;color:var(--muted);font-size:13px}
   .row2,.dgrid{grid-template-columns:1fr}
   .how{grid-template-columns:1fr 1fr}
   .hide-sm{display:none}
+  table{table-layout:auto}
+  colgroup{display:none}
   .meta{text-align:left}
 }
 @media (max-width:480px){.kpi .val{font-size:28px}.how{grid-template-columns:1fr}}
@@ -117,12 +119,12 @@ footer{margin-top:24px;color:var(--muted);font-size:13px}
       <div class="bar"><i id="k-bar" style="width:0"></i><b id="k-goal"></b></div>
     </div>
     <div class="card kpi">
-      <div class="label">Deals calificados · 30 días</div>
+      <div class="label">Nuevos al pipeline · 30 días</div>
       <div class="val" id="k-q">—</div>
       <div class="hint" id="k-q-h"></div>
     </div>
     <div class="card kpi">
-      <div class="label">Alto fit · 30 días</div>
+      <div class="label">Prioridad · 30 días</div>
       <div class="val" id="k-hi">—</div>
       <div class="hint" id="k-hi-h"></div>
     </div>
@@ -135,7 +137,7 @@ footer{margin-top:24px;color:var(--muted);font-size:13px}
 
   <section class="grid row2">
     <div class="card chart">
-      <h2>Deals calificados por semana</h2>
+      <h2>Deals nuevos al pipeline por semana</h2>
       <div id="chart"><p class="empty">Aún no hay suficientes corridas.</p></div>
     </div>
     <div class="card calib">
@@ -158,8 +160,9 @@ footer{margin-top:24px;color:var(--muted);font-size:13px}
   </div>
 
   <table aria-label="Startups">
+    <colgroup><col style="width:68px"><col><col class="hide-sm" style="width:110px"><col class="hide-sm" style="width:150px"><col class="hide-sm" style="width:130px"><col style="width:130px"><col class="hide-sm" style="width:110px"></colgroup>
     <thead><tr>
-      <th data-k="score">Score</th><th data-k="nombre">Startup</th>
+      <th data-k="fit">Fit</th><th data-k="nombre">Startup</th>
       <th data-k="pais" class="hide-sm">País</th><th data-k="sector" class="hide-sm">Sector</th>
       <th data-k="estado_ronda" class="hide-sm">Ronda</th><th data-k="accion">Acción</th>
       <th data-k="first_seen" class="hide-sm">Detectada</th>
@@ -184,9 +187,9 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const ACC = {contactar_ya:"Contactar ya", seguimiento:"Seguimiento", descartar:"Descartar"};
 const RONDA = {levantando:"Levantando", cerro_recientemente:"Cerró hace poco", sin_info:"Sin info"};
 const RUB = [["equipo","Equipo",30],["sector","Sector",20],["modelo","Modelo probado",10],["traccion","Tracción",20],["etapa_timing","Etapa y timing",20]];
-let DATA = null, sortK = "score", sortDir = -1, open = null;
+let DATA = null, sortK = "fit", sortDir = -1, open = null;
 
-function scoreCls(s){ return s >= DATA.umbral_alto_fit ? "s-hi" : s >= DATA.umbral_calificada ? "s-mid" : "s-lo"; }
+function scoreCls(f){ return f >= DATA.umbral_fit + 10 ? "s-hi" : f >= DATA.umbral_fit ? "s-mid" : "s-lo"; }
 function safeUrl(u){ try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.href : ""; } catch { return ""; } }
 
 async function load(){
@@ -199,14 +202,14 @@ async function load(){
   const k = DATA.kpis, run = DATA.ultima_corrida || {};
   $("#meta").innerHTML = `Actualizado ${esc(DATA.generado.replace("T"," ").replace("+00:00"," UTC"))}<br>${k.corridas} ${k.corridas === 1 ? "corrida" : "corridas"} · próxima: lunes`;
   $("#k-up").textContent = `+${k.incremento_pct}%`;
-  $("#k-up-h").textContent = `${k.calificadas_30d} deals nuevos sobre ${k.baseline_mensual}/mes · meta +${k.meta_pct}%`;
+  $("#k-up-h").textContent = `${k.pipeline_30d} deals nuevos sobre ${k.baseline_mensual}/mes · meta +${k.meta_pct}%`;
   const scale = Math.max(k.incremento_pct, k.meta_pct * 2);
   $("#k-bar").style.width = Math.min(100, 100 * k.incremento_pct / scale) + "%";
   $("#k-goal").style.left = (100 * k.meta_pct / scale) + "%";
-  $("#k-q").textContent = k.calificadas_30d;
-  $("#k-q-h").textContent = `score ≥ ${DATA.umbral_calificada} y no descartadas`;
-  $("#k-hi").textContent = k.alto_fit_30d;
-  $("#k-hi-h").textContent = `score ≥ ${DATA.umbral_alto_fit}`;
+  $("#k-q").textContent = k.pipeline_30d;
+  $("#k-q-h").textContent = `pasan los filtros de tesis · ${k.descartadas_30d} descartadas`;
+  $("#k-hi").textContent = k.prioridad_30d;
+  $("#k-hi-h").textContent = `fit ≥ ${DATA.umbral_fit}/80, calibrado con el portafolio`;
   $("#k-tot").textContent = k.evaluadas_total;
   $("#k-cost").textContent = `costo acumulado ≈ US$${k.costo_total_usd.toFixed(2)}`;
   chart(k.por_semana);
@@ -239,11 +242,11 @@ function chart(weeks){
 async function calib(){
   let c;
   try { const r = await fetch("calibration.json", {cache:"no-store"}); if (!r.ok) return; c = await r.json(); } catch { return; }
-  const rows = c.resultados.slice().sort((a,b) => b.score - a.score);
+  const rows = c.resultados.slice().sort((a,b) => b.fit - a.fit);
   $("#calib").innerHTML = `
-    <div class="big">${esc(c.portafolio_aprobado)} del portafolio sobre el umbral</div>
-    <div class="desc">Promedio portafolio ${c.score_promedio_portafolio} vs. controles fuera de tesis ${c.score_promedio_controles} · ${esc(c.controles_rechazados)} controles rechazados</div>
-    <ul>${rows.map(r => `<li><span>${esc(r.nombre)} <span class="tag ${r.grupo === "control" ? "a-descartar" : "pf"}">${r.grupo === "control" ? "control" : "portafolio"}</span></span><span class="score ${scoreCls(r.score)}">${r.score}</span></li>`).join("")}</ul>`;
+    <div class="big">Umbral de fit: ${c.umbral_fit}/80</div>
+    <div class="desc">${esc(c.portafolio_aprobado)} inversiones reales lo superan · fit promedio del portafolio ${c.fit_promedio_portafolio} vs. ${c.fit_promedio_controles} de controles fuera de tesis</div>
+    <ul>${rows.map(r => `<li><span>${esc(r.nombre)} <span class="tag ${r.grupo === "control" ? "a-descartar" : "pf"}">${r.grupo === "control" ? "control" : "portafolio"}</span></span><span class="score ${scoreCls(r.fit)}">${r.fit}</span></li>`).join("")}</ul>`;
 }
 
 function render(){
@@ -256,7 +259,7 @@ function render(){
   $("#count").textContent = `${rows.length} de ${DATA.deals.length}`;
   $("#tb").innerHTML = rows.map(d => `
     <tr class="r" data-k="${esc(d.key)}">
-      <td><span class="score ${scoreCls(d.score)}">${d.score}</span></td>
+      <td><span class="score ${scoreCls(d.fit)}" title="Score total ${d.score}/100">${d.fit}</span></td>
       <td><div class="name">${esc(d.nombre)}${d.en_portafolio ? '<span class="tag pf">portafolio</span>' : ""}</div><div class="desc">${esc(d.descripcion)}</div></td>
       <td class="hide-sm">${esc(d.pais)}</td><td class="hide-sm">${esc(d.sector)}</td>
       <td class="hide-sm">${esc(RONDA[d.estado_ronda] || d.estado_ronda)}</td>
@@ -286,7 +289,7 @@ function detail(d){
       ${web ? `<h3>Sitio</h3><p><a href="${esc(web)}" target="_blank" rel="noopener" style="color:inherit">${esc(web)}</a></p>` : ""}
     </div>
     <div>
-      <h3>Desglose del score (confianza ${esc(d.confianza)})</h3>
+      <h3>Fit ${d.fit}/80 · score total ${d.score}/100 · confianza ${esc(d.confianza)}</h3>
       <div class="pts">${RUB.map(([k, l, m]) => `<span>${l}</span><span class="track"><i style="width:${100 * (d.puntajes?.[k] || 0) / m}%"></i></span><span>${d.puntajes?.[k] ?? 0}/${m}</span>`).join("")}</div>
       <h3 style="margin-top:16px">Borrador de primer contacto</h3>
       <div class="msg">${esc(d.mensaje_contacto)}</div>

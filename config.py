@@ -21,8 +21,10 @@ PRICE_PER_WEB_SEARCH = 0.01
 # --------------------------------------------------------------------------
 # Límites por corrida
 # --------------------------------------------------------------------------
-MAX_USD_PER_RUN = 1.20          # el pipeline se detiene antes de pasar este gasto
-MAX_CANDIDATES_PER_RUN = 15     # startups nuevas que se investigan y califican por corrida
+# Calibrado con la corrida 1: el estimado fue US$1.16 y el gasto real en la consola, US$0.52.
+# El estimado sobrevalora ~2x, así que 2.50 estimados ≈ US$1.10 reales por corrida.
+MAX_USD_PER_RUN = 2.50          # el pipeline se detiene antes de pasar este gasto (estimado)
+MAX_CANDIDATES_PER_RUN = 25     # startups nuevas que se investigan y califican por corrida
 SEARCHES_PER_CANDIDATE = 3      # búsquedas web por startup al investigarla
 LOOKBACK_DAYS = 7               # ventana de noticias en corridas normales
 LOOKBACK_DAYS_FIRST_RUN = 30    # primera corrida: llena el pipeline con el último mes
@@ -31,8 +33,12 @@ YC_RECENT_BATCH_YEARS = 2       # YC: solo batches de los últimos N años
 # --------------------------------------------------------------------------
 # Umbrales de calificación (puntaje 0-100)
 # --------------------------------------------------------------------------
-QUALIFIED_THRESHOLD = 65        # cuenta como "deal calificado" para el KPI
-HIGH_FIT_THRESHOLD = 78         # aparece como prioridad en el digest
+# El score total (0-100) = FIT con la tesis (equipo+sector+modelo+tracción, 0-80)
+#                          + TIMING (etapa y momento de ronda, 0-20).
+# - "Deal nuevo al pipeline": pasa los filtros de tesis y no se descarta (KPI vs. baseline).
+# - "Prioridad": además, su FIT supera el umbral. El umbral se calibra con el portafolio
+#   real (calibrate.py escribe data/calibration.json); este es solo el valor inicial.
+FIT_THRESHOLD_DEFAULT = 50
 BASELINE_DEALS_PER_MONTH = 60   # baseline dado por Latin Leap en el reto
 
 # --------------------------------------------------------------------------

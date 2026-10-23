@@ -56,31 +56,36 @@ def main() -> int:
             continue
         rows.append({
             "nombre": name, "grupo": "portafolio" if expected == "alto" else "control",
-            "esperado": expected, "score": r["score"], "accion": r["accion"],
+            "esperado": expected, "score": r["score"], "fit": r["fit"], "accion": r["accion"],
             "pais": r["pais"], "sector": r["sector"], "puntajes": r["puntajes"],
             "tesis_match": r["tesis_match"], "confianza": r["confianza"],
             "fuentes": urls,
         })
-        print(f"{r['score']:3d}  {name:22s} esperado={expected}  acción={r['accion']}")
+        print(f"fit {r['fit']:2d}/80  {name:22s} esperado={expected}  acción={r['accion']}")
 
     port = [r for r in rows if r["grupo"] == "portafolio"]
     ctrl = [r for r in rows if r["grupo"] == "control"]
-    hit_port = sum(1 for r in port if r["score"] >= config.QUALIFIED_THRESHOLD)
-    hit_ctrl = sum(1 for r in ctrl if r["score"] < config.QUALIFIED_THRESHOLD)
+    # Umbral = percentil 25 del FIT del portafolio: 3 de cada 4 inversiones reales
+    # del fondo lo superan. Si la calibración no tiene datos, se usa el valor inicial.
+    fits = sorted(r["fit"] for r in port)
+    umbral = fits[len(fits) // 4] if len(fits) >= 4 else config.FIT_THRESHOLD_DEFAULT
+    hit_port = sum(1 for r in port if r["fit"] >= umbral)
+    hit_ctrl = sum(1 for r in ctrl if r["fit"] < umbral)
+    avg = lambda xs, k: round(sum(r[k] for r in xs) / max(len(xs), 1), 1)
     out = {
         "generado": datetime.now(timezone.utc).isoformat(timespec="minutes"),
-        "umbral": config.QUALIFIED_THRESHOLD,
+        "umbral_fit": umbral,
+        "fit_promedio_portafolio": avg(port, "fit"),
+        "fit_promedio_controles": avg(ctrl, "fit"),
         "portafolio_aprobado": f"{hit_port}/{len(port)}",
         "controles_rechazados": f"{hit_ctrl}/{len(ctrl)}",
-        "score_promedio_portafolio": round(sum(r["score"] for r in port) / max(len(port), 1), 1),
-        "score_promedio_controles": round(sum(r["score"] for r in ctrl) / max(len(ctrl), 1), 1),
         "costo_usd": round(budget.spent, 2),
         "resultados": rows,
     }
     for path in (ROOT / "data" / "calibration.json", ROOT / "calibration.json"):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"\nPortafolio sobre umbral: {out['portafolio_aprobado']} · "
+    print(f"\nUmbral de fit sugerido: {umbral}/80 · portafolio sobre umbral: {out['portafolio_aprobado']} · "
           f"controles bajo umbral: {out['controles_rechazados']} · costo US${out['costo_usd']}")
     return 0
 

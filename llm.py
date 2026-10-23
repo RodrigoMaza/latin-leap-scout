@@ -288,7 +288,9 @@ def score(profile: str, budget: Budget, calibration: bool = False) -> dict:
     pts = {k: max(0, min(v, int(data["puntajes"].get(k, 0)))) for k, v in RUBRIC.items()}
     data["puntajes"] = pts
     data["score"] = sum(pts.values())
+    data["fit"] = data["score"] - pts["etapa_timing"]
     if not all(data["filtros"].values()):
         data["accion"] = "descartar"
         data["score"] = min(data["score"], 30)
+        data["fit"] = min(data["fit"], 20)
     return data

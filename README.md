@@ -69,14 +69,24 @@ La rúbrica sale de las fuentes públicas del fondo y de su portafolio real (`co
 la startup se descarta.
 
 El **total lo suma el código, no el modelo**: cada criterio se acota a su máximo, así que
-el puntaje es reproducible y auditable. Umbral de deal calificado: **65/100**; alto fit: **78**.
+el puntaje es reproducible y auditable. El score se separa en dos partes:
+
+- **Fit con la tesis (0-80):** equipo + sector + modelo + tracción. ¿Es el tipo de empresa
+  en la que invierte Latin Leap?
+- **Timing (0-20):** ¿cuándo actuar? Determina la acción sugerida (contactar ya o seguimiento).
+
+Separarlos evita castigar a una startup excelente que acaba de cerrar ronda: sigue siendo
+dealflow relevante (follow-on, siguiente ronda), solo cambia cuándo contactarla.
 
 ## Calibración: ¿piensa como Latin Leap?
 
 `python calibrate.py` corre el mismo flujo sobre **el portafolio real** del fondo y
-sobre **controles fuera de tesis** (Brasil, España, EE.UU.). Si el portafolio sale alto y
-los controles salen bajo, el calificador está alineado con cómo invierte el fondo. El
-resultado aparece en el dashboard.
+sobre **controles fuera de tesis** (Brasil, España, EE.UU.). El **umbral de prioridad** no
+es arbitrario: es el percentil 25 del fit del portafolio, es decir, la vara que superan 3 de
+cada 4 inversiones reales del fondo. El resultado aparece en el dashboard.
+
+Validación adicional: en su primera corrida, la herramienta detectó por su cuenta a
+**Dapta**, empresa del portafolio de Latin Leap, en noticias de su ronda seed.
 
 ## Automatización
 
@@ -92,14 +102,20 @@ auditable en el historial del repositorio.
 ## Costo
 
 Haiku hace el trabajo de volumen (leer titulares, investigar) y Sonnet el juicio de
-inversión. Hay un **tope de US$1.20 por corrida** (`MAX_USD_PER_RUN`): si se alcanza, lo
-pendiente pasa a la siguiente semana. El costo de cada corrida queda registrado en el
-dashboard.
+inversión. Hay un **tope de US$2.50 estimados por corrida** (`MAX_USD_PER_RUN`): si se alcanza, lo
+pendiente pasa a la siguiente semana. El estimado es conservador: en la primera corrida
+estimó US$1.16 y el gasto real fue US$0.52, así que una corrida completa cuesta ~US$1.
 
 ## Cómo se mide el +10%
 
-`deals calificados en 30 días ÷ 60`. Esto supone que esas startups no estaban ya en el
-pipeline del fondo. **Siguiente paso natural:** marcar en el dashboard las que el equipo
+Dos niveles, para comparar peras con peras:
+
+- **Deals nuevos al pipeline:** pasan los filtros de tesis y no se descartan. Es lo
+  comparable con los 60 deals/mes que hoy entran al pipeline de Latin Leap.
+  **KPI = deals nuevos en 30 días ÷ 60.**
+- **Prioridad:** además superan el umbral de fit calibrado con el portafolio.
+
+Esto supone que esas startups no estaban ya en el pipeline del fondo. **Siguiente paso natural:** marcar en el dashboard las que el equipo
 ya conocía y retroalimentar al calificador con las que sí avanzan a primera llamada.
 
 ## Limitaciones conocidas

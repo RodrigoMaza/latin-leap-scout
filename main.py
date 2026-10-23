@@ -142,9 +142,8 @@ def run(dry_run: bool = False) -> int:
         stats.update(evaluated=done, cost_usd=round(budget.spent, 3),
                      searches=budget.searches, new_keys=new_keys)
 
-    stats["qualified"] = sum(1 for k in stats.get("new_keys", []) for d in [deals[k]]
-                             if d.get("score", 0) >= config.QUALIFIED_THRESHOLD
-                             and d.get("accion") != "descartar")
+    stats["pipeline"] = sum(1 for k in stats.get("new_keys", []) if report.in_pipeline(deals[k]))
+    stats["priority"] = sum(1 for k in stats.get("new_keys", []) if report.is_priority(deals[k]))
     state["runs"].append(stats)
     if dry_run:  # la vista previa nunca toca los datos reales
         report.publish(deals, state, stats, out_root=store.ROOT / "_preview")
@@ -152,7 +151,8 @@ def run(dry_run: bool = False) -> int:
         store.save_deals(deals)
         store.save_state(state)
         report.publish(deals, state, stats)
-    print(f"\nListo. Evaluadas: {stats['evaluated']} · calificadas hoy: {stats['qualified']} · "
+    print(f"\nListo. Evaluadas: {stats['evaluated']} · nuevas al pipeline: {stats['pipeline']} · "
+          f"prioridad: {stats['priority']} · "
           f"costo estimado: US${stats['cost_usd']:.2f}")
     return 0
 
