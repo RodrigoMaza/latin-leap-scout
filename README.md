@@ -39,23 +39,23 @@ flowchart LR
   F --> I[Digest semanal<br/>Issue por correo]
 ```
 
-1. **Recolecta** (`scout/sources.py`): noticias de rondas, lanzamientos y aceleradoras
+1. **Recolecta** (`sources.py`): noticias de rondas, lanzamientos y aceleradoras
    de los últimos 7 días, más startups de batches recientes de YC con sede en LATAM
    hispanohablante. Solo fuentes públicas: no hay scraping de LinkedIn ni Crunchbase,
    porque sus términos lo prohíben.
-2. **Extrae y filtra** (`scout/llm.py → extract`): Claude lee los titulares en lote y
+2. **Extrae y filtra** (`llm.py → extract`): Claude lee los titulares en lote y
    extrae startups concretas. Se descartan Brasil, EE.UU., España, Serie A en adelante
    y las que ya están en el pipeline. Si una startup ya conocida vuelve a aparecer en
    noticias, se registra como señal de momentum.
 3. **Investiga** (`research`): por cada candidata, Claude hace hasta 3 búsquedas web:
    sitio, fundadores y su experiencia, rondas, tracción y modelo comparable.
 4. **Califica** (`score`): rúbrica explícita basada en la tesis.
-5. **Entrega** (`scout/report.py`): dashboard, CSV y digest con borrador de primer
+5. **Entrega** (`report.py`): dashboard, CSV y digest con borrador de primer
    contacto para cada founder.
 
 ## La tesis, codificada
 
-La rúbrica sale de las fuentes públicas del fondo y de su portafolio real (`scout/config.py`):
+La rúbrica sale de las fuentes públicas del fondo y de su portafolio real (`config.py`):
 
 | Criterio | Pts | De dónde sale |
 |---|---:|---|
@@ -73,7 +73,7 @@ el puntaje es reproducible y auditable. Umbral de deal calificado: **65/100**; a
 
 ## Calibración: ¿piensa como Latin Leap?
 
-`python -m scout.calibrate` corre el mismo flujo sobre **el portafolio real** del fondo y
+`python calibrate.py` corre el mismo flujo sobre **el portafolio real** del fondo y
 sobre **controles fuera de tesis** (Brasil, España, EE.UU.). Si el portafolio sale alto y
 los controles salen bajo, el calificador está alineado con cómo invierte el fondo. El
 resultado aparece en el dashboard.
@@ -82,9 +82,8 @@ resultado aparece en el dashboard.
 
 | Workflow | Cuándo | Qué hace |
 |---|---|---|
-| `scout.yml` | Lunes 06:17 CDMX + botón manual | Pipeline completo, guarda resultados y publica el digest |
+| `scout.yml` | Lunes 06:17 CDMX + botón manual | Prueba simulada, pipeline completo, guarda resultados y publica el digest |
 | `calibrate.yml` | Manual | Recalibra contra el portafolio |
-| `tests.yml` | En cada cambio de código | Prueba de punta a punta con API simulada |
 
 Todo corre en GitHub Actions (gratis). La API key vive cifrada en *Secrets*. El estado
 (deals vistos, historial de corridas) se versiona en `data/`, así que cada corrida es
@@ -114,15 +113,18 @@ ya conocía y retroalimentar al calificador con las que sí avanzan a primera ll
 ## Estructura
 
 ```
-scout/config.py      tesis, fuentes, umbrales y límites de costo
-scout/sources.py     Google News RSS + directorio YC
-scout/llm.py         extracción, investigación web y calificación
-scout/main.py        orquestación y deduplicación
-scout/report.py      dashboard, CSV y digest
-scout/calibrate.py   calibración contra el portafolio
-docs/index.html      dashboard (GitHub Pages)
+config.py            tesis, fuentes, umbrales y límites de costo
+sources.py           Google News RSS + directorio YC
+llm.py               extracción, investigación web y calificación
+main.py              orquestación y deduplicación
+store.py             estado persistente (deals vistos, corridas)
+report.py            dashboard, CSV y digest
+calibrate.py         calibración contra el portafolio
+offline_test.py      prueba de punta a punta sin API
+index.html           dashboard (GitHub Pages)
 data/                estado persistente versionado
-tests/               prueba de punta a punta sin API
+reports/             digests semanales
+.github/workflows/   automatización
 ```
 
 Construido por Rodrigo Maza para el proceso de VC Associate de Latin Leap, con Claude como

@@ -20,7 +20,7 @@ from datetime import datetime, timedelta, timezone
 import feedparser
 import requests
 
-from . import config
+import config
 
 UA = {"User-Agent": "Mozilla/5.0 (latin-leap-scout; +https://github.com)"}
 YC_URL = "https://yc-oss.github.io/api/companies/all.json"

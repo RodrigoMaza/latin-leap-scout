@@ -7,15 +7,15 @@ Corre exactamente el mismo flujo (investigación web + calificación) sobre:
 El modo calibración evalúa a cada empresa "como era en su ronda semilla", para
 que su etapa actual no contamine la medición de fit con la tesis.
 
-Uso:  python -m scout.calibrate
+Uso:  python calibrate.py
 """
 from __future__ import annotations
 
 import json
 from datetime import datetime, timezone
 
-from . import config, llm
-from .store import ROOT
+import config, llm
+from store import ROOT
 
 # (nombre, pista para desambiguar la búsqueda, esperado)
 PORTFOLIO = [
@@ -77,7 +77,7 @@ def main() -> int:
         "costo_usd": round(budget.spent, 2),
         "resultados": rows,
     }
-    for path in (ROOT / "data" / "calibration.json", ROOT / "docs" / "calibration.json"):
+    for path in (ROOT / "data" / "calibration.json", ROOT / "calibration.json"):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"\nPortafolio sobre umbral: {out['portafolio_aprobado']} · "

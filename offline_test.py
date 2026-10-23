@@ -4,7 +4,7 @@ Simula Google News, el directorio de YC y la API de Claude, y verifica que el
 pipeline completo (recolectar → extraer → filtrar → investigar → calificar →
 publicar) funciona y respeta los filtros de tesis.
 
-Uso:  python -m tests.offline_test
+Uso:  python offline_test.py
 """
 from __future__ import annotations
 
@@ -95,7 +95,7 @@ def fake_get(url, **kw):
 def main() -> None:
     tmp = Path(tempfile.mkdtemp())
     os.environ["ANTHROPIC_API_KEY"] = "test"
-    from scout import config, llm, main as pipeline, store
+    import config, llm, main as pipeline, store
     store.ROOT = tmp
     store.DATA = tmp / "data"
     store.DEALS_FILE = store.DATA / "deals.json"
@@ -104,8 +104,8 @@ def main() -> None:
                                       http_client=httpx.Client(transport=httpx.MockTransport(fake_api)))
     config.NEWS_QUERIES_ES = config.NEWS_QUERIES_ES[:1]
     config.NEWS_QUERIES_EN = []
-    with mock.patch("scout.sources.requests.get", fake_get), \
-            mock.patch("scout.sources.time.sleep", lambda s: None):
+    with mock.patch("sources.requests.get", fake_get), \
+            mock.patch("sources.time.sleep", lambda s: None):
         pipeline.run()
         deals = json.loads((tmp / "data" / "deals.json").read_text())
         names = {d["nombre"] for d in deals}
@@ -116,7 +116,7 @@ def main() -> None:
         pipeline.run()
         st = json.loads((tmp / "data" / "state.json").read_text())
         assert st["runs"][-1]["evaluated"] == 0, st["runs"][-1]
-        data = json.loads((tmp / "docs" / "data.json").read_text())
+        data = json.loads((tmp / "data.json").read_text())
         assert data["kpis"]["calificadas_30d"] == 3
         print("OK — pipeline completo:", sorted(names))
         print("   costo simulado por corrida: US$", st["runs"][0]["cost_usd"])

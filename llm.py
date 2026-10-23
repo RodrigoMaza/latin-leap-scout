@@ -18,7 +18,7 @@ import time
 
 import anthropic
 
-from . import config
+import config
 
 
 class BudgetExceeded(Exception):

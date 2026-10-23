@@ -8,8 +8,8 @@ from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config
-from . import store
+import config
+import store
 
 ACTION_LABEL = {"contactar_ya": "Contactar ya", "seguimiento": "Seguimiento",
                 "descartar": "Descartar"}
@@ -55,7 +55,7 @@ def publish(deals_map: dict, state: dict, stats: dict, out_root: Path | None = N
     out_root = out_root or store.ROOT
     deals = sorted(deals_map.values(), key=lambda d: (-d.get("score", 0), d.get("nombre", "")))
     k = kpis(deals, state["runs"])
-    docs = out_root / "docs"
+    docs = out_root  # GitHub Pages sirve la raíz del repositorio
     docs.mkdir(parents=True, exist_ok=True)
     payload = {
         "generado": datetime.now(timezone.utc).isoformat(timespec="minutes"),

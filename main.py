@@ -1,8 +1,8 @@
 """Pipeline completo: recolectar → extraer → deduplicar → investigar → calificar → publicar.
 
 Uso:
-    python -m scout.main            # corrida normal (la que dispara GitHub Actions)
-    python -m scout.main --dry-run  # sin llamadas a la API, con datos de ejemplo
+    python main.py            # corrida normal (la que dispara GitHub Actions)
+    python main.py --dry-run  # sin llamadas a la API, con datos de ejemplo
 """
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import sys
 import unicodedata
 from datetime import datetime, timezone
 
-from . import config, llm, report, sources, store
+import config, llm, report, sources, store
 
 
 def _norm(s: str) -> str:
@@ -92,7 +92,7 @@ def run(dry_run: bool = False) -> int:
              "evaluated": 0, "qualified": 0, "remention": 0, "cost_usd": 0.0}
 
     if dry_run:
-        from .demo import demo_deals
+        from demo import demo_deals
         for d in demo_deals():
             deals[d["key"]] = d
         stats.update(evaluated=len(deals), new_keys=list(deals))
