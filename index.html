@@ -209,7 +209,7 @@ async function load(){
   $("#k-q").textContent = k.pipeline_30d;
   $("#k-q-h").textContent = `pasan los filtros de tesis · ${k.descartadas_30d} descartadas`;
   $("#k-hi").textContent = k.prioridad_30d;
-  $("#k-hi-h").textContent = `fit ≥ ${DATA.umbral_fit}/80, calibrado con el portafolio`;
+  $("#k-hi-h").innerHTML = `fit ≥ ${DATA.umbral_fit}/80, <a href="calibracion.html" style="color:inherit">calibrado con el portafolio</a>`;
   $("#k-tot").textContent = k.evaluadas_total;
   $("#k-cost").textContent = `costo acumulado ≈ US$${k.costo_total_usd.toFixed(2)}`;
   chart(k.por_semana);
@@ -246,6 +246,7 @@ async function calib(){
   $("#calib").innerHTML = `
     <div class="big">Umbral de fit: ${c.umbral_fit}/80</div>
     <div class="desc">${esc(c.portafolio_aprobado)} inversiones reales lo superan · fit promedio del portafolio ${c.fit_promedio_portafolio} vs. ${c.fit_promedio_controles} de controles fuera de tesis</div>
+    <p style="margin:10px 0 0;font-size:13px"><a href="calibracion.html" style="color:inherit;font-weight:600">Ver cómo se fija el umbral →</a></p>
     <ul>${rows.map(r => `<li><span>${esc(r.nombre)} <span class="tag ${r.grupo === "control" ? "a-descartar" : "pf"}">${r.grupo === "control" ? "control" : "portafolio"}</span></span><span class="score ${scoreCls(r.fit)}">${r.fit}</span></li>`).join("")}</ul>`;
 }
 
