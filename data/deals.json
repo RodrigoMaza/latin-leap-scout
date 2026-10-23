@@ -2339,6 +2339,80 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Marein.io",
+  "website": "https://marein.io",
+  "pais": "Estados Unidos",
+  "ciudad": "Menlo Park (sede contradictoria: Chula Vista según ZoomInfo)",
+  "sector": "ClimateTech",
+  "descripcion": "SaaS con IA que mejora el rendimiento financiero de proyectos de energía renovable, con parques solares como caso de uso, sin sensores adicionales. Cobra por suscripción.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Heinrich Terborg, PhD",
+    "antecedentes": "CEO y CTO; más de 15 años liderando I+D en IoT y ciencia de datos."
+   },
+   {
+    "nombre": "Marcos Ripoll",
+    "antecedentes": "CCO; más de 20 años en renovables, exVP de Operaciones de Solar City/Tesla México, cofundador de suports.es."
+   },
+   {
+    "nombre": "Adolfo Cortes",
+    "antecedentes": "CPO; más de 20 años en producto y consultoría (Bank of America, USAA, Yahoo!)."
+   },
+   {
+    "nombre": "Moises Santiago",
+    "antecedentes": "VP de Ingeniería; diseñó arquitectura que procesa el 3% de las transacciones de e-commerce de México."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Sin clientes, ingresos ni crecimiento verificables. Solo el premio IBM Cloud Rocks Award en energía renovable. Tamaño inconsistente: 2-10 o 11-50 empleados.",
+  "filtros": {
+   "geografia": false,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 18,
+   "sector": 10,
+   "modelo": 1,
+   "traccion": 3,
+   "etapa_timing": 5
+  },
+  "tesis_match": "Equipo senior con vínculos con México y producto de IA B2B, lo que encaja con la ambición en IA. Pero es una empresa que figura como estadounidense, en energía renovable, un sector ajeno a los patrones del portafolio.",
+  "riesgos": "No hay evidencia de operación principal en LATAM hispanohablante: figura como empresa de EE.UU. y no hay clientes, ingresos ni ronda verificables.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Heinrich, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX. Vimos Marein y nos llamó la atención la propuesta de IA para optimizar el rendimiento financiero de proyectos solares, y el perfil de su equipo con raíces en México. Nos gustaría saber si están operando o planean operar en LATAM y en qué etapa está su financiamiento. ¿Tendrían 20 minutos para conversar?",
+  "confianza": "baja",
+  "score": 30,
+  "fit": 20,
+  "key": "mareinio",
+  "origen": "evento",
+  "nota_evento": "Prueba",
+  "manual": true,
+  "menciones": [
+   {
+    "title": "Evaluada a mano · Prueba",
+    "url": "https://marein.io",
+    "source": "Evento",
+    "date": "2026-10-23"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://marein.io",
+   "https://www.linkedin.com/company/marein-inc",
+   "https://www.zoominfo.com/pic/marein-inc/1333700190",
+   "https://magnitt.com/startups/marn-io-58448",
+   "https://marein.io/",
+   "https://marein.ch/uber-uns/"
+  ],
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-23",
+  "evaluada": "2026-10-23T19:55+00:00",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Melonn",
   "website": "",
   "pais": "Colombia",
