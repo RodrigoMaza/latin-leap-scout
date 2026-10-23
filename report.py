@@ -84,6 +84,10 @@ def publish(deals_map: dict, state: dict, stats: dict, out_root: Path | None = N
     deals = list(deals_map.values())
     for d in deals:
         d["fit"] = fit(d)
+        if d.get("pais") not in config.SPANISH_LATAM and d.get("accion") != "descartar":
+            # Filtro duro de geografía, aplicado también a deals evaluados antes de la regla
+            d["accion"] = "descartar"
+            d.setdefault("filtros", {})["geografia"] = False
     deals.sort(key=lambda d: (-d["fit"], -d.get("score", 0), d.get("nombre", "")))
     k = kpis(deals, state["runs"])
     out_root.mkdir(parents=True, exist_ok=True)  # GitHub Pages sirve la raíz del repositorio
