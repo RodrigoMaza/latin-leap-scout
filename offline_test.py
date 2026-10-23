@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import os
 import shutil
+import sys
 import tempfile
 from pathlib import Path
 from unittest import mock
@@ -65,6 +66,9 @@ def fake_api(request: httpx.Request) -> httpx.Response:
     usage = {"input_tokens": 1000, "output_tokens": 200}
     if "tools" in body:  # investigación
         assert body["tools"][0]["type"] == "web_search_20250305"
+        if len(body["tools"]) > 1:  # evaluación manual: también lee el sitio de la empresa
+            assert body["tools"][1]["type"] == "web_fetch_20250910"
+            assert "https://minuevaempresa.mx" in body["messages"][0]["content"]
         content = [{"type": "text", "text": "Notas de investigación."}]
         usage["server_tool_use"] = {"web_search_requests": 2}
     else:
@@ -121,6 +125,21 @@ def main() -> None:
         print("OK — pipeline completo:", sorted(names))
         print("   costo simulado por corrida: US$", st["runs"][0]["cost_usd"])
         print((tmp / "reports" / "latest.md").read_text()[:300])
+
+        # Evaluación manual (empresa de un evento): lee el sitio, se marca y no infla el KPI
+        import evaluate
+        digest_before = (tmp / "reports" / "latest.md").read_text()
+        with mock.patch.object(sys, "argv", ["evaluate.py", "--url", "minuevaempresa.mx",
+                                             "--nota", "Mixer CDMX"]):
+            assert evaluate.main() == 0
+        data = json.loads((tmp / "data.json").read_text())
+        man = [d for d in data["deals"] if d.get("manual")]
+        assert len(man) == 1 and man[0]["nota_evento"] == "Mixer CDMX", man
+        assert man[0]["website"].startswith("https://"), man[0]["website"]
+        assert data["kpis"]["pipeline_30d"] == 3, data["kpis"]           # el KPI no cambia
+        assert (tmp / "reports" / "latest.md").read_text() == digest_before  # el digest tampoco
+        assert evaluate.normalize_url("empresa.com/") == "https://empresa.com"
+        print("OK — evaluación manual:", man[0]["nombre"], "fit", man[0]["fit"])
     shutil.rmtree(tmp)
 
 

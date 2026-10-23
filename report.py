@@ -55,15 +55,17 @@ def is_priority(d: dict) -> bool:
 def kpis(deals: list[dict], runs: list[dict]) -> dict:
     today = datetime.now(timezone.utc).date()
     since = (today - timedelta(days=30)).isoformat()
-    recent = [d for d in deals if d.get("first_seen", "") >= since]
+    # El KPI mide lo que la herramienta encontró sola: las evaluadas a mano (eventos) no cuentan
+    recent = [d for d in deals if d.get("first_seen", "") >= since and not d.get("manual")]
     p30 = [d for d in recent if in_pipeline(d)]
     weeks: Counter = Counter()
     for d in deals:
-        if in_pipeline(d) and d.get("first_seen"):
+        if in_pipeline(d) and d.get("first_seen") and not d.get("manual"):
             y, w, _ = date.fromisoformat(d["first_seen"]).isocalendar()
             weeks[f"{y}-S{w:02d}"] += 1
     return {
         "evaluadas_total": len(deals),
+        "evaluadas_evento": sum(1 for d in deals if d.get("manual")),
         "evaluadas_30d": len(recent),
         "pipeline_30d": len(p30),
         "prioridad_30d": sum(1 for d in p30 if is_priority(d)),
@@ -79,7 +81,8 @@ def kpis(deals: list[dict], runs: list[dict]) -> dict:
     }
 
 
-def publish(deals_map: dict, state: dict, stats: dict, out_root: Path | None = None) -> None:
+def publish(deals_map: dict, state: dict, stats: dict, out_root: Path | None = None,
+            write_digest: bool = True) -> None:
     out_root = out_root or store.ROOT
     deals = list(deals_map.values())
     for d in deals:
@@ -101,6 +104,8 @@ def publish(deals_map: dict, state: dict, stats: dict, out_root: Path | None = N
     }
     (out_root / "data.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
     _csv(deals, out_root / "deals.csv")
+    if not write_digest:  # una evaluación a mano no reescribe el digest semanal
+        return
     digest = _digest(deals, k, stats)
     rep = out_root / "reports"
     rep.mkdir(parents=True, exist_ok=True)

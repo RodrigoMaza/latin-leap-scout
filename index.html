@@ -73,6 +73,7 @@ tr:last-child td{border-bottom:0}
 .a-seguimiento{background:var(--warn-soft);color:var(--warn)}
 .a-descartar{background:var(--bad-soft);color:var(--bad)}
 .pf{background:var(--accent-soft);color:var(--ink);margin-left:6px}
+.ev{background:var(--warn-soft);color:var(--warn);margin-left:6px}
 .detail td{background:var(--bg);padding:18px}
 .dgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
 .dgrid h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 6px;font-weight:500}
@@ -156,6 +157,7 @@ footer{margin-top:24px;color:var(--muted);font-size:13px}
       <option value="">Todas (incluye descartadas)</option>
     </select>
     <a class="btn" href="deals.csv" download>Descargar CSV</a>
+    <a class="btn" href="calibracion.html#evaluar">Evaluar una empresa</a>
     <span class="count" id="count"></span>
   </div>
 
@@ -261,7 +263,7 @@ function render(){
   $("#tb").innerHTML = rows.map(d => `
     <tr class="r" data-k="${esc(d.key)}">
       <td><span class="score ${scoreCls(d.fit)}" title="Score total ${d.score}/100">${d.fit}</span></td>
-      <td><div class="name">${esc(d.nombre)}${d.en_portafolio ? '<span class="tag pf">portafolio</span>' : ""}</div><div class="desc">${esc(d.descripcion)}</div></td>
+      <td><div class="name">${esc(d.nombre)}${d.en_portafolio ? '<span class="tag pf">portafolio</span>' : ""}${d.manual ? '<span class="tag ev">evento</span>' : ""}</div><div class="desc">${esc(d.descripcion)}</div></td>
       <td class="hide-sm">${esc(d.pais)}</td><td class="hide-sm">${esc(d.sector)}</td>
       <td class="hide-sm">${esc(RONDA[d.estado_ronda] || d.estado_ronda)}</td>
       <td><span class="tag a-${esc(d.accion)}">${esc(ACC[d.accion] || d.accion)}</span></td>
@@ -282,6 +284,7 @@ function detail(d){
   const web = safeUrl(d.website);
   return `<tr class="detail"><td colspan="7"><div class="dgrid">
     <div>
+      ${d.manual ? `<h3>Evaluada a mano</h3><p>${esc(d.nota_evento || "Evento / referido")} · <a href="calibracion.html?empresa=${encodeURIComponent(d.key)}" style="color:inherit">ver frente al umbral</a></p>` : ""}
       <h3>Por qué encaja</h3><p>${esc(d.tesis_match)}</p>
       <h3>Riesgo principal</h3><p>${esc(d.riesgos)}</p>
       <h3>Fundadores</h3><p>${founders}</p>

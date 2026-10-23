@@ -11,17 +11,17 @@
 :root{
   --bg:#f6f6f3;--panel:#ffffff;--ink:#141414;--muted:#6b6b66;--line:#e4e4de;
   --accent:#c8d900;--accent-ink:#141414;--accent-soft:#f3f7c7;--accent-line:#8a9600;
-  --good:#1f7a4d;--good-soft:#e2f3ea;--bad:#a23b3b;--bad-soft:#f8e3e3;--dot-ctrl:#b9b9b1;--dot-deal:#4a6fa5;
+  --good:#1f7a4d;--good-soft:#e2f3ea;--bad:#a23b3b;--bad-soft:#f8e3e3;--dot-ctrl:#b9b9b1;--dot-deal:#4a6fa5;--warn:#c27a00;
   --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0f0f0e;--panel:#191917;--ink:#f1f1ec;--muted:#9a9a92;--line:#2c2c29;
   --accent:#d7e83a;--accent-soft:#2d3110;--accent-line:#d7e83a;--good:#5fd39a;--good-soft:#14281d;--bad:#ef8a8a;--bad-soft:#301818;
-  --dot-ctrl:#5c5c56;--dot-deal:#8fb3e8;--shadow:none}}
+  --dot-ctrl:#5c5c56;--dot-deal:#8fb3e8;--warn:#e9b44c;--shadow:none}}
 :root[data-theme="dark"]{
   --bg:#0f0f0e;--panel:#191917;--ink:#f1f1ec;--muted:#9a9a92;--line:#2c2c29;
   --accent:#d7e83a;--accent-soft:#2d3110;--accent-line:#d7e83a;--good:#5fd39a;--good-soft:#14281d;--bad:#ef8a8a;--bad-soft:#301818;
-  --dot-ctrl:#5c5c56;--dot-deal:#8fb3e8;--shadow:none}
+  --dot-ctrl:#5c5c56;--dot-deal:#8fb3e8;--warn:#e9b44c;--shadow:none}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1040px;margin:0 auto;padding:28px 16px 64px}
@@ -68,11 +68,29 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .step span{font-size:13.5px;color:var(--muted)}
 .note{font-size:14px;color:var(--muted);margin-top:12px}
 .tablewrap{overflow-x:auto}
+.ev-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.btn{font:inherit;font-size:14px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;text-decoration:none;white-space:nowrap;display:inline-block}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+select{font:inherit;font-size:14px;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);max-width:100%}
+.how{margin:10px 0 0;padding-left:20px;color:var(--muted);font-size:14px}
+.how li{margin:3px 0}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px;border-top:1px solid var(--line);padding-top:16px}
+.res h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 6px;font-weight:500}
+.res p{margin:0 0 12px}
+.verdict{display:inline-block;font-weight:600;padding:5px 12px;border-radius:20px;font-size:14px;margin:6px 0 10px}
+.v-ok{background:var(--accent);color:var(--accent-ink)}
+.v-mid{background:var(--line);color:var(--ink)}
+.v-out{background:var(--bad-soft);color:var(--bad)}
+.ename{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.pts{display:grid;grid-template-columns:96px 1fr 46px;gap:6px 10px;align-items:center;font-size:13px}
+.track{height:8px;background:var(--line);border-radius:8px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--ink);border-radius:8px}
+.links a{display:block;font-size:13px;overflow-wrap:anywhere;margin-bottom:4px}
 @media (max-width:820px){
   .hero{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr}
-  .whatif{grid-template-columns:1fr}
+  .whatif,.res{grid-template-columns:1fr}
   .hide-sm{display:none}
 }
 @media (max-width:480px){.steps{grid-template-columns:1fr}h1{font-size:25px}}
@@ -104,7 +122,9 @@ async function load(){
   if (!C) { $("#app").innerHTML = '<p class="sub">Aún no hay calibración: corre el workflow "Calibrar contra el portafolio".</p>'; return; }
   const port = C.resultados.filter(r => r.grupo === "portafolio").sort((a,b) => b.fit - a.fit);
   const ctrl = C.resultados.filter(r => r.grupo === "control");
-  const deals = (D?.deals || []).filter(d => d.accion !== "descartar" && !d.en_portafolio);
+  const deals = (D?.deals || []).filter(d => d.accion !== "descartar" && !d.en_portafolio && !d.manual);
+  const manual = (D?.deals || []).filter(d => d.manual).sort((a,b) => String(b.evaluada).localeCompare(String(a.evaluada)));
+  let sel = manual.find(d => d.key === new URLSearchParams(location.search).get("empresa")) || manual.at(0) || null;
   const thr = C.umbral_fit, asc = port.map(r => r.fit).sort((a,b) => a - b);
 
   $("#app").innerHTML = `
@@ -121,6 +141,22 @@ async function load(){
       <div class="card stat"><div class="n">${esc(C.controles_rechazados)}</div><div class="l">controles rechazados</div></div>
     </div>
   </div>
+
+  <section class="card" id="evaluar">
+    <div class="ev-head">
+      <div>
+        <h2>Evaluar una empresa que conociste en un evento</h2>
+        <p class="sub" style="margin:0">Pega su sitio web: se investiga y se califica con la misma rúbrica, y aparece aquí frente al umbral.</p>
+      </div>
+      <a class="btn primary" id="ev-btn" target="_blank" rel="noopener">Evaluar en GitHub →</a>
+    </div>
+    <ol class="how">
+      <li>En GitHub, haz clic en <b>Run workflow</b>.</li>
+      <li>Pega el sitio web y, si quieres, dónde la conociste. Dale <b>Run workflow</b>.</li>
+      <li>En unos 2 minutos recarga esta página. Solo el dueño del repositorio puede correrlo.</li>
+    </ol>
+    <div id="ev-res"></div>
+  </section>
 
   <section class="card">
     <h2>El portafolio y los controles caen en lados opuestos</h2>
@@ -167,6 +203,37 @@ async function load(){
     ${RUB.map(([k]) => `<td class="num">${r.puntajes?.[k] ?? "—"}</td>`).join("")}
     <td class="num"><span class="fitcell ${r.fit >= thr ? "over" : "under"}">${r.fit}</span></td></tr>`).join("");
 
+  const parts = location.hostname.endsWith("github.io") ? [location.hostname.split(".")[0], location.pathname.split("/").filter(Boolean)[0]] : ["RodrigoMaza", "latin-leap-scout"];
+  $("#ev-btn").href = `https://github.com/${parts[0]}/${parts[1]}/actions/workflows/evaluar.yml`;
+  const showRes = () => {
+    if (!sel) { $("#ev-res").innerHTML = '<p class="note" style="margin-top:14px">Todavía no has evaluado ninguna empresa a mano.</p>'; return; }
+    const d = sel, out = d.accion === "descartar" || !Object.values(d.filtros || {}).every(Boolean);
+    const above = port.filter(r => r.fit <= d.fit).length;
+    const [cls, txt] = out ? ["v-out", "Fuera de tesis"] : d.fit >= thr ? ["v-ok", "Por encima del umbral: prioridad"] : ["v-mid", "Por debajo del umbral: pipeline"];
+    const RB = [...RUB, ["etapa_timing","Timing",20]];
+    const links = (d.fuentes_investigacion || []).filter(u => /^https?:/.test(u)).slice(0, 6).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`).join("");
+    $("#ev-res").innerHTML = `<div class="res">
+      <div>
+        ${manual.length > 1 ? `<p><select id="ev-sel" aria-label="Empresa evaluada">${manual.map(m => `<option value="${esc(m.key)}" ${m.key === d.key ? "selected" : ""}>${esc(m.nombre)} · ${esc(String(m.evaluada).slice(0,10))}</option>`).join("")}</select></p>` : ""}
+        <div class="ename">${esc(d.nombre)}</div>
+        <div class="sub" style="margin:2px 0 0">${esc(d.pais)} · ${esc(d.sector)} · ${esc(d.etapa)}${d.nota_evento ? " · " + esc(d.nota_evento) : ""}</div>
+        <span class="verdict ${cls}">${txt}</span>
+        <p><b>Fit ${d.fit}/80</b> contra un umbral de ${thr}. ${out ? "No pasa los filtros duros de la tesis." : `Encaja igual o mejor que ${above} de las ${port.length} inversiones reales del fondo.`}</p>
+        <h3>Por qué encaja</h3><p>${esc(d.tesis_match)}</p>
+        <h3>Riesgo principal</h3><p>${esc(d.riesgos)}</p>
+        <h3>Fundadores</h3><p>${(d.fundadores || []).map(f => `<b>${esc(f.nombre)}</b> — ${esc(f.antecedentes)}`).join("<br>") || "Sin información"}</p>
+      </div>
+      <div>
+        <h3>Desglose (confianza ${esc(d.confianza)})</h3>
+        <div class="pts">${RB.map(([k, l, m]) => `<span>${l}</span><span class="track"><i style="width:${100 * (d.puntajes?.[k] || 0) / m}%"></i></span><span>${d.puntajes?.[k] ?? 0}/${m}</span>`).join("")}</div>
+        <h3 style="margin-top:16px">Ronda · tracción</h3><p>${esc(d.ultima_ronda)}<br><span class="sub">${esc(d.traccion)}</span></p>
+        <h3>Fuentes</h3><div class="links">${links || "—"}</div>
+      </div>
+    </div>`;
+    $("#ev-sel")?.addEventListener("change", e => { sel = manual.find(m => m.key === e.target.value); showRes(); update(); });
+  };
+  showRes();
+
   const update = () => {
     const t = Number($("#thr").value);
     $("#thr-v").textContent = `${t}/80`;
@@ -175,26 +242,29 @@ async function load(){
     $("#wi-port-n").textContent = port.filter(r => r.fit < t).length ? "Quedan fuera: " + port.filter(r => r.fit < t).map(r => r.nombre).join(", ") : "Ninguna queda fuera.";
     $("#wi-deal").textContent = d.length;
     $("#wi-deal-n").textContent = d.length ? d.map(x => `${x.nombre} (${x.fit})`).join(", ") : "Ningún deal nuevo alcanza este umbral.";
-    strip(port, ctrl, deals, t);
+    strip(port, ctrl, deals, t, manual, sel);
   };
   $("#thr").addEventListener("input", update);
   let rw; window.addEventListener("resize", () => { clearTimeout(rw); rw = setTimeout(update, 150); });
   update();
 }
 
-function strip(port, ctrl, deals, t){
-  const narrow = window.innerWidth < 620, W = narrow ? 440 : 880, L = narrow ? 0 : 150, R = 18, H = 210;
+function strip(port, ctrl, deals, t, manual = [], sel = null){
+  const narrow = window.innerWidth < 620, W = narrow ? 440 : 880, L = narrow ? 0 : 150, R = 18, extra = manual.length ? 58 : 0, H = 210 + extra, base = 180 + extra;
   const X = v => L + 12 + (W - L - R - 12) * v / 80;
   const rows = [["Portafolio real", port, "var(--accent-line)", 50], ["Deals nuevos", deals, "var(--dot-deal)", 105], ["Controles", ctrl, "var(--dot-ctrl)", 160]];
   let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Distribución del fit: portafolio, deals nuevos y controles">`;
-  for (let v = 0; v <= 80; v += 10) s += `<line x1="${X(v)}" x2="${X(v)}" y1="26" y2="180" stroke="var(--line)"/><text x="${X(v)}" y="200" text-anchor="middle" font-size="12" fill="var(--muted)">${v}</text>`;
+  if (manual.length) rows.push(["Evaluadas a mano", manual, "var(--warn, #9a6a00)", 218]);
+  for (let v = 0; v <= 80; v += 10) s += `<line x1="${X(v)}" x2="${X(v)}" y1="26" y2="${base}" stroke="var(--line)"/><text x="${X(v)}" y="${base + 20}" text-anchor="middle" font-size="12" fill="var(--muted)">${v}</text>`;
   rows.forEach(([name, list, color, y]) => {
     s += narrow ? `<text x="0" y="${y - 14}" font-size="13" font-weight="600" fill="var(--ink)">${name}</text>` : `<text x="0" y="${y + 4}" font-size="13.5" font-weight="600" fill="var(--ink)">${name}</text>`;
     const seen = {};
     list.forEach(r => { const k = r.fit; seen[k] = (seen[k] || 0) + 1; const dy = (seen[k] - 1) * 7 * (seen[k] % 2 ? 1 : -1);
-      s += `<circle cx="${X(r.fit)}" cy="${y + dy}" r="6.5" fill="${color}" fill-opacity="${r.fit >= t ? 0.95 : 0.35}" stroke="${color}"><title>${esc(r.nombre)}: fit ${r.fit}</title></circle>`; });
+      const me = sel && r.key === sel.key && r.manual;
+      s += `<circle cx="${X(r.fit)}" cy="${y + dy}" r="${me ? 9 : 6.5}" fill="${color}" fill-opacity="${me ? 1 : r.fit >= t ? 0.95 : 0.35}" stroke="${me ? "var(--ink)" : color}" stroke-width="${me ? 2 : 1}"><title>${esc(r.nombre)}: fit ${r.fit}</title></circle>`;
+      if (me) s += `<text x="${X(r.fit)}" y="${y + 26}" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--ink)">${esc(r.nombre)} · ${r.fit}</text>`; });
   });
-  s += `<line x1="${X(t)}" x2="${X(t)}" y1="18" y2="182" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 4"/>`;
+  s += `<line x1="${X(t)}" x2="${X(t)}" y1="18" y2="${base + 2}" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 4"/>`;
   s += `<text x="${X(t) + 6}" y="20" font-size="12.5" font-weight="600" fill="var(--ink)">umbral ${t}</text>`;
   $("#strip").innerHTML = s + "</svg>";
 }

@@ -173,13 +173,23 @@ búsqueda web y entrega notas concisas y verificables en español. Cubre:
 Si algo no aparece en fuentes, escribe "no encontrado". No inventes. Máximo 250 palabras."""
 
 
-def research(name: str, context: str, budget: Budget) -> tuple[str, list[str]]:
-    """Devuelve (notas, urls_fuente). Si la búsqueda falla, regresa notas vacías."""
+def research(name: str, context: str, budget: Budget, website: str = "",
+             searches: int | None = None) -> tuple[str, list[str]]:
+    """Devuelve (notas, urls_fuente). Si la búsqueda falla, regresa notas vacías.
+
+    Con `website`, además lee el sitio de la empresa directamente (web fetch: solo
+    puede abrir URLs que aparecen en el mensaje, así que el sitio va en el texto)."""
     budget.check(reserve=0.05)
     model = config.MODEL_RESEARCH
-    messages = [{"role": "user", "content": f"Startup: {name}\nContexto: {context}"}]
+    user = f"Startup: {name}\nContexto: {context}"
     tools = [{"type": "web_search_20250305", "name": "web_search",
-              "max_uses": config.SEARCHES_PER_CANDIDATE}]
+              "max_uses": searches or config.SEARCHES_PER_CANDIDATE}]
+    if website:
+        user += (f"\nSitio web oficial: {website}\nLee primero el sitio (inicio y, si existe, "
+                 "la página del equipo) y luego complementa con búsqueda web.")
+        tools.append({"type": "web_fetch_20250910", "name": "web_fetch",
+                      "max_uses": 3, "max_content_tokens": 8000})
+    messages = [{"role": "user", "content": user}]
     urls: list[str] = []
     notes = ""
     try:
@@ -191,6 +201,8 @@ def research(name: str, context: str, budget: Budget) -> tuple[str, list[str]]:
             for b in resp.content:
                 if getattr(b, "type", "") == "web_search_tool_result" and isinstance(b.content, list):
                     urls += [r.url for r in b.content if getattr(r, "url", None)]
+                if getattr(b, "type", "") == "web_fetch_tool_result" and getattr(b.content, "url", None):
+                    urls.insert(0, b.content.url)
             if resp.stop_reason == "pause_turn":
                 messages.append({"role": "assistant", "content": resp.content})
                 continue
