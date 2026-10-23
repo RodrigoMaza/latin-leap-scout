@@ -1,0 +1,47 @@
+name: Evaluar una empresa
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Sitio web de la empresa (ej. empresa.com)"
+        required: true
+        type: string
+      nota:
+        description: "Dónde la conociste (opcional, ej. Mixer Endeavor CDMX)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scout          # misma fila que el Scout semanal: nunca escriben a la vez
+  cancel-in-progress: false
+
+jobs:
+  evaluar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Investigar y calificar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EMPRESA_URL: ${{ inputs.url }}     # se pasan como variables, nunca pegadas en el comando
+          EMPRESA_NOTA: ${{ inputs.nota }}
+        run: python evaluate.py
+      - name: Guardar en el dashboard
+        run: |
+          git config user.name "latin-leap-scout[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data data.json deals.csv
+          git diff --cached --quiet || git commit -m "Evaluación manual: ${EMPRESA_URL}"
+          git pull --rebase
+          git push
+        env:
+          EMPRESA_URL: ${{ inputs.url }}
