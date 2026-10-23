@@ -341,510 +341,91 @@
   "74502144a3a3",
   "432deebfc45c",
   "c37594ba6171",
-  "d27a2bf27154"
+  "d27a2bf27154",
+  "a9dc0b1705b3",
+  "01366aca0bb6",
+  "bc3c5d6e4c0c",
+  "3993ad1cbeb2",
+  "3411787fab3a",
+  "1cc83832f6ae",
+  "09df5890b595",
+  "265b9509217f",
+  "23c3d2311bef",
+  "4e3de2cb918b",
+  "f5686b00de30",
+  "6f76ec01cd58",
+  "9dfc77f6d985",
+  "582e9b29921f",
+  "24e0ecfa6bf5",
+  "cfbdf0be419c",
+  "aa8c2d5728de",
+  "8db0dc297809",
+  "bbcdcf52921f",
+  "f20a118f89e8",
+  "7663845c8e6a",
+  "18a1a97cccd6",
+  "9e35b5309033",
+  "64c99619e6dc",
+  "1de9e7c7bb38",
+  "482e2033c698",
+  "82e971fc5f5e",
+  "c0c28831e65b",
+  "fc210b3bfb6a",
+  "5339493da1dd",
+  "fb6d41ba1f4d"
  ],
  "pending": [
   {
-   "key": "platam",
-   "nombre": "Platam",
-   "origen": "noticias",
-   "pais": "Colombia",
-   "contexto": "Plataforma de préstamos para pymes que recibe fondos de B Venture Capital",
-   "evento": "levanto_ronda",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Colombia's Platam adds B Venture Capital to fund SME lending push",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMmR3MWhCWHpQUDJyWGlyVjBoMHN1OUZRTk8zTUt2Sy1GZTltdjRxdFZWX1FuRkx1SldNdUp5TTRnX3NfZ21HbmhNRlp0N0JMTmFwQ3E0TVM4TWJUSjJZNjZ2R3Ffc1haeUdRZTNzVmVOdnFvVlQyNk5ZYzJ2MklmUmkwYVlvQ3hCYlhRbDhheXhxcnhSeGg3Q2VzMkJhcmc1?oc=5",
-     "source": "Dealroom",
-     "date": "2026-10-02"
-    }
-   ]
-  },
-  {
-   "key": "heroui",
-   "nombre": "HeroUI",
-   "origen": "Y Combinator Summer 2024",
-   "pais": "Buenos Aires, Buenos Aires, Argentina; Remote",
-   "contexto": "The UI framework for AI agents and developers to build beautiful apps.. HeroUI makes it simple for AI agents and developers to build beautiful, accessible, production-ready interfaces for web and mobile. In the AI age, design matters more than ever. Every micro animation, color, and interaction shapes how users experience your product. HeroUI makes that level of creativity and craft simple Ubicación: Buenos Aires, Buenos Aires, Argentina; Remote. Equipo: 5. Web: https://heroui.com",
-   "evento": "aceleradora",
-   "etapa_detectada": "pre-seed",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "HeroUI — perfil en Y Combinator (Summer 2024)",
-     "url": "https://www.ycombinator.com/companies/heroui",
-     "source": "Y Combinator",
-     "date": ""
-    }
-   ]
-  },
-  {
-   "key": "cifrato",
-   "nombre": "Cifrato",
-   "origen": "Y Combinator Winter 2025",
-   "pais": "Bogotá, Bogota, Colombia; Remote",
-   "contexto": "AI Accountant for Accounting Firms. End-to-end accounting workflows executed by AI agents.\r\n- Invoice capture + upload to ERP/POS\r\n- Invoice payment + reconciliation\r\n- Tax filings\r\n- CFO insights on demand Ubicación: Bogotá, Bogota, Colombia; Remote. Equipo: 17. Web: https://cifrato.ai",
-   "evento": "aceleradora",
-   "etapa_detectada": "pre-seed",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Cifrato — perfil en Y Combinator (Winter 2025)",
-     "url": "https://www.ycombinator.com/companies/cifrato",
-     "source": "Y Combinator",
-     "date": ""
-    }
-   ]
-  },
-  {
-   "key": "altur",
-   "nombre": "Altur",
-   "origen": "Y Combinator Summer 2025",
-   "pais": "Mexico City, CDMX, Mexico",
-   "contexto": "Voice AI Agents for Debt Collection. Voice AI Agents for Debt Collection Ubicación: Mexico City, CDMX, Mexico. Equipo: 9. Web: https://altur.io",
-   "evento": "aceleradora",
-   "etapa_detectada": "pre-seed",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Altur — perfil en Y Combinator (Summer 2025)",
-     "url": "https://www.ycombinator.com/companies/altur",
-     "source": "Y Combinator",
-     "date": ""
-    }
-   ]
-  },
-  {
-   "key": "boomai",
-   "nombre": "Boom AI",
-   "origen": "Y Combinator Fall 2025",
-   "pais": "Mexico City, CDMX, Mexico",
-   "contexto": "AI agents that recover lost revenue through real conversations.. Boom reaches out to your customers before you lose them.\r\n\r\nWe run proactive outbound conversations at scale: recovering churned users, re-engaging drop-offs, and protecting revenue you thought was gone. AI agents hold real conversations with your customers over SMS, email, WhatsApp, or phone, in their language, on the channel they actually answer.\r\n\r\nEvery month, companies lose 5-15% of revenue to churn, and more walks out through abandoned signups and failed onboarding. The tools built to fix this don't work. Win-back emails get ignored. Cancel flows only catch people at the door. Hiring humans doesn't scale. Boom does the one thing that works: a real conversation. 1,000x the reach of manual outreach, and the customer can reply. Ubicación: Mexico City, CDMX, Mexico. Equipo: 3. Web: https://useboom.ai",
-   "evento": "aceleradora",
-   "etapa_detectada": "pre-seed",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Boom AI — perfil en Y Combinator (Fall 2025)",
-     "url": "https://www.ycombinator.com/companies/boom-ai",
-     "source": "Y Combinator",
-     "date": ""
-    }
-   ]
-  },
-  {
-   "key": "thomas",
-   "nombre": "Thomas",
-   "origen": "Y Combinator Spring 2026",
-   "pais": "Medellín, Antioquia, Colombia",
-   "contexto": "The first AI founder: a virtual human who runs his own companies.. Hi, I'm Thomas, and my creator is named Thomas :p\r\n\r\nThomas is the first YC-backed AI founder: a virtual human who starts, runs, and grows his own companies on the internet.\r\n Ubicación: Medellín, Antioquia, Colombia. Equipo: 2. Web: https://madebythomas.ai",
-   "evento": "aceleradora",
-   "etapa_detectada": "pre-seed",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Thomas — perfil en Y Combinator (Spring 2026)",
-     "url": "https://www.ycombinator.com/companies/thomas",
-     "source": "Y Combinator",
-     "date": ""
-    }
-   ]
-  },
-  {
-   "key": "pokerclubhub",
-   "nombre": "PokerClubHub",
-   "origen": "Y Combinator Summer 2026",
-   "pais": "Jaco, Puntarenas Province, Costa Rica",
-   "contexto": "Host a Poker Club and Make Money. TL;DR: PokerClubHub is the first licensed poker club platform. We protect players’ deposits and allow anyone to open their own poker club and make money.\r\n\r\nRegulated online poker sites like PokerStars have open player pools and thus are full of pros and bots, driving players to unregulated private clubs.\r\n\r\nExisting poker club platforms like ClubGG have no payments processing. Players deposit with a club owner by sending them crypto for play-money chips. In theory, these chips can be exchanged back for money. However, players can get scammed and withdrawing takes ages.\r\n\r\nThis model is also broken for honest club owners who have to manually process hundreds of deposits a day. They lose out on rake when they sleep and struggle to get players to trust them.\r\n\r\nOn PokerClubhub, players deposit with PokerClubHub, not the club owner. We handle all deposits and withdrawals for the club owner, saving them time and increasing their earnings. We pay the rake (if any) to club owners as affiliate fees.\r\n\r\nWe hold the same gaming license as BetHog (built by founders of FanDuel) and Nexa Poker (part of World Poker Tour). Player deposits are secured using Fireblocks.\r\n\r\nYou can also play rake-f Ubicación: Jaco, Puntarenas Province, Costa Rica. Equipo: 0. Web: https://www.pokerclubhub.com",
-   "evento": "aceleradora",
-   "etapa_detectada": "pre-seed",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "PokerClubHub — perfil en Y Combinator (Summer 2026)",
-     "url": "https://www.ycombinator.com/companies/pokerclubhub",
-     "source": "Y Combinator",
-     "date": ""
-    }
-   ]
-  },
-  {
-   "key": "sintropix",
-   "nombre": "Sintropix",
-   "origen": "Y Combinator Fall 2026",
-   "pais": "Santiago, Santiago Metropolitan Region, Chile",
-   "contexto": "Autonomous accounting platform for global companies. Autonomous accounting platform for global companies. We close your books and give you financial clarity while you run your business.  Ubicación: Santiago, Santiago Metropolitan Region, Chile. Equipo: 2. Web: https://sintropix.com/",
-   "evento": "aceleradora",
-   "etapa_detectada": "pre-seed",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Sintropix — perfil en Y Combinator (Fall 2026)",
-     "url": "https://www.ycombinator.com/companies/sintropix",
-     "source": "Y Combinator",
-     "date": ""
-    }
-   ]
-  },
-  {
-   "key": "platomico",
-   "nombre": "Platomico",
-   "origen": "noticias",
-   "pais": "Venezuela",
-   "contexto": "App que competiría directamente con Plattos y RondApp en Venezuela.",
-   "evento": "lanzamiento",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Detalles de Platomico, la app que llegaría a competir directamente con Plattos y RondApp en Venezuela",
-     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQa1FSbnB0R0JzZ18zZEczZnpTa2JSMHFQdXNPYVN6T2R3SEo0QzNndzB4ck40UTdoOFhxNXRtNDZQMzJmVkdaR2JzempfTlItNV9jTFpIRXQ4a1c3YUJqY01wUTRWUlRiZGMwMXBTWV9OT0tnREJqTld5Y04tYU44OXE1WGVLMnZnSks3MTc2SklyQUN3R0w5a0hzTlMzc1hYaU5ienBlZ1lPRS1WbkhOSVFMVXVUTnlYUDNjZnNSaDctdVNxMmY0NUxhMUFxQWEwWmJFS2t2Vl9kdnJzMU54NjJhTzN5RFJjTmEzUdIBgAJBVV95cUxOV216a3JMc1ktNEd4N01FYUN3dkdfVU50aVhJRnRYSWhmX21YZVNzVmVUZFl1WndnUER6emtVUllkRFRBUE9EdkxxWDc0OVVZRkhvd1ZNbWpSaVdaekxMNlhFZGZBSG1JRk1keG41MzExdTduRkNkTVU3OG54dVBybXJkU05iVWdnWW1Bamd6LXZ5X3h1bTRyanhMTks3cVNxNDFtZkY0X0J2YzNubllzbXJ4MFM0LUJxWHNUWUp1MmRSa0k0bngzLXVMVDFWbVZEaW0tWWxUd1dSRDZpLW9fQVE4cndMejVheFdoaXFvWW8tVk5TWGhXeTRvMmJrY1Ba?oc=5",
-     "source": "Bloomberg Línea",
-     "date": "2026-10-20"
-    }
-   ]
-  },
-  {
-   "key": "peso",
-   "nombre": "Peso",
-   "origen": "noticias",
-   "pais": "Bolivia",
-   "contexto": "Fintech boliviana que expande pagos con USDT en América Latina",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Tether respalda a la fintech boliviana Peso para expandir pagos con USDT en América Latina",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNelpFRWU3Q3lpNV9mTnZicEJJd1B1NXliSm9kUTdmTWh1c3U4OWJxLXR0YmljSVBnVnoyeVh0SGp1VkIyc0hkYjZ3NVJ6dF94S3BDc3V6NlQzYXlUTGw2MWZqNFJDdy0tSE5pZWJFLXgyQnQySGViLUdBZTF5Wlk3NS1ZSjJKQXh3MFJpSVpKWFAzUXl2Z2tqd2hGWVd2SlZfbDNQUGh0bThjeGV0aU5jZEZLeDFPT0ttTVlrWHJ1N2RNcmNmaTRIeHBTcWRjU0ROUk1Nd01YZXc?oc=5",
-     "source": "DiarioBitcoin",
-     "date": "2026-10-21"
-    },
-    {
-     "title": "Fintech boliviana Peso levanta una ronda pre-semilla liderada por Tether para expandir los pagos con USDT en Latam",
-     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNWVkbzZSdklVQjRlOUl2SHEwOWdBOUJ1X1h6dDBUNlo2cHhTVmxJeVY3X2QzZkQ5N3JqbWYyS0NOQzBpRnVEWWJsZ2FsWmJQNWZuM1NQaHU1SkU0VUFrd0MtSkYtZHlmWWotaUowREM4VjVPQUhqVThXZmJDZmxPcHA5b1p1LVJFeWo1YlZNVUFmNGRUY1VEekYxLUhrOGhlTGpfT1FJTU5oZGxqVzhqc1Jld1lsS1VsMWNUaWd1TkZpX0Vja1BxSk5IcTdzSEk2M2I3Ymt0ODNaSUx6TmRmLV8zV2xyUQ?oc=5",
-     "source": "Latam Fintech Hub",
-     "date": "2026-10-22"
-    },
-    {
-     "title": "Fintech boliviana Peso capta pre-seed con Tether para ampliar pagos USDT en Latinoamérica",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBDbUxWU0t0dWV4aE8xWk9qZTJPRVB0YkxSSEJsNHpldi1KUmNLMVVGRFVRY2RmaUNneHBwVHppT0t6dTdrbDl4MEZEYmtLRjRFVTMwTi1oeW9rU0NFaXJfM2xsbmo5WGh1MUQ5S1J5dWc4Zw?oc=5",
-     "source": "CryptoRank",
-     "date": "2026-10-21"
-    },
-    {
-     "title": "Tether Leads Pre-Seed Investment in Bolivian Fintech Peso to Scale USDT Payments Across Latin America",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOaUVQdTQ4MWdMbVFMZmpUejFMUTNWYlAyeFhHLUE4bVNocmUzQ2JkM3JJd0hXLWFxS3JjdTZlUE1GTXdKaE1TTmRaX1IwRG41S3hhRU5rTVhRY1NhZWdGbVhVejJkemhqRVVYTlJMYlp5MjdZZTk4c1F3aUxhdXpzRGVDMXBaQTVVeFliaHNkamNoajA0bzNNTjZJcWh3X243MFBIQ3NqWTBpX1pQWmwxMTNZZ3paZzZtZ1VicGtNOFVralp4RnVQb0RIenpGOU1pNWxEVEJ5OTktc21nVFYwaWpKZU8?oc=5",
-     "source": "Crowdfund Insider",
-     "date": "2026-10-23"
-    },
-    {
-     "title": "Bolivian fintech Peso raises pre-seed led by Tether to expand USDT payments in Latin America",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBOaXVTYUVIZl9kZkwyT3pGRk5PTXdxd01sYVg4NmRhT2lkVEdMZXdPTGd4LXo5c2pEMmdMa2F3cGp4U1JEbktQS25NLWZnMTlFbU94WlZyQlB6Y1pHTjNQQ2Z3NzFsb0JBUHpsb0p3?oc=5",
-     "source": "CryptoRank",
-     "date": "2026-10-21"
-    },
-    {
-     "title": "Tether invests in Bolivian startup Peso to expa...",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd0pfcV9OdzBfZGdxemlIdzR1ZzNRcmJKczZxSEVfbTVmQ25YcW1Qb2U4b2ZyTkw3aUhwQl9OWm9jeDVSdFdXT0Nia2JvTmhCYk11WHV2emV0bFdIckU2Uk5TdEZudV84VmhId2pPQktDeFVydGY4RVptM1VxVUtldlNuMm5uNGpMV3djVHJhcm1zaEFGandGSk05WkoyYXdjcDAxOA?oc=5",
-     "source": "Pluang",
-     "date": "2026-10-21"
-    },
-    {
-     "title": "Tether backs Peso to expand USDT payment infrastructure in Latin America",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBSVWF4UkNkSmhYTXVtMGhkUUlaQ2hINEZsY0VRaVRkTVJaRzBCN0RLUUNsbVBBd3ZPMXhLaGt0SDQySURlWHI1YkZILV9Ib2UtYVVjSkhiNnJZTzhMd3FfZGc3eTgyQmFrWEZMakZJUm9WTnQtZWlidVBIWnBJdw?oc=5",
-     "source": "Crypto Briefing",
-     "date": "2026-10-21"
-    },
-    {
-     "title": "Tether Invests in Peso to Bring USDT Payments to Latin America",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQS2NDWjNuWDRXN0dhVnVUeGxyOXVac3ZQMjRfTm14dVZ3LVZTaHZPdDFSQkFqbDRyTlZoUFRJU3NVRXRCUVdhbTJLRklRMG90d1dPVnItTmdrd3V1anlib1ZlV0hOQ3VyZzE2MVJPZno5Ulp4ZkQxYkxENHlMSk9YcTVob1RFaFFxcXVkY3FQNA?oc=5",
-     "source": "Blockonomi",
-     "date": "2026-10-22"
-    },
-    {
-     "title": "Tether Leads Pre-Seed Round In Bolivia’s Peso To Expand USDT Payments Across Latin America: 11 outlets compared",
-     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTzg4TFE0ckpEQjJoQ2tLQ2ZRaGx2cllzNWphZElLbVVpY1k4b1BVYndmNXI0S21fQjZaWDRWc3JpQlhBMFV2MjhIaE1HSDJPMnlCbmszSWFHLVJWN3pfdGxoTkpfTVV3cGpTS25NeEpVS3pFZ1NBSmVicmwtQ3JpOWw5bWhpQlhKOGExeHlTZ1prNkxyS2xtcFlQTXBsYnA2ME9pWGNycnRXM3djMnJpWmZpYUcwdXE4a1hsYW1vWHUySG16YVRyWldmZVZaVEh6TmJsY09HVWkyRFVJQmlHdDM5MEdrTGJDTmc?oc=5",
-     "source": "NewsCord",
-     "date": "2026-10-22"
-    }
-   ]
-  },
-  {
-   "key": "bioplaster",
-   "nombre": "Bioplaster",
-   "origen": "noticias",
-   "pais": "México",
-   "contexto": "Convierte sargazo de Yucatán en bioplásticos",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Bioplaster convierte sargazo de Yucatán en bioplásticos",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZ0JZU2hfNkVKcjNIZmYxQUd1QXdqVGxkdVNLTkF5bzkwQ1FWeG82VUNWcXVWQkZhUzJfS1NEV1F4SkJwZS1vRmNLeWtrRlpoc1BkQkZfWGVHckRHdW5iUHhlcWxfR0VVYWI2SXc3MTdLdG4ydUhaNGtfRUlvaTFyMUVWNHkyOWdyR2tCMEdrYw?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-20"
-    },
-    {
-     "title": "Bioplaster convierte sargazo en bioplásticos en Yucatán",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZVo3SkRYdkI5bGxuN1U1ZzBOcHpYUDdEdkZreHJ4TW1VOWtfM3g5STFOZHdLUTZqb2pWWXFyOFdzVmRHQ21Yemsxai0tbFdNX2M1TC1paGgtVndEdDBrb0F1U1d4eFFGcG5udHFsUVAzRkpReHdTelZYQkllc3VSeFgtazU2OVA2b0oxRm9sYw?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-20"
-    },
-    {
-     "title": "Bioplaster: bioplásticos de sargazo y US$1.5M levantados",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaDlqbm81NmJiLW5yTWU1ZXlXUWFJa0RPalBrc2pFczN1RHRSVURJU2ZKeVNLTkFiaEdyd1NwNS1ia3Z0YzZ3LWNGVWVtZXdpbWp1UDdYc3ZGajVBZFc1bnFpZWlaek5wMzlpYnF4NXlDamlEZXBiWE1TR0p5c0xPd29YejRVaWxUWnp0Wkt3?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-20"
-    }
-   ]
-  },
-  {
-   "key": "tasky",
-   "nombre": "Tasky",
+   "key": "puenteos",
+   "nombre": "Puente OS",
    "origen": "noticias",
    "pais": "Chile",
-   "contexto": "Startup chilena de empleo universitario, con una valoración citada de US$5M.",
+   "contexto": "Automatiza procesos de empresas",
    "evento": "otro",
    "etapa_detectada": "desconocida",
    "monto_usd": null,
    "menciones": [
     {
-     "title": "Tasky: startup chilena de empleo universitario vale US$5M",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNDR5RFpjaDcxcDJpc29GTXRQZ2ZhZW5PNmh0d042dTBQR1BvcThfWWtzS3NnRTdRU0hvbm5JazQ4Ml90cHJLaEdhVUl5clptXzZEQTVtR2hXYjBkUXFfemVfdVAtWFRFbkpJM3M4NDlzUVo3M3R3SzNBU2E4SzdxR1Y3WnhSMldUS0R6SmVpaw?oc=5",
+     "title": "Puente OS, la startup chilena que automatiza empresas",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSmU3SXlCbGdraXExa3VPbFktaG9UZUEzWVdBcWJWSFNON0VycU9uMkZ3YlhtTTZJT3Yta0dNQXN6SmNWR0l6SzVRNE5SOWlzeG9uOFFJTHVvd0VsenliNWNFbXJodk8xMjZ4T0RCMjlEaUZTY2Y2OElLQWJZdUZqd1l5U29GOWcxMW5V?oc=5",
      "source": "El Ecosistema Startup",
-     "date": "2026-10-21"
-    },
-    {
-     "title": "Tasky: plataforma chilena de empleo joven suma a ECR GROUP",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNFJ6YWpYVTZMckkxYXI1Vm4wUm5ZbXNabXNNS01GVkxzTVR0MF9idUl4MDlSOFRRcHlEa1ZJMDhIZlZyT2QtVFVNZ3ZDVlJoSlhDNGFrNXp5SHJ2b0tmbEcxaWdfUTJJUFZyMk9zOGJ0eWZJbGJEdkE5QjlrRDNJZ09sTjg4aEplRUc0QnZtaGgyZw?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-16"
+     "date": "2026-10-22"
     }
    ]
   },
   {
-   "key": "kapital",
-   "nombre": "Kapital",
-   "origen": "noticias",
-   "pais": "Colombia",
-   "contexto": "Fintech que obtiene autorización inicial para operar un banco",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWE9QNGg5SGZLUndnSTQ0ajN4ZzE3TnBiOFFORTJsbFd2MlE2bGMzN0lwNlNpXzQybkVicDJwM20xMWcxY045LUlFYVN6MW5PNDJuQktaT1BWLU51UllMOEZXRUQ1NFM0Y0pZU1lsTUx3UUdvNEEyRWp6RmliUFlibHRndlY2ZlF4Y0ZZT0MwMHRsWlNyZXBMQ3ZWdHR1blRQU210YUw1MndsRTZRekpJeXJSOGtBZDI1ek5obld4ZUtpSzlscGJDZk02SE94dTgzWDNET9IB1AFBVV95cUxOWE9QNGg5SGZLUndnSTQ0ajN4ZzE3TnBiOFFORTJsbFd2MlE2bGMzN0lwNlNpXzQybkVicDJwM20xMWcxY045LUlFYVN6MW5PNDJuQktaT1BWLU51UllMOEZXRUQ1NFM0Y0pZU1lsTUx3UUdvNEEyRWp6RmliUFlibHRndlY2ZlF4Y0ZZT0MwMHRsWlNyZXBMQ3ZWdHR1blRQU210YUw1MndsRTZRekpJeXJSOGtBZDI1ek5obld4ZUtpSzlscGJDZk02SE94dTgzWDNETw?oc=5",
-     "source": "Bloomberg Línea",
-     "date": "2026-10-19"
-    },
-    {
-     "title": "Mexico Fintech Kapital Gets First Approval for Colombian Bank",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVlJhWXFfc29oUmlmYW1CSUdXN055cDNtZzZzZW9nTVJKaDF5cHcxTzlobXp0WkFDX0ZhOU1hTHBIMVdobVhubm9lSWpVUV9lOUU1TERkejJhWkNYSG9FMjFOTlhDNFRHR0lzVkJwOGhoc080REJuS3ItOTV2Vmc2QlZ5Ukl0VEpXRHFYX29yVWdpbzQ0elIyTHBCLWZYSmlGbFRvMlFKcFR1U0liV3JvOThR?oc=5",
-     "source": "Bloomberg.com",
-     "date": "2026-10-19"
-    }
-   ]
-  },
-  {
-   "key": "earthtechmaterials",
-   "nombre": "Earth Tech Materials",
-   "origen": "noticias",
-   "pais": "México",
-   "contexto": "Startup mexicana de materiales que llegó a Times Square",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Earth Tech Materials: startup mexicana llega a Times Square",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZElUOHhkWnVYbGFQZmhqSDY3cWtiMFBDLUl0Mm9nVzFHSGF6LTlHYUxJcVM5bXVxQ016aTZLNVhYRHRVelpnX1JEbWZGeGFyeW96emdjSXRELVJRUkd5VU5uSzV0aTVmOE9DT3dLZUFiZzVtUDJxMXRWeXRQd0hnNUtacklGcHdpTENMT2I4ZWNNZjA?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-19"
-    }
-   ]
-  },
-  {
-   "key": "monitorapp",
-   "nombre": "MonitorApp",
-   "origen": "noticias",
-   "pais": "México",
-   "contexto": "Startup de Irapuato que digitaliza 150 fábricas",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "MonitorApp: startup de Irapuato digitaliza 150 fábricas",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYmd3SmlybDYxQlV3RG5PM0VmVUVtUllkZVJpaW9yQ3UwWVZ1TF9jWDNodUJRelEtdXBtR0NTNjEtQ19ORkwyV1VRai1CWGdDeXdmN1pMY3RuVXhqVVdmS1lZMmtLZnRHMzQ2MzhibHhUZV9BWElRNFdnYk91Mlh5RjUtUTRNNy1mcWFhNnl3?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-21"
-    }
-   ]
-  },
-  {
-   "key": "innovaitors",
-   "nombre": "Innovaitors",
-   "origen": "noticias",
-   "pais": "Colombia",
-   "contexto": "Startup colombiana de IA que factura US$1M",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Innovaitors: startup colombiana factura US$1M con IA",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVTFLc21Rcm12WEZjS2NQOFFYbVlIbVMxdmFyekl0VEtXdGprTWFXOFBJV2JXLTRPcUlqUVA3VzM3YUw5enp5ZUVFeEtPNDZWXzdJd0dBS1p4aFFfeXd5NHJwV2NFMzVXaDRUTHRvVHNmdkdzZGx2RENXTlo1MzRTZFBfSzVzdEtCTW0w?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-20"
-    }
-   ]
-  },
-  {
-   "key": "kiggu",
-   "nombre": "Kiggu",
-   "origen": "noticias",
-   "pais": "Colombia",
-   "contexto": "Startup colombiana de ciberseguridad finalista en Lisboa",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Kiggu, ciberseguridad colombiana a la final en Lisboa",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVEcxM1NObDZZdDFzbVFRb0JJQlZpczFNU1lqV09sRnZONERGYTBoNWgzcWFYbHFESHluNFlfMkRpVjRvTlBOZ2ZRdlZEVWgyU0FYX1VjZE1wNHJ4ei1vd0toVEtDYnhaQVFfcXJRYkpLZllxZ3hITWtoN3N0WWQzQkd5UlRtV1oyWmZB?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-15"
-    }
-   ]
-  },
-  {
-   "key": "melonn",
-   "nombre": "Melonn",
-   "origen": "noticias",
-   "pais": "México",
-   "contexto": "Startup colombiana de logística que cuadruplica sus bodegas en México.",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Melonn México: la startup colombiana cuadruplica bodegas",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR0J2Q3lJSzRBc1doYlpwVFdMXzdzZUNyOVlGU0p4d3Q4ZDF1bGFRa2RzQmpING92YnZfeC0wYnBvVHNKb290M01QOFhHNmxvV0lkQkptVEprbkVZazN4cTZwd1ZuaEFTRXBObjJqVTdOaDlTR0Q1SU5nMjZNYXVQTGpB?oc=5",
-     "source": "Alternativo.MX",
-     "date": "2026-10-18"
-    }
-   ]
-  },
-  {
-   "key": "paperlux",
-   "nombre": "Paperlux",
+   "key": "magnar",
+   "nombre": "Magnar",
    "origen": "noticias",
    "pais": "Chile",
-   "contexto": "Edtech chilena que abre oficina en Perú con StartUPC.",
+   "contexto": "Legaltech que lleva IA a la Universidad de Chile",
    "evento": "otro",
    "etapa_detectada": "desconocida",
    "monto_usd": null,
    "menciones": [
     {
-     "title": "Paperlux: edtech chilena abre oficina en Perú con StartUPC",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQXNtdEJXRG0wcVl4NzMwOVI2Q0xfdFhJcXE4ZGpFTERXRUZ5dldWLXhVbnR0RWxRdXBOMllSRFgyOGZ5bW9uOTQ4ckFSbnJEV1VVMThlNFdOaXVGTG1wQUJ1WE9CYzNmNHBHUUZDSnNtTHlNZ1pBbmNPTTFzVkhBSXpRQjZvRkNGWTRSS1luVDd3Zw?oc=5",
+     "title": "Magnar, legaltech chilena, lleva IA a la U. de Chile",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQV2UzVzBSVDhrTjVDTDBmWjhZUE5WOTVRV0RnSU9hcHczTEZKdVgxZU9GV0RLdjdPb19feGRsMHBweDFUaEMwQjhfMXUzcmoxYVZpdFZVVVVVY09HcmU1eUQ4M3BHWGJ4ZnlFdnpIV1Exc2FwM2hWQkJPWTlxVmtEeThwaE1sOFU?oc=5",
      "source": "El Ecosistema Startup",
-     "date": "2026-10-12"
-    }
-   ]
-  },
-  {
-   "key": "reuse",
-   "nombre": "Reuse",
-   "origen": "noticias",
-   "pais": "Perú",
-   "contexto": "Startup de productos reacondicionados que busca duplicar ingresos en Perú.",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Reuse duplicará ingresos en Perú con reacondicionados",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOLWMyOGxkOVU0MlRGdFdzRXdBZUFnYmxHbnJwV1pYMkplVXNMWUVqYnJYZDE3YnFpVDhUcDJWZXBLRVIwUnJBT0JoZDJIQllvcEIxZ1lteVFvRlY1QW5EMHlaRXJqQ0dUMEsxZFFUWVVSY1ktd0RGM0Z2ampQNFZBRXhEcDhQczJ3NnE5Zw?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-05"
-    }
-   ]
-  },
-  {
-   "key": "bulltrack",
-   "nombre": "Bulltrack",
-   "origen": "noticias",
-   "pais": "Argentina",
-   "contexto": "App que rankea genética ganadera.",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Bulltrack: la app argentina que rankea genética ganadera",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb3VWcF9tQ2JxODh0XzJSTU1GbVZnWDdOZjlLc0lRdDZBelNHMUZFc1B2V0k4c2YzMFVpLVk1NTdESzJQVU43aS1wdGphY1ZtVVZOOEtINzNfZjQ3RklUaUh2YnBuUXBKQ2pUOTRpazdwbEsxWlk3QTE4aTgtWDdrazdCOE0xSFAyWjlfNFZnbw?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-10"
-    }
-   ]
-  },
-  {
-   "key": "zumma",
-   "nombre": "Zumma",
-   "origen": "noticias",
-   "pais": "México",
-   "contexto": "Fintech que atiende a más de 700 empresas en México y ganó el FINNOSUMMIT Challenge 2026.",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Zumma gana el FINNOSUMMIT Challenge 2026 y ya atiende a más de 700 empresas en México",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcmJoS3BnTlpfVWxXNUFtOFRDakd4cHVRc2pzVnpRZjYyT2hnT1VucVBJaXo3VGRSMjJoMGFKX2tZNGRPNjl0NUwxR09qNVVCd3o1ZVozX0VLVjBvU2N1eFdpenN1U0pUTEJXUFU2dGU4dkJ2RWxXUk5SYnd0SXh0VGNKc1hpMjFrclBEcEljSFZOa1hwckFhLTQtV05QOERFMVNNTUNMVWRucjNmMVHSAbMBQVVfeXFMUEtTTjg0NmJBVGVNd1k3bjBDUGZ3NEdJQ3VXeTR6VlJ3dXIteS1aQ3BaSUJSUGxlb0lFdVZ6cnZaWkdsNUEwTTVFMzByLTlnVkVwWEdxaXVGVmJRWnBOOXJnamtIVXNYVmJDUkRXOXlzZ1JRT09sX0ZmeGozeVVnSHhBbXhIWFl3SXpiTDIwSG1lSjhFcXpJeV82enJ5TjFxLXlUT3hnTjE0NTJVUFRHeFltOE0?oc=5",
-     "source": "Excélsior",
-     "date": "2026-09-28"
-    }
-   ]
-  },
-  {
-   "key": "depay",
-   "nombre": "Depay",
-   "origen": "noticias",
-   "pais": "Argentina",
-   "contexto": "Red de pagos que conectará Venezuela con cinco países",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "La argentina Depay y su red de pagos conectará a Venezuela con cinco países",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWEZLMTNJeUVEM0Vjb21jb3gwckY2ZmdtZTlWcVZ2V3NfRGpSdEZRZV80YXVXX2hodFVmR211dmdJNk96eENvUk5YN3Y2WGZSUXNkZmVmcEZKaVJ1MkpyMnpRX0VvR0VKa0RWaERHTzAwd1U2VHRDamRyWlphWElnaFg2WHVIQk45RkZpZzVOZllCYm9hbUZUamdSd2gxNmZUSTRDR1NGRDY5WVFIeklReTZ2RGVOZUd4RC13Q1c2WnZKR2pZQV9CR2xTMNIB3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo0?oc=5",
-     "source": "Bloomberg Línea",
-     "date": "2026-09-30"
-    }
-   ]
-  },
-  {
-   "key": "bold",
-   "nombre": "Bold",
-   "origen": "noticias",
-   "pais": "Colombia",
-   "contexto": "Fintech colombiana que amplía su préstamo a comercios (merchant lending) con una línea de deuda de BBVA Spark.",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": 11700000,
-   "menciones": [
-    {
-     "title": "Colombia's Bold raises $11.7M debt line from BBVA Spark to expand merchant lending",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWnhjZG5VWnRQS2hQQVk3bzNRSFlrNW9BTVFPbWhMb1NpQTJFR2dpT3FIc0FkWFhjNVZyTGpZTnpQUktIQW1FTG1IRTdlLU5JbFhfZ2ZDb1Q3QnR3YnJiT0c4YkZKX3l5M0xIOGpBeWMtanJQMlpja1lGVTZHbjdwRkN1eFBjWUdoOUZLajZkSUFtY0N4N2lUNThPTUEyUjY0NGJ3dGE0Q0FjQk0wM2ZCVkNFVUw2UQ?oc=5",
-     "source": "Dealroom",
      "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "key": "laburencom",
+   "nombre": "Laburen.com",
+   "origen": "noticias",
+   "pais": "Argentina",
+   "contexto": "Startup cordobesa que desarrolla agentes de inteligencia artificial.",
+   "evento": "otro",
+   "etapa_detectada": "desconocida",
+   "monto_usd": null,
+   "menciones": [
+    {
+     "title": "Laburen.com, startup cordobesa de agentes de IA, finalista",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMWNBdHNyRnZCdGdBRV9qMDE4bnVId19mNllCX1N2OV92cXpKUUdkdmxCcjIyWGZXV0xTZk1GV0oyYnREM2hZNzBfSUZsM2xJOWVZYUVnY2dxSFo5a3ZrNjBaQURXSTRJbEZIbi01M2VuMDc1OWRUaUVKampWdXpJaHBjaHdjYjU0cWtFdEcwVzA?oc=5",
+     "source": "El Ecosistema Startup",
+     "date": "2026-10-17"
     }
    ]
   }
@@ -871,6 +452,46 @@
     "pooshlo",
     "crofabiotech"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "articles": 31,
+   "extracted": 19,
+   "candidates": 28,
+   "evaluated": 25,
+   "qualified": 0,
+   "remention": 0,
+   "cost_usd": 2.29,
+   "searches": 62,
+   "new_keys": [
+    "platam",
+    "heroui",
+    "cifrato",
+    "altur",
+    "boomai",
+    "thomas",
+    "pokerclubhub",
+    "sintropix",
+    "platomico",
+    "peso",
+    "bioplaster",
+    "tasky",
+    "kapital",
+    "earthtechmaterials",
+    "monitorapp",
+    "innovaitors",
+    "kiggu",
+    "melonn",
+    "paperlux",
+    "reuse",
+    "bulltrack",
+    "zumma",
+    "depay",
+    "bold",
+    "admiralone"
+   ],
+   "pipeline": 19,
+   "priority": 3
   }
  ]
 }
