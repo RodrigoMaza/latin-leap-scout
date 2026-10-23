@@ -1,0 +1,51 @@
+name: Scout semanal de dealflow
+
+on:
+  schedule:
+    - cron: "17 12 * * 1"   # lunes 06:17 hora CDMX (12:17 UTC)
+  workflow_dispatch:        # botón "Run workflow" para correrlo a mano (demo)
+
+permissions:
+  contents: write   # guardar deals y dashboard en el repo
+  issues: write     # publicar el digest semanal como Issue (llega por correo)
+
+concurrency:
+  group: scout
+  cancel-in-progress: false
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Correr el pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m scout.main
+
+      - name: Guardar resultados en el repositorio
+        run: |
+          git config user.name "latin-leap-scout[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data docs reports
+          git diff --cached --quiet || git commit -m "Dealflow $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push
+
+      - name: Publicar digest semanal
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "📬 Dealflow Latin Leap — $(date -u +%Y-%m-%d)" \
+            --body-file reports/latest.md

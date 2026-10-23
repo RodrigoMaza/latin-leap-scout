@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Latin Leap Scout</title>
+<meta name="description" content="Dealflow automatizado y calificado contra la tesis de Latin Leap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f6f3;--panel:#ffffff;--ink:#141414;--muted:#6b6b66;--line:#e4e4de;
+  --accent:#c8d900;--accent-ink:#141414;--accent-soft:#f3f7c7;
+  --good:#1f7a4d;--good-soft:#e2f3ea;--warn:#9a6a00;--warn-soft:#fbf0d6;--bad:#a23b3b;--bad-soft:#f8e3e3;
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f0f0e;--panel:#191917;--ink:#f1f1ec;--muted:#9a9a92;--line:#2c2c29;
+  --accent:#d7e83a;--accent-soft:#2d3110;--good:#5fd39a;--good-soft:#14281d;--warn:#e9b44c;--warn-soft:#2c2412;--bad:#ef8a8a;--bad-soft:#301818;
+  --shadow:none}}
+:root[data-theme="dark"]{
+  --bg:#0f0f0e;--panel:#191917;--ink:#f1f1ec;--muted:#9a9a92;--line:#2c2c29;
+  --accent:#d7e83a;--accent-soft:#2d3110;--good:#5fd39a;--good-soft:#14281d;--warn:#e9b44c;--warn-soft:#2c2412;--bad:#ef8a8a;--bad-soft:#301818;
+  --shadow:none}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em}
+.mark{width:22px;height:22px;background:var(--accent);clip-path:polygon(0 0,100% 0,100% 100%,62% 100%,62% 38%,0 38%)}
+h1{font-size:28px;line-height:1.15;margin:10px 0 4px;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:0;max-width:640px}
+.meta{color:var(--muted);font-size:13px;text-align:right}
+.meta a{color:var(--ink)}
+.grid{display:grid;gap:12px}
+.kpis{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.kpi .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.kpi .val{font-size:34px;font-weight:700;letter-spacing:-.03em;margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi .hint{font-size:13px;color:var(--muted)}
+.kpi.hero{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.kpi.hero .label,.kpi.hero .hint{color:rgba(20,20,20,.7)}
+.bar{height:6px;border-radius:6px;background:rgba(20,20,20,.15);margin-top:10px;overflow:hidden;position:relative}
+.bar i{display:block;height:100%;background:#141414;border-radius:6px}
+.bar b{position:absolute;top:-3px;width:2px;height:12px;background:#141414}
+.row2{grid-template-columns:1.4fr 1fr;margin-top:12px}
+h2{font-size:15px;margin:0 0 12px;font-weight:600}
+.chart svg{width:100%;height:150px;display:block}
+.calib .big{font-size:22px;font-weight:700}
+.calib ul{list-style:none;margin:10px 0 0;padding:0;max-height:180px;overflow:auto}
+.calib li{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px}
+.empty{color:var(--muted);font-size:13px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:24px 0 10px}
+.toolbar input,.toolbar select{font:inherit;font-size:14px;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.toolbar input[type=search]{flex:1;min-width:180px}
+.btn{font:inherit;font-size:14px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn:hover{border-color:var(--ink)}
+.count{color:var(--muted);font-size:13px;margin-left:auto}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;font-weight:500;padding:10px 12px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
+td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.r{cursor:pointer}
+tr.r:hover td{background:var(--bg)}
+tr:last-child td{border-bottom:0}
+.score{font-family:"JetBrains Mono",monospace;font-weight:500;display:inline-block;min-width:40px;text-align:center;padding:3px 8px;border-radius:8px}
+.s-hi{background:var(--accent);color:var(--accent-ink)}
+.s-mid{background:var(--good-soft);color:var(--good)}
+.s-lo{background:var(--line);color:var(--muted)}
+.name{font-weight:600}
+.desc{color:var(--muted);font-size:13px}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.a-contactar_ya{background:var(--good-soft);color:var(--good)}
+.a-seguimiento{background:var(--warn-soft);color:var(--warn)}
+.a-descartar{background:var(--bad-soft);color:var(--bad)}
+.pf{background:var(--accent-soft);color:var(--ink);margin-left:6px}
+.detail td{background:var(--bg);padding:18px}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.dgrid h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 6px;font-weight:500}
+.dgrid p{margin:0 0 12px}
+.pts{display:grid;grid-template-columns:110px 1fr 46px;gap:6px 10px;align-items:center;font-size:13px}
+.pts .track{height:8px;background:var(--line);border-radius:8px;overflow:hidden}
+.pts .track i{display:block;height:100%;background:var(--ink);border-radius:8px}
+.links a{display:block;font-size:13px;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.msg{white-space:pre-wrap;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.how{margin-top:28px;grid-template-columns:repeat(5,1fr)}
+.step .n{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted)}
+.step b{display:block;margin:2px 0 4px}
+.step span{font-size:13px;color:var(--muted)}
+footer{margin-top:24px;color:var(--muted);font-size:13px}
+.hide-sm{}
+@media (max-width:860px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .row2,.dgrid{grid-template-columns:1fr}
+  .how{grid-template-columns:1fr 1fr}
+  .hide-sm{display:none}
+  .meta{text-align:left}
+}
+@media (max-width:480px){.kpi .val{font-size:28px}.how{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="brand"><span class="mark"></span>Latin Leap Scout</div>
+      <h1>Dealflow calificado, en automático</h1>
+      <p class="sub">Startups pre-seed y seed de LATAM hispanohablante, detectadas en fuentes públicas, investigadas y calificadas contra la tesis del fondo cada semana.</p>
+    </div>
+    <div class="meta" id="meta">Cargando…</div>
+  </header>
+
+  <section class="grid kpis">
+    <div class="card kpi hero">
+      <div class="label">Incremento vs. baseline</div>
+      <div class="val" id="k-up">—</div>
+      <div class="hint" id="k-up-h">meta: +10% sobre 60 deals/mes</div>
+      <div class="bar"><i id="k-bar" style="width:0"></i><b id="k-goal"></b></div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Deals calificados · 30 días</div>
+      <div class="val" id="k-q">—</div>
+      <div class="hint" id="k-q-h"></div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Alto fit · 30 días</div>
+      <div class="val" id="k-hi">—</div>
+      <div class="hint" id="k-hi-h"></div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Investigadas en total</div>
+      <div class="val" id="k-tot">—</div>
+      <div class="hint" id="k-cost"></div>
+    </div>
+  </section>
+
+  <section class="grid row2">
+    <div class="card chart">
+      <h2>Deals calificados por semana</h2>
+      <div id="chart"><p class="empty">Aún no hay suficientes corridas.</p></div>
+    </div>
+    <div class="card calib">
+      <h2>Calibración contra el portafolio real</h2>
+      <div id="calib"><p class="empty">Corre el workflow "Calibrar" para validar el calificador con el portafolio de Latin Leap.</p></div>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Buscar startup, fundador, sector…" aria-label="Buscar">
+    <select id="f-pais" aria-label="País"><option value="">Todos los países</option></select>
+    <select id="f-sector" aria-label="Sector"><option value="">Todos los sectores</option></select>
+    <select id="f-acc" aria-label="Acción">
+      <option value="activos">Contactar + seguimiento</option>
+      <option value="contactar_ya">Solo contactar ya</option>
+      <option value="">Todas (incluye descartadas)</option>
+    </select>
+    <a class="btn" href="deals.csv" download>Descargar CSV</a>
+    <span class="count" id="count"></span>
+  </div>
+
+  <table aria-label="Startups">
+    <thead><tr>
+      <th data-k="score">Score</th><th data-k="nombre">Startup</th>
+      <th data-k="pais" class="hide-sm">País</th><th data-k="sector" class="hide-sm">Sector</th>
+      <th data-k="estado_ronda" class="hide-sm">Ronda</th><th data-k="accion">Acción</th>
+      <th data-k="first_seen" class="hide-sm">Detectada</th>
+    </tr></thead>
+    <tbody id="tb"></tbody>
+  </table>
+
+  <section class="grid how">
+    <div class="card step"><span class="n">01</span><b>Recolecta</b><span>Noticias de rondas, lanzamientos y aceleradoras en LATAM, y el directorio de Y Combinator.</span></div>
+    <div class="card step"><span class="n">02</span><b>Filtra</b><span>Solo LATAM hispanohablante, pre-seed/seed y base tecnológica. Sin duplicados.</span></div>
+    <div class="card step"><span class="n">03</span><b>Investiga</b><span>Búsqueda web por startup: fundadores, rondas, tracción, modelo comparable.</span></div>
+    <div class="card step"><span class="n">04</span><b>Califica</b><span>Rúbrica de 100 pts basada en la tesis y el portafolio: equipo, sector, modelo, tracción, timing.</span></div>
+    <div class="card step"><span class="n">05</span><b>Entrega</b><span>Dashboard, CSV para el CRM y digest semanal con borrador de contacto.</span></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ACC = {contactar_ya:"Contactar ya", seguimiento:"Seguimiento", descartar:"Descartar"};
+const RONDA = {levantando:"Levantando", cerro_recientemente:"Cerró hace poco", sin_info:"Sin info"};
+const RUB = [["equipo","Equipo",30],["sector","Sector",20],["modelo","Modelo probado",10],["traccion","Tracción",20],["etapa_timing","Etapa y timing",20]];
+let DATA = null, sortK = "score", sortDir = -1, open = null;
+
+function scoreCls(s){ return s >= DATA.umbral_alto_fit ? "s-hi" : s >= DATA.umbral_calificada ? "s-mid" : "s-lo"; }
+function safeUrl(u){ try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.href : ""; } catch { return ""; } }
+
+async function load(){
+  try {
+    DATA = await (await fetch("data.json", {cache:"no-store"})).json();
+  } catch(e){
+    $("#meta").textContent = "Aún no hay datos: corre el workflow por primera vez.";
+    return;
+  }
+  const k = DATA.kpis, run = DATA.ultima_corrida || {};
+  $("#meta").innerHTML = `Actualizado ${esc(DATA.generado.replace("T"," ").replace("+00:00"," UTC"))}<br>${k.corridas} ${k.corridas === 1 ? "corrida" : "corridas"} · próxima: lunes`;
+  $("#k-up").textContent = `+${k.incremento_pct}%`;
+  $("#k-up-h").textContent = `${k.calificadas_30d} deals nuevos sobre ${k.baseline_mensual}/mes · meta +${k.meta_pct}%`;
+  const scale = Math.max(k.incremento_pct, k.meta_pct * 2);
+  $("#k-bar").style.width = Math.min(100, 100 * k.incremento_pct / scale) + "%";
+  $("#k-goal").style.left = (100 * k.meta_pct / scale) + "%";
+  $("#k-q").textContent = k.calificadas_30d;
+  $("#k-q-h").textContent = `score ≥ ${DATA.umbral_calificada} y no descartadas`;
+  $("#k-hi").textContent = k.alto_fit_30d;
+  $("#k-hi-h").textContent = `score ≥ ${DATA.umbral_alto_fit}`;
+  $("#k-tot").textContent = k.evaluadas_total;
+  $("#k-cost").textContent = `costo acumulado ≈ US$${k.costo_total_usd.toFixed(2)}`;
+  chart(k.por_semana);
+  const opts = (key, sel) => [...new Set(DATA.deals.map(d => d[key]).filter(Boolean))].sort()
+    .forEach(v => sel.insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
+  opts("pais", $("#f-pais")); opts("sector", $("#f-sector"));
+  ["#q","#f-pais","#f-sector","#f-acc"].forEach(s => $(s).addEventListener("input", render));
+  document.querySelectorAll("th[data-k]").forEach(th => th.onclick = () => {
+    const k = th.dataset.k; sortDir = sortK === k ? -sortDir : (k === "nombre" || k === "pais" ? 1 : -1); sortK = k; render();
+  });
+  $("#foot").innerHTML = `Última corrida: ${run.articles ?? 0} artículos leídos, ${run.evaluated ?? 0} startups investigadas, US$${(run.cost_usd ?? 0).toFixed(2)}. Código y metodología en el <a href="https://github.com/RodrigoMaza/latin-leap-scout" style="color:inherit">repositorio</a>.`;
+  render();
+  calib();
+}
+
+function chart(weeks){
+  if (!weeks || !weeks.length) return;
+  const W = 600, H = 150, pad = 22, n = weeks.length, max = Math.max(...weeks.map(w => w[1]), 1);
+  const bw = Math.min(48, (W - pad) / n - 8);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Deals calificados por semana">`;
+  weeks.forEach(([wk, v], i) => {
+    const x = pad + i * ((W - pad) / n) + 4, h = (H - 40) * v / max, y = H - 22 - h;
+    s += `<rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="5" fill="var(--accent)"/>`;
+    s += `<text x="${x + bw/2}" y="${y - 5}" text-anchor="middle" font-size="12" fill="var(--ink)" font-weight="600">${v}</text>`;
+    s += `<text x="${x + bw/2}" y="${H - 6}" text-anchor="middle" font-size="11" fill="var(--muted)">${esc(wk.split("-")[1])}</text>`;
+  });
+  $("#chart").innerHTML = s + "</svg>";
+}
+
+async function calib(){
+  let c;
+  try { const r = await fetch("calibration.json", {cache:"no-store"}); if (!r.ok) return; c = await r.json(); } catch { return; }
+  const rows = c.resultados.slice().sort((a,b) => b.score - a.score);
+  $("#calib").innerHTML = `
+    <div class="big">${esc(c.portafolio_aprobado)} del portafolio sobre el umbral</div>
+    <div class="desc">Promedio portafolio ${c.score_promedio_portafolio} vs. controles fuera de tesis ${c.score_promedio_controles} · ${esc(c.controles_rechazados)} controles rechazados</div>
+    <ul>${rows.map(r => `<li><span>${esc(r.nombre)} <span class="tag ${r.grupo === "control" ? "a-descartar" : "pf"}">${r.grupo === "control" ? "control" : "portafolio"}</span></span><span class="score ${scoreCls(r.score)}">${r.score}</span></li>`).join("")}</ul>`;
+}
+
+function render(){
+  const q = $("#q").value.trim().toLowerCase(), p = $("#f-pais").value, s = $("#f-sector").value, a = $("#f-acc").value;
+  let rows = DATA.deals.filter(d =>
+    (!p || d.pais === p) && (!s || d.sector === s) &&
+    (a === "" || (a === "activos" ? d.accion !== "descartar" : d.accion === a)) &&
+    (!q || JSON.stringify([d.nombre, d.descripcion, d.sector, d.pais, d.fundadores, d.modelo_comparable]).toLowerCase().includes(q)));
+  rows.sort((x, y) => { const u = x[sortK] ?? "", v = y[sortK] ?? ""; return (u > v ? 1 : u < v ? -1 : 0) * sortDir; });
+  $("#count").textContent = `${rows.length} de ${DATA.deals.length}`;
+  $("#tb").innerHTML = rows.map(d => `
+    <tr class="r" data-k="${esc(d.key)}">
+      <td><span class="score ${scoreCls(d.score)}">${d.score}</span></td>
+      <td><div class="name">${esc(d.nombre)}${d.en_portafolio ? '<span class="tag pf">portafolio</span>' : ""}</div><div class="desc">${esc(d.descripcion)}</div></td>
+      <td class="hide-sm">${esc(d.pais)}</td><td class="hide-sm">${esc(d.sector)}</td>
+      <td class="hide-sm">${esc(RONDA[d.estado_ronda] || d.estado_ronda)}</td>
+      <td><span class="tag a-${esc(d.accion)}">${esc(ACC[d.accion] || d.accion)}</span></td>
+      <td class="hide-sm desc">${esc(d.first_seen)}</td>
+    </tr>${open === d.key ? detail(d) : ""}`).join("") || `<tr><td colspan="7" class="empty">Sin resultados con estos filtros.</td></tr>`;
+  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { open = open === tr.dataset.k ? null : tr.dataset.k; render(); });
+  document.querySelectorAll("[data-copy]").forEach(b => b.onclick = e => {
+    e.stopPropagation();
+    const d = DATA.deals.find(x => x.key === b.dataset.copy);
+    navigator.clipboard?.writeText(d.mensaje_contacto).then(() => { b.textContent = "Copiado"; setTimeout(() => b.textContent = "Copiar mensaje", 1500); });
+  });
+}
+
+function detail(d){
+  const founders = (d.fundadores || []).map(f => `<div><b>${esc(f.nombre)}</b> — ${esc(f.antecedentes)}</div>`).join("") || "<span class='desc'>Sin información</span>";
+  const links = [...(d.menciones || []).map(m => [m.url, `${m.title}${m.source ? " · " + m.source : ""}`]), ...(d.fuentes_investigacion || []).map(u => [u, u])]
+    .map(([u, t]) => safeUrl(u) ? `<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(t)}</a>` : "").join("");
+  const web = safeUrl(d.website);
+  return `<tr class="detail"><td colspan="7"><div class="dgrid">
+    <div>
+      <h3>Por qué encaja</h3><p>${esc(d.tesis_match)}</p>
+      <h3>Riesgo principal</h3><p>${esc(d.riesgos)}</p>
+      <h3>Fundadores</h3><p>${founders}</p>
+      <h3>Ronda · tracción</h3><p>${esc(d.ultima_ronda)}<br><span class="desc">${esc(d.traccion)}</span></p>
+      ${d.modelo_comparable ? `<h3>Modelo comparable</h3><p>${esc(d.modelo_comparable)}</p>` : ""}
+      ${web ? `<h3>Sitio</h3><p><a href="${esc(web)}" target="_blank" rel="noopener" style="color:inherit">${esc(web)}</a></p>` : ""}
+    </div>
+    <div>
+      <h3>Desglose del score (confianza ${esc(d.confianza)})</h3>
+      <div class="pts">${RUB.map(([k, l, m]) => `<span>${l}</span><span class="track"><i style="width:${100 * (d.puntajes?.[k] || 0) / m}%"></i></span><span>${d.puntajes?.[k] ?? 0}/${m}</span>`).join("")}</div>
+      <h3 style="margin-top:16px">Borrador de primer contacto</h3>
+      <div class="msg">${esc(d.mensaje_contacto)}</div>
+      <p style="margin-top:8px"><button class="btn" data-copy="${esc(d.key)}">Copiar mensaje</button></p>
+      <h3>Fuentes</h3><div class="links">${links || "<span class='desc'>—</span>"}</div>
+    </div>
+  </div></td></tr>`;
+}
+load();
+</script>
+</body>
+</html>
