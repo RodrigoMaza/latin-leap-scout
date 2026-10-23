@@ -341,6 +341,69 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Puente OS",
+  "website": "",
+  "pais": "Chile",
+  "ciudad": "",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Plataforma que se integra con ERP, CRM, eCommerce, WMS, planillas y correos para centralizar datos y automatizar operaciones de empresas de retail y logística.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Cristopher (Cris) Ugarte",
+    "antecedentes": "Cofundador y CEO. Lideró la operación de retail media de Walmart Chile; antes pasó por SoyFocus."
+   },
+   {
+    "nombre": "Octavio Flores",
+    "antecedentes": "Cofundador. Conoció a Ugarte en SoyFocus y lideró con él retail media en Walmart Chile."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Pre-seed de US$200K liderada por Platanus Ventures; fecha exacta no encontrada",
+  "traccion": "Más de US$500K de ARR a ocho meses del lanzamiento del producto actual, rentable, 16-20 clientes (Blue Express, Shopstar, Dyson), crecimiento mensual de 10-12%, en Chile, Perú y México.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 17,
+   "sector": 13,
+   "modelo": 2,
+   "traccion": 16,
+   "etapa_timing": 12
+  },
+  "tesis_match": "SaaS B2B con tracción real y clientes de retail y logística en Chile, Perú y México, y con un equipo que viene de operar en Walmart. Por su ARR, es candidata natural a levantar seed pronto, y Latin Leap puede entrar antes de que la ronda se llene.",
+  "riesgos": "Los datos de tracción vienen de notas de prensa inconsistentes (fundación 2024 vs. 2025, 16 vs. 20 clientes), no hay exits previos de los fundadores y el producto, un conector de datos y automatización, no tiene una diferenciación clara.",
+  "accion": "contactar_ya",
+  "mensaje_contacto": "Hola Cris, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos la nota sobre Puente OS y nos llamó la atención llegar a más de US$500K de ARR en ocho meses y siendo rentables, con clientes como Blue Express y Dyson. Nos gustaría conocer mejor el producto y sus planes de ronda y de expansión a Colombia. ¿Tienes 30 minutos esta semana o la próxima?",
+  "confianza": "media",
+  "score": 60,
+  "fit": 48,
+  "key": "puenteos",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Puente OS, la startup chilena que automatiza empresas",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSmU3SXlCbGdraXExa3VPbFktaG9UZUEzWVdBcWJWSFNON0VycU9uMkZ3YlhtTTZJT3Yta0dNQXN6SmNWR0l6SzVRNE5SOWlzeG9uOFFJTHVvd0VsenliNWNFbXJodk8xMjZ4T0RCMjlEaUZTY2Y2OElLQWJZdUZqd1l5U29GOWcxMW5V?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-22"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.df.cl/df-lab/innovacion-y-startups/puente-os-abre-oficina-en-mexico-y-alista-llegada-a-estados-unidos",
+   "https://ecosistemastartup.com/puente-os-la-startup-chilena-que-automatiza-empresas/",
+   "https://ecosistemastartup.com/puente-os-abre-oficina-en-mexico-y-va-por-ee-uu-a-fin-de-ano/",
+   "https://portalerp.com/cl/noticia/puente-os-la-startup-chilena-fundada-por-exejecutivos-de-walmart-estara-presente-en-el-erp-summit-chile-2026",
+   "https://www.tourinnovacion.cl/emprendimiento/exejecutivos-de-walmart-crean-startup-que-desarrolla-un-sistema-operativo-para-empresas-autonomas-proyecta-us15-millones-en-arr-y-prepara-su-expansion-a-estados-unidos/",
+   "https://ecosistemastartup.com/puente-os-sistema-operativo-de-ia-con-us500k-de-arr/"
+  ],
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Altur",
   "website": "https://altur.io",
   "pais": "México",
@@ -465,6 +528,65 @@
    "https://www.useboom.ai/platform",
    "https://apis.io/providers/boom-ai/",
    "https://www.boomnow.com/home"
+  ],
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Laburen.com",
+  "website": "https://laburen.com",
+  "pais": "Argentina",
+  "ciudad": "Córdoba",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Plataforma de agentes de IA sin código que se conectan a WhatsApp, CRMs y ERPs para gestionar reservas, cotizaciones e inventarios.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Sebastián Rinaldi",
+    "antecedentes": "Fundador y CEO, perfil de producto. Programó el MVP en 2020 sin capital externo. Primer empleo como becario de ciencia de datos."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Declarado y no auditado: +400 empresas, +3.000 agentes activos, más de US$1M de ARR. Un agente generó US$9.000 en 10 días.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 11,
+   "sector": 18,
+   "modelo": 2,
+   "traccion": 16,
+   "etapa_timing": 10
+  },
+  "tesis_match": "Es IA aplicada y SaaS B2B en LATAM, en la línea de Keybe y Dapta, con tracción declarada fuerte y aparentemente bootstrapped. Podría estar lista para un seed y encaja con la ambición del fondo en IA.",
+  "riesgos": "El equipo parece de un solo fundador, sin exits ni cofundadores identificados, y las cifras de tracción son autodeclaradas y sin verificar. Además, el espacio de agentes de IA es muy competitivo y tiene poca diferenciación.",
+  "accion": "contactar_ya",
+  "mensaje_contacto": "Hola Sebastián, soy del equipo de Latin Leap, un fondo con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos que Laburen supera los 400 clientes y el US$1M de ARR con agentes de IA, y nos llamó mucho la atención. Nos interesa conocer mejor la historia, el equipo y los planes de expansión a Chile, México y Perú. ¿Tendrías 30 minutos esta o la próxima semana para conversar?",
+  "confianza": "media",
+  "score": 57,
+  "fit": 47,
+  "key": "laburencom",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Laburen.com, startup cordobesa de agentes de IA, finalista",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMWNBdHNyRnZCdGdBRV9qMDE4bnVId19mNllCX1N2OV92cXpKUUdkdmxCcjIyWGZXV0xTZk1GV0oyYnREM2hZNzBfSUZsM2xJOWVZYUVnY2dxSFo5a3ZrNjBaQURXSTRJbEZIbi01M2VuMDc1OWRUaUVKampWdXpJaHBjaHdjYjU0cWtFdEcwVzA?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-17"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/laburen-com-startup-cordobesa-de-agentes-de-ia-finalista/",
+   "https://www.puntal.com.ar/cordoba/nacio-cordoba-y-busca-cambiar-la-forma-trabajar-laburencom-lleva-la-inteligencia-artificial-al-corazon-las-empresas-n266633",
+   "https://infonegocios.info/amp/nota-principal/un-agente-de-laburen-com-puede-absorber-el-trabajo-de-mas-de-20-empleados-humanos-ya-opera-con-mas-de-3-000-agentes-de-ia-activos",
+   "https://mundoempresas.com.ar/desarrolla-agentes-de-ia-para-empresas-y-representara-a-cordoba-en-una-final-nacional/",
+   "https://negociosar.com/agentes-de-inteligencia-artificial-una-startup-cordobesa-competira-por-el-emprendimiento-argentino-2026/",
+   "https://ecosistemastartup.com/agentes-de-ia-en-startups-argentinas-casos-reales/"
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
@@ -2144,6 +2266,73 @@
    "https://thepaypers.com/fintech/news/kapital-gets-preliminary-approval-for-banking-in-colombia",
    "https://www.latamfintech.co/articles/fintech-kapital-inicia-proceso-para-operar-como-compania-de-financiamiento-en-colombia-y-ampliar-su-oferta-para-pymes",
    "https://latinfinance.com/daily-brief/2026/10/19/kapital-closes-in-on-colombia-banking-permit/"
+  ],
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Magnar",
+  "website": "",
+  "pais": "Chile",
+  "ciudad": "Santiago",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Plataforma legaltech con IA para investigación jurídica, análisis de fallos y redacción de documentos, usada por abogados, estudios y empresas; lanza Magnar Campus para universidades.",
+  "modelo_comparable": "El Harvey de LATAM",
+  "fundadores": [
+   {
+    "nombre": "Andrés Arellano",
+    "antecedentes": "CEO; fue CTO cuatro años en Lemontech y dirigió la Oficina de Gobierno Digital del gobierno chileno."
+   },
+   {
+    "nombre": "Andrés Rodríguez",
+    "antecedentes": "CRO; trabajó con Arellano en Lemontech como CRO."
+   },
+   {
+    "nombre": "Nicolás López",
+    "antecedentes": "Cofundador; experiencia previa no encontrada."
+   }
+  ],
+  "etapa": "series-a-o-mas",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Serie A de US$8M a comienzos de julio (2026), liderada por 6 Degrees Capital con Hi Ventures, Nascent VC, Platanus Ventures y otros (lista truncada); antes US$500K de Carey (enero 2026).",
+  "traccion": "Casi 30.000 abogados usan la plataforma en la región; migra a un esquema híbrido licencias + consumo con nivel gratuito y tres pagados; convenio con la U. de Chile.",
+  "filtros": {
+   "geografia": true,
+   "etapa": false,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 21,
+   "sector": 16,
+   "modelo": 6,
+   "traccion": 14,
+   "etapa_timing": 0
+  },
+  "tesis_match": "Encaja en equipo (operadores de Lemontech) y en la ambición de IA aplicada / SaaS B2B en LATAM, pero ya superó la etapa objetivo del fondo.",
+  "riesgos": "Cerró una Serie A de US$8M hace pocos meses, fuera del rango pre-seed/seed y sin espacio para un cheque inicial de US$250-500K.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Andrés, felicitaciones por la Serie A y por el avance de Magnar con la U. de Chile. En Latin Leap invertimos en pre-seed y seed en LATAM, así que por etapa no encajamos hoy, pero seguimos con interés lo que están construyendo en IA aplicada. Si conoces founders de legaltech o IA B2B en etapa temprana, nos encantaría que nos los presentes. Y si en algún momento quieres conversar, con gusto.",
+  "confianza": "alta",
+  "score": 30,
+  "fit": 20,
+  "key": "magnar",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Magnar, legaltech chilena, lleva IA a la U. de Chile",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQV2UzVzBSVDhrTjVDTDBmWjhZUE5WOTVRV0RnSU9hcHczTEZKdVgxZU9GV0RLdjdPb19feGRsMHBweDFUaEMwQjhfMXUzcmoxYVZpdFZVVVVVY09HcmU1eUQ4M3BHWGJ4ZnlFdnpIV1Exc2FwM2hWQkJPWTlxVmtEeThwaE1sOFU?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-22"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/magnar-legaltech-chilena-lleva-ia-a-la-u-de-chile/",
+   "https://ecosistemastartup.com/magnar-legaltech-chilena-de-ia-desembarca-en-argentina/",
+   "https://gestion.pe/economia/empresas/magnar-llega-al-peru-la-legaltech-chilena-apuesta-por-liderar-la-revolucion-de-la-ia-en-el-sector-legal-andino-noticia/",
+   "https://ecosistemastartup.com/magnar-legaltech-chilena-levanta-us8m-para-ia-juridica/",
+   "https://es-us.noticias.yahoo.com/startup-chilena-levant%C3%B3-us-8-125000019.html",
+   "https://www.totalmedios.com/nota/64682/llega-a-argentina-la-startup-de-ia-legal-que-ya-usan-mas-de-25-mil-abogados-en-latam"
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",

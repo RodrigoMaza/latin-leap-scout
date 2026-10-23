@@ -372,64 +372,13 @@
   "c0c28831e65b",
   "fc210b3bfb6a",
   "5339493da1dd",
-  "fb6d41ba1f4d"
+  "fb6d41ba1f4d",
+  "7333fb5e620b",
+  "2fbd38cfd480",
+  "899444622924",
+  "0da41c326ec0"
  ],
- "pending": [
-  {
-   "key": "puenteos",
-   "nombre": "Puente OS",
-   "origen": "noticias",
-   "pais": "Chile",
-   "contexto": "Automatiza procesos de empresas",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Puente OS, la startup chilena que automatiza empresas",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSmU3SXlCbGdraXExa3VPbFktaG9UZUEzWVdBcWJWSFNON0VycU9uMkZ3YlhtTTZJT3Yta0dNQXN6SmNWR0l6SzVRNE5SOWlzeG9uOFFJTHVvd0VsenliNWNFbXJodk8xMjZ4T0RCMjlEaUZTY2Y2OElLQWJZdUZqd1l5U29GOWcxMW5V?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-22"
-    }
-   ]
-  },
-  {
-   "key": "magnar",
-   "nombre": "Magnar",
-   "origen": "noticias",
-   "pais": "Chile",
-   "contexto": "Legaltech que lleva IA a la Universidad de Chile",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Magnar, legaltech chilena, lleva IA a la U. de Chile",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQV2UzVzBSVDhrTjVDTDBmWjhZUE5WOTVRV0RnSU9hcHczTEZKdVgxZU9GV0RLdjdPb19feGRsMHBweDFUaEMwQjhfMXUzcmoxYVZpdFZVVVVVY09HcmU1eUQ4M3BHWGJ4ZnlFdnpIV1Exc2FwM2hWQkJPWTlxVmtEeThwaE1sOFU?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-22"
-    }
-   ]
-  },
-  {
-   "key": "laburencom",
-   "nombre": "Laburen.com",
-   "origen": "noticias",
-   "pais": "Argentina",
-   "contexto": "Startup cordobesa que desarrolla agentes de inteligencia artificial.",
-   "evento": "otro",
-   "etapa_detectada": "desconocida",
-   "monto_usd": null,
-   "menciones": [
-    {
-     "title": "Laburen.com, startup cordobesa de agentes de IA, finalista",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMWNBdHNyRnZCdGdBRV9qMDE4bnVId19mNllCX1N2OV92cXpKUUdkdmxCcjIyWGZXV0xTZk1GV0oyYnREM2hZNzBfSUZsM2xJOWVZYUVnY2dxSFo5a3ZrNjBaQURXSTRJbEZIbi01M2VuMDc1OWRUaUVKampWdXpJaHBjaHdjYjU0cWtFdEcwVzA?oc=5",
-     "source": "El Ecosistema Startup",
-     "date": "2026-10-17"
-    }
-   ]
-  }
- ],
+ "pending": [],
  "runs": [
   {
    "date": "2026-10-23",
@@ -492,6 +441,24 @@
    ],
    "pipeline": 19,
    "priority": 3
+  },
+  {
+   "date": "2026-10-23",
+   "articles": 4,
+   "extracted": 2,
+   "candidates": 3,
+   "evaluated": 3,
+   "qualified": 0,
+   "remention": 0,
+   "cost_usd": 0.278,
+   "searches": 7,
+   "new_keys": [
+    "puenteos",
+    "magnar",
+    "laburencom"
+   ],
+   "pipeline": 2,
+   "priority": 0
   }
  ]
 }
