@@ -66,8 +66,12 @@ def _text(resp) -> str:
     return "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
 
 
+class BadOutput(Exception):
+    """La respuesta llegó cortada o no es JSON válido."""
+
+
 def _json_call(model: str, system: str, user: str, schema: dict, budget: Budget,
-               max_tokens: int = 8000) -> dict:
+               max_tokens: int = 16000) -> dict:
     budget.check()
     resp = client().messages.create(
         model=model,
@@ -77,7 +81,12 @@ def _json_call(model: str, system: str, user: str, schema: dict, budget: Budget,
         output_config={"format": {"type": "json_schema", "schema": schema}},
     )
     budget.add(model, resp.usage)
-    return json.loads(_text(resp))
+    if resp.stop_reason == "max_tokens":
+        raise BadOutput("respuesta cortada por límite de longitud")
+    try:
+        return json.loads(_text(resp))
+    except json.JSONDecodeError as exc:
+        raise BadOutput(f"JSON inválido: {exc}") from exc
 
 
 # ---------------------------------------------------------------------------
@@ -124,16 +133,30 @@ Si una ronda es Serie A, B o posterior, o supera ~US$10M, marca etapa "series-a-
 Usa los nombres de país en español del catálogo. Sé conservador: no inventes datos."""
 
 
-def extract(articles: list, budget: Budget, batch_size: int = 40) -> list[dict]:
+def _extract_range(articles: list, start: int, end: int, budget: Budget) -> list[dict]:
+    """Extrae de articles[start:end]; si la respuesta falla, parte el lote en dos."""
+    lines = [f"[{i}] {articles[i].title} — {articles[i].source} ({articles[i].published})"
+             for i in range(start, end)]
+    try:
+        data = _json_call(config.MODEL_EXTRACT, EXTRACT_SYSTEM,
+                          "Titulares:\n" + "\n".join(lines), EXTRACT_SCHEMA, budget)
+        out = data.get("startups", [])
+        for s in out:  # descarta índices fuera del lote
+            s["articulos"] = [i for i in s.get("articulos", []) if start <= i < end]
+        return out
+    except BadOutput as exc:
+        if end - start <= 5:
+            print(f"   ! lote {start}-{end} omitido: {exc}")
+            return []
+        mid = (start + end) // 2
+        return (_extract_range(articles, start, mid, budget)
+                + _extract_range(articles, mid, end, budget))
+
+
+def extract(articles: list, budget: Budget, batch_size: int = 25) -> list[dict]:
     found: list[dict] = []
     for i in range(0, len(articles), batch_size):
-        chunk = articles[i:i + batch_size]
-        lines = [f"[{i + j}] {a.title} — {a.source} ({a.published}). {a.summary[:200]}"
-                 for j, a in enumerate(chunk)]
-        user = "Titulares:\n" + "\n".join(lines)
-        data = _json_call(config.MODEL_EXTRACT, EXTRACT_SYSTEM, user, EXTRACT_SCHEMA,
-                          budget, max_tokens=6000)
-        found.extend(data.get("startups", []))
+        found.extend(_extract_range(articles, i, min(i + batch_size, len(articles)), budget))
     return found
 
 
