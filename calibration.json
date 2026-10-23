@@ -1,0 +1,416 @@
+{
+ "generado": "2026-10-23T18:04+00:00",
+ "umbral_fit": 49,
+ "fit_promedio_portafolio": 52.0,
+ "fit_promedio_controles": 20.0,
+ "portafolio_aprobado": "9/12",
+ "controles_rechazados": "3/3",
+ "costo_usd": 1.53,
+ "resultados": [
+  {
+   "nombre": "MejorCDT (Luable)",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 71,
+   "fit": 51,
+   "accion": "contactar_ya",
+   "pais": "Colombia",
+   "sector": "Fintech",
+   "puntajes": {
+    "equipo": 21,
+    "sector": 17,
+    "modelo": 7,
+    "traccion": 6,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Fintech para ahorradores en Colombia con un modelo de comparador ya probado en otros mercados, respaldada por Y Combinator. El CEO es un operador de scale-ups que ya lanzó negocios en varios países de la región.",
+   "confianza": "media",
+   "fuentes": [
+    "https://ca.linkedin.com/company/luable?trk=public_profile_experience-item_profile-section-card_image-click",
+    "https://www.linkedin.com/company/luable",
+    "https://app.dealroom.co/companies/mejorcdt",
+    "https://co.linkedin.com/company/luable",
+    "https://reports.cuanticovp.com/colombias-top-startups-to-watch-for-2026-according-to-cuantico-vp/",
+    "https://es-us.noticias.yahoo.com/yango-group-anuncia-importante-inversi%C3%B3n-193000242.html"
+   ]
+  },
+  {
+   "nombre": "Keybe",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 76,
+   "fit": 56,
+   "accion": "contactar_ya",
+   "pais": "Colombia",
+   "sector": "IA / SaaS B2B",
+   "puntajes": {
+    "equipo": 17,
+    "sector": 18,
+    "modelo": 5,
+    "traccion": 16,
+    "etapa_timing": 20
+   },
+   "tesis_match": "SaaS B2B con IA aplicada para pymes de LATAM, en línea con Keybe/Dapta y con la ambición de liderar inversiones en IA. Tiene tracción real en seed y el respaldo de operadores de Rappi y La Haus.",
+   "confianza": "media",
+   "fuentes": [
+    "https://www.linkedin.com/company/keybe",
+    "https://www.mediasource.mx/herramientas-ia/ventas/keybe-biky",
+    "https://www.enter.co/empresas/keybe-la-startup-colombiana-que-ayuda-a-las-empresas-a-aumentar-sus-ventas/",
+    "https://forbes.co/2022/02/01/emprendedores/con-un-asistente-de-ventas-omnicanal-keybe-recoge-us1-7-millones/",
+    "https://app.dealroom.co/companies/keybe_1",
+    "https://portalinnova.cl/llyc-venturing-firma-alianza-con-startup-colombiana-keybe-ai/"
+   ]
+  },
+  {
+   "nombre": "Refurbi",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 67,
+   "fit": 47,
+   "accion": "contactar_ya",
+   "pais": "Colombia",
+   "sector": "E-commerce / Retail",
+   "puntajes": {
+    "equipo": 14,
+    "sector": 15,
+    "modelo": 8,
+    "traccion": 10,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Encaja con el patrón de e-commerce y consumo con canal digital y con el ADN Rocket Internet (referente Back Market). El CEO viene de un e-commerce regional (Linio, por verificar) y el modelo tiene un componente B2B de software, trade-in y financiación.",
+   "confianza": "media",
+   "fuentes": [
+    "https://forbes.co/emprendedores/refurbi-obtiene-us4-millones-en-extension-de-su-ronda-semilla-para-expandirse-a-mexico",
+    "https://startupslatam.com/startup-colombiana-levanta-us-4-millones-y-se-expande-a-mexico-con-tecnologia-reacondicionada/",
+    "https://es-us.noticias.yahoo.com/startup-colombiana-refurbi-levanta-us-172432070.html",
+    "https://www.semana.com/economia/empresas/articulo/startup-colombiana-levanta-us4-millones-y-acelera-su-expansion-en-la-region/202631/",
+    "https://ecosistemastartup.com/refurbi-recibe-us4m-y-se-expande-a-mexico-en-2026/",
+    "https://www.startuplinks.world/noticias/refurbi-startup-colombiana-de-celulares-reacondicionados-levanta-4m-usd-para-expandirse-a-mexico"
+   ]
+  },
+  {
+   "nombre": "Morado",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 73,
+   "fit": 53,
+   "accion": "contactar_ya",
+   "pais": "Colombia",
+   "sector": "Fintech",
+   "puntajes": {
+    "equipo": 21,
+    "sector": 19,
+    "modelo": 3,
+    "traccion": 10,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Fintech para pymes lideradas por mujeres con canal de insumos y logística, muy cercana al patrón del portafolio. Fundadora con paso por Rappi y scoring con IA refuerzan el encaje.",
+   "confianza": "media",
+   "fuentes": [
+    "https://forbes.co/2025/07/01/foros-forbes/morado-y-ceeles-startups-colombianas-que-escalan-con-inteligencia-artificial",
+    "https://contxto.com/es/startups-es/morado-startup-colombiana-que-aspira-a-digitalizar-los-salones-de-belleza-levanta-us5-millones/",
+    "https://www.moradocolombia.com/sobre-morado",
+    "https://contxto.com/en/startups/morado-a-colombian-startup-aiming-to-digitize-beauty-salons-raises-us5-million/",
+    "https://forbes.co/2022/04/20/emprendedores/la-exrappi-que-esta-construyendo-un-amazon-para-peluquerias",
+    "https://www.qedinvestors.com/companies/morado"
+   ]
+  },
+  {
+   "nombre": "Cubo",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 69,
+   "fit": 49,
+   "accion": "contactar_ya",
+   "pais": "El Salvador",
+   "sector": "Fintech",
+   "puntajes": {
+    "equipo": 17,
+    "sector": 19,
+    "modelo": 7,
+    "traccion": 6,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Fintech de pagos para mipymes desatendidas en Centroamérica, que encaja de lleno con el patrón del portafolio. El CEO viene de Uber y Bain, y la licencia de facilitador Visa y la certificación PCI dan una base regulatoria sólida.",
+   "confianza": "media",
+   "fuentes": [
+    "https://www.revistaeyn.com/finanzas/cubo-app-la-fintech-que-acelera-pagos-digitales-en-mipymes-de-el-salvador-JX9231931",
+    "https://www.latamfintech.co/countries/el-salvador",
+    "https://www.latamfintech.co/articles/paytech-cubo-cierra-ronda-semilla-de-us-3-5m-para-continuar-apoyando-a-mipymes-del-salvador",
+    "https://www.utec.edu.sv/enlaces/articulo/cubo-una-opcion-de-pago-para-mipymes-salvadorenas",
+    "https://www.bloomberglinea.com/2023/04/26/en-el-reto-de-bancarizar-a-el-salvador-esta-fintech-levanto-us-35-millones-en-capital/",
+    "https://edigital.economia.gob.sv/empresa/cubo/"
+   ]
+  },
+  {
+   "nombre": "Rintin",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 77,
+   "fit": 57,
+   "accion": "contactar_ya",
+   "pais": "México",
+   "sector": "B2B Commerce / Supply",
+   "puntajes": {
+    "equipo": 20,
+    "sector": 18,
+    "modelo": 4,
+    "traccion": 15,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Infraestructura para el comercio pequeño en CDMX con componente fintech (crédito), muy alineada con Rintin en portafolio y con foco en pymes desatendidas. Fundadores emprendedores con ángeles de peso (Clip, Vercel, Globant) y tracción real para un seed.",
+   "confianza": "media",
+   "fuentes": [
+    "https://www.instagram.com/rintinok/",
+    "https://www.youtube.com/@rintinshop/xregexp",
+    "https://ecosistemastartup.com/rintin-levanta-us62m-lecciones-para-founders-latam/",
+    "https://heraldodemexico.com.mx/nacional/2025/6/12/temu-mexicano-esta-es-la-pagina-donde-encontraras-las-tiendas-del-centro-de-la-cdmx-706913.html",
+    "https://www.elobservador.com.uy/argentina/economia-y-negocios/un-argentino-se-mudo-la-salada-mexicana-co-fundo-una-startup-pequenos-comerciantes-y-levanto-us-62-millones-n6054456",
+    "https://dealroom.co/news/142486-rintin-raises-6-2m-to-digitise-sourcing-for-mexicos-micro-merchants/"
+   ]
+  },
+  {
+   "nombre": "PuntoPost",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 84,
+   "fit": 64,
+   "accion": "contactar_ya",
+   "pais": "México",
+   "sector": "Logística / Movilidad",
+   "puntajes": {
+    "equipo": 27,
+    "sector": 18,
+    "modelo": 10,
+    "traccion": 9,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Combina un modelo probado en Europa (InPost) con infraestructura logística para el comercio pequeño, como en Rintin. El equipo une experiencia de expansión de red PUDO y operaciones en Mercado Libre.",
+   "confianza": "media",
+   "fuentes": [
+    "https://cafecondigital.substack.com/p/las-noticias-mas-relevantes-del-e-353",
+    "https://www.cronista.com/mexico/finanzas-economia/liverpool-invierte-en-la-startup-mexicana-puntopost-dentro-de-su-ronda-de-43-millones-de-euros/",
+    "https://ecosistemastartup.com/puntopost-levanta-4-3me-con-liverpool-logistica-ultima-milla/",
+    "https://ecosistemastartup.com/puntopost-levanta-4-3me-con-liverpool-lecciones-para-founders/",
+    "https://www.descubre.vc/puntopost",
+    "https://elreferente.es/startup/puntopost/"
+   ]
+  },
+  {
+   "nombre": "Magneto",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 71,
+   "fit": 51,
+   "accion": "contactar_ya",
+   "pais": "Colombia",
+   "sector": "HR-tech",
+   "puntajes": {
+    "equipo": 15,
+    "sector": 18,
+    "modelo": 3,
+    "traccion": 15,
+    "etapa_timing": 20
+   },
+   "tesis_match": "HR-tech con IA aplicada y SaaS B2B, patrón del portafolio (Magneto/Talently). Base de clientes corporativos grandes en Colombia con expansión a México y Perú, en etapa seed.",
+   "confianza": "media",
+   "fuentes": [
+    "https://www.startupblink.com/top-startups/colombia/software-data/enterprise-technology",
+    "https://latamlist.com/magneto-raises-7m-seed-round/",
+    "https://www.elcolombiano.com/negocios/magneto-global-levanta-inversion-de-7-millones-de-dolares-y-quiere-ser-unicornio-de-medellin-FK24489936",
+    "https://forbes.co/emprendedores/magneto-obtiene-us7-millones-en-inversion-semilla-para-su-plataforma-de-recursos-humanos",
+    "https://revenuebase.ai/companies/hr-tech-platforms/colombia",
+    "https://tekiosmag.com/2024/05/16/la-hr-tech-magneto-global-consigue-7-millones-de-dolares-en-ronda-semilla/"
+   ]
+  },
+  {
+   "nombre": "Dapta",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 75,
+   "fit": 55,
+   "accion": "contactar_ya",
+   "pais": "Estados Unidos",
+   "sector": "IA / SaaS B2B",
+   "puntajes": {
+    "equipo": 17,
+    "sector": 18,
+    "modelo": 3,
+    "traccion": 17,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Encaja con la ambición de liderar inversiones en IA aplicada y SaaS B2B, con clientes de primer nivel en LATAM y un ARR declarado alto para un seed. El fundador tiene experiencia operativa construyendo una firma de software de más de 70 personas.",
+   "confianza": "media",
+   "fuentes": [
+    "https://forbes.co/2026/10/14/emprendedores/esta-plataforma-colombiana-de-ia-levanto-us6-millones-en-financiacion/",
+    "https://ecosistemastartup.com/dapta-startup-colombiana-de-agentes-de-ia-levanta-us6m/",
+    "https://tekiosmag.com/2026/10/14/dapta-levanta-us6-millones-para-escalar-su-agente-de-ventas-en-espanol-en-ee-uu-y-latam/",
+    "https://ecosistemastartup.com/dapta-startup-colombiana-de-ia-en-ventas-levanta-us6m/",
+    "https://startupslatam.com/startup-colombiana-levanta-us6-millones-para-escalar-sus-agentes-de-ia-en-ventas-para-el-mercado-hispanohablante/",
+    "https://entorno.vc/dapta-atrae-us6-millones-en-capital-semilla-para-llevar-sus-agentes-de-ia-a-nuevos-mercados/"
+   ]
+  },
+  {
+   "nombre": "Mutuus",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 58,
+   "fit": 38,
+   "accion": "seguimiento",
+   "pais": "México",
+   "sector": "Insurtech",
+   "puntajes": {
+    "equipo": 10,
+    "sector": 14,
+    "modelo": 2,
+    "traccion": 12,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Insurtech/salud para segmentos desatendidos en México, cercano al patrón de fintech para pymes y consumidores del portafolio. La tracción en miembros y hospitales es tangible para una etapa seed, con una dupla complementaria (CEO y actuario).",
+   "confianza": "media",
+   "fuentes": [
+    "https://www.contxto.com/en/news/mexicos-mutuus-gets-3-2-million-to-grow-its-digital-health-membership/",
+    "https://www.cbinsights.com/company/mutuus-1",
+    "https://finance.yahoo.com/news/revolutionizing-healthcare-mexico-mutuus-provides-120500272.html",
+    "https://app.dealroom.co/companies/mutuus_1",
+    "https://coverager.com/company/mutuus/",
+    "https://mexicobusiness.news/health/news/only-4-mexicans-can-afford-insurance-tech-can-change"
+   ]
+  },
+  {
+   "nombre": "TripWip",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 65,
+   "fit": 45,
+   "accion": "contactar_ya",
+   "pais": "Uruguay",
+   "sector": "Logística / Movilidad",
+   "puntajes": {
+    "equipo": 10,
+    "sector": 10,
+    "modelo": 9,
+    "traccion": 16,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Modelo probado (Turo) ejecutado en LATAM con tracción real y expansión a México, en timing ideal de seed. Marketplace tecnológico de movilidad con canal digital, cercano al ADN operador del fondo.",
+   "confianza": "media",
+   "fuentes": [
+    "https://www.montevideo.com.uy/Negocios-y-Tendencias/TripWip-la-startup-uruguaya-que-revoluciona-la-movilidad-y-se-expande-internacionalmente-uc909616",
+    "https://es-us.noticias.yahoo.com/tripwip-startup-uruguaya-alquiler-autos-100000360.html",
+    "https://latamlist.com/tripwip-raises-4-2m-seed-round/",
+    "https://ecosistemastartup.com/tripwip-levanta-us-42m-en-ronda-seed-para-escalar-carsharing-en-latam/",
+    "https://www.iprofesional.com/management/461389-tripwip-levanto-42-millones-dolares-multiplicar-por-seis-operacion-argentina-contratara-personal-postularse",
+    "https://raising.fi/news/tripwip-seed-july-2026"
+   ]
+  },
+  {
+   "nombre": "Talently",
+   "grupo": "portafolio",
+   "esperado": "alto",
+   "score": 78,
+   "fit": 58,
+   "accion": "contactar_ya",
+   "pais": "México",
+   "sector": "HR-tech",
+   "puntajes": {
+    "equipo": 18,
+    "sector": 16,
+    "modelo": 8,
+    "traccion": 16,
+    "etapa_timing": 20
+   },
+   "tesis_match": "HR-tech en LATAM con modelo probado (Andela), tracción real en varios países hispanohablantes y equipo complementario con CEO, COO y CTO. Encaja con el patrón del portafolio (Magneto) y con el timing de seed.",
+   "confianza": "media",
+   "fuentes": [
+    "https://roastbrief.com.mx/2022/11/bid-lab-invierte-en-talently-para-impulsar-la-formacion-y-contratacion-de-talento-tecnologico-femenino-en-latam/",
+    "https://www.bloomberglinea.com/2022/11/22/bid-lab-invierte-en-startup-peruana-talently-para-apoyar-talento-tech-en-latam/",
+    "https://forbes.com.mx/talently-levanta-ronda-seed-por-3-mdd-para-ser-un-marketplace-de-talento-tech-en-latam-y-eu/",
+    "https://expansion.mx/emprendedores/2022/06/02/la-edtech-talently-levanta-una-ronda-de-capital-semilla-por-3-mdd",
+    "https://theorg.com/iterate/meet-talently-the-startup-upgrading-tech-talent-in-latam",
+    "https://www.descubre.vc/talently"
+   ]
+  },
+  {
+   "nombre": "Loft",
+   "grupo": "control",
+   "esperado": "bajo",
+   "score": 30,
+   "fit": 20,
+   "accion": "descartar",
+   "pais": "Brasil",
+   "sector": "PropTech",
+   "puntajes": {
+    "equipo": 8,
+    "sector": 14,
+    "modelo": 7,
+    "traccion": 3,
+    "etapa_timing": 20
+   },
+   "tesis_match": "El sector PropTech y el modelo probado en otro mercado se parecen a Habi y al ADN Rocket Internet del fundador. Pero opera solo en Brasil, que queda fuera de la tesis hispanohablante.",
+   "confianza": "baja",
+   "fuentes": [
+    "https://forbes.com.br/forbes-tech/2021/04/exclusivo-loft-fecha-extensao-de-serie-d-e-valuation-chega-a-quase-us-3-bilhoes/",
+    "https://startupi.com.br/loft-se-torna-11o-unicornio-brasileiro-com-16-meses-de-operacao/",
+    "https://shorttermrentalz.com/news/brazil-loft-investment-proptech/",
+    "https://investidor10.com.br/conteudo/loft-111330/",
+    "https://selva.vc/s/loft",
+    "https://www.startse.com/artigos/loft-recebe-investimento-de-usdollar-425-milhoes-e-se-torna-a-maior-proptech-da-america-latina/"
+   ]
+  },
+  {
+   "nombre": "Glovo",
+   "grupo": "control",
+   "esperado": "bajo",
+   "score": 30,
+   "fit": 20,
+   "accion": "descartar",
+   "pais": "España",
+   "sector": "Logística / Movilidad",
+   "puntajes": {
+    "equipo": 22,
+    "sector": 14,
+    "modelo": 2,
+    "traccion": 4,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Equipo con exits previos y sector de delivery y logística cercano a PuntoPost y Rintin. Sin embargo, opera en España y no en LATAM hispanohablante, lo que incumple el filtro duro de geografía.",
+   "confianza": "media",
+   "fuentes": [
+    "https://seedtable.com/companies/glovo",
+    "https://multiples.vc/private-comps/glovo",
+    "https://catalonia.com/w/delivery-platform-glovo-founded-in-barcelona-raises-450-million-euros-in-a-series-f-round",
+    "https://www.crunchbase.com/organization/glovo-app",
+    "https://www.cnbc.com/2019/12/19/glovo-abu-dhabi-leads-167-million-investment-in-spanish-delivery-app.html",
+    "https://tracxn.com/d/companies/glovo/__-2D9UfkDSWBfX0LNRAy7wkKbf3t2P_7oH-o1tHwmkzI/funding-and-investors"
+   ]
+  },
+  {
+   "nombre": "Notion",
+   "grupo": "control",
+   "esperado": "bajo",
+   "score": 30,
+   "fit": 20,
+   "accion": "descartar",
+   "pais": "Estados Unidos",
+   "sector": "IA / SaaS B2B",
+   "puntajes": {
+    "equipo": 8,
+    "sector": 8,
+    "modelo": 0,
+    "traccion": 6,
+    "etapa_timing": 20
+   },
+   "tesis_match": "Es SaaS B2B con componente de IA, cercano a Keybe y Dapta. Pero es una empresa de EE.UU. sin foco en LATAM hispanohablante, así que no encaja con la tesis geográfica.",
+   "confianza": "media",
+   "fuentes": [
+    "https://multiples.vc/private-comps/notion",
+    "https://forgeglobal.com/notion_ipo/",
+    "https://www.cbinsights.com/company/notion-labs/financials",
+    "https://startupintros.com/orgs/notion",
+    "https://research.contrary.com/company/notion",
+    "https://pitchbook.com/profiles/company/168506-47"
+   ]
+  }
+ ]
+}
