@@ -43,7 +43,9 @@ def fit(d: dict) -> int:
 
 
 def in_pipeline(d: dict) -> bool:
-    return d.get("accion") != "descartar" and all((d.get("filtros") or {}).values())
+    # El país se revisa en código además de en el modelo: la geografía es un filtro duro.
+    return (d.get("accion") != "descartar" and all((d.get("filtros") or {}).values())
+            and d.get("pais") in config.SPANISH_LATAM)
 
 
 def is_priority(d: dict) -> bool:
