@@ -301,6 +301,14 @@ def score(profile: str, budget: Budget, calibration: bool = False) -> dict:
     data["puntajes"] = pts
     data["score"] = sum(pts.values())
     data["fit"] = data["score"] - pts["etapa_timing"]
+    if calibration:  # se evalúa como era en su ronda semilla: la etapa actual no la descarta
+        data["filtros"]["etapa"] = True
+        pts["etapa_timing"] = 20
+        data["puntajes"] = pts
+        data["score"] = sum(pts.values())
+        data["fit"] = data["score"] - pts["etapa_timing"]
+        if data["accion"] == "descartar" and all(data["filtros"].values()):
+            data["accion"] = "contactar_ya"  # lo descartaba solo por su etapa actual
     if data["pais"] not in config.SPANISH_LATAM:  # filtro duro verificado en código
         data["filtros"]["geografia"] = False
     if not all(data["filtros"].values()):

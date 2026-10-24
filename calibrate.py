@@ -67,7 +67,9 @@ def main() -> int:
     ctrl = [r for r in rows if r["grupo"] == "control"]
     # Umbral = percentil 25 del FIT del portafolio: 3 de cada 4 inversiones reales
     # del fondo lo superan. Si la calibración no tiene datos, se usa el valor inicial.
-    fits = sorted(r["fit"] for r in port)
+    # Solo inversiones que pasan los filtros duros: si una se descarta por un error de
+    # identificación, no debe arrastrar el piso a cero.
+    fits = sorted(r["fit"] for r in port if r["accion"] != "descartar")
     umbral = fits[len(fits) // 4] if len(fits) >= 4 else config.FIT_THRESHOLD_DEFAULT
     hit_port = sum(1 for r in port if r["fit"] >= umbral)
     hit_ctrl = sum(1 for r in ctrl if r["fit"] < umbral)
