@@ -23,7 +23,7 @@ filtro de un Associate**, con la justificación lista para leer en 10 minutos.
 ## Por qué outbound y no inbound
 
 Optimizar el formulario de aplicación solo sube el dealflow si ya existe demanda que se
-pierde, y eso no se puede demostrar en 48 horas. El sourcing outbound agrega startups que
+pierde entre muchos otros prospectos. El sourcing outbound agrega startups que
 hoy el equipo no ve y se puede medir desde la primera corrida.
 
 ## Cómo funciona
