@@ -75,6 +75,7 @@ def main() -> int:
     out = {
         "generado": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "umbral_fit": umbral,
+        "piso_fit": fits[0] if fits else config.FIT_FLOOR_DEFAULT,
         "fit_promedio_portafolio": avg(port, "fit"),
         "fit_promedio_controles": avg(ctrl, "fit"),
         "portafolio_aprobado": f"{hit_port}/{len(port)}",

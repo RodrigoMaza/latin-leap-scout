@@ -136,7 +136,7 @@ def run(dry_run: bool = False) -> int:
             new_keys.append(d["key"])
             done += 1
             print(f"   {d['score']:3d}  {d['nombre']} ({d['pais']}) → {d['accion']}")
-        evaluated_keys = set(deals)
+        evaluated_keys = set(deals)  # incluye las evaluadas a mano: no se re-investigan
         state["pending"] = [c for c in queue if c["key"] not in evaluated_keys][:100]
         state["seen_articles"] += [a.id for a in articles]
         stats.update(evaluated=done, cost_usd=round(budget.spent, 3),
@@ -144,6 +144,7 @@ def run(dry_run: bool = False) -> int:
 
     stats["pipeline"] = sum(1 for k in stats.get("new_keys", []) if report.in_pipeline(deals[k]))
     stats["priority"] = sum(1 for k in stats.get("new_keys", []) if report.is_priority(deals[k]))
+    stats["qualified"] = sum(1 for k in stats.get("new_keys", []) if report.is_qualified(deals[k]))
     state["runs"].append(stats)
     if dry_run:  # la vista previa nunca toca los datos reales
         report.publish(deals, state, stats, out_root=store.ROOT / "_preview")
@@ -151,7 +152,7 @@ def run(dry_run: bool = False) -> int:
         store.save_deals(deals)
         store.save_state(state)
         report.publish(deals, state, stats)
-    print(f"\nListo. Evaluadas: {stats['evaluated']} · nuevas al pipeline: {stats['pipeline']} · "
+    print(f"\nListo. Evaluadas: {stats['evaluated']} · calificadas: {stats['qualified']} · "
           f"prioridad: {stats['priority']} · "
           f"costo estimado: US${stats['cost_usd']:.2f}")
     return 0

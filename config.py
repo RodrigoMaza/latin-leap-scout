@@ -39,6 +39,10 @@ YC_RECENT_BATCH_YEARS = 2       # YC: solo batches de los últimos N años
 # - "Prioridad": además, su FIT supera el umbral. El umbral se calibra con el portafolio
 #   real (calibrate.py escribe data/calibration.json); este es solo el valor inicial.
 FIT_THRESHOLD_DEFAULT = 50
+# Piso de "deal calificado" (el KPI principal): el fit de la inversión MENOS afín del
+# portafolio real. Regla: nada cuenta si encaja peor que algo en lo que el fondo ya invirtió.
+# calibrate.py lo recalcula; este es solo el valor inicial.
+FIT_FLOOR_DEFAULT = 38
 BASELINE_DEALS_PER_MONTH = 60   # baseline dado por Latin Leap en el reto
 
 # --------------------------------------------------------------------------

@@ -36,6 +36,18 @@ def fit_threshold() -> int:
         return config.FIT_THRESHOLD_DEFAULT
 
 
+def fit_floor() -> int:
+    """Piso de deal calificado: el fit mínimo del portafolio en la última calibración."""
+    path = store.ROOT / "data" / "calibration.json"
+    try:
+        c = json.loads(path.read_text(encoding="utf-8"))
+        if "piso_fit" in c:
+            return int(c["piso_fit"])
+        return min(int(r["fit"]) for r in c["resultados"] if r.get("grupo") == "portafolio")
+    except Exception:
+        return config.FIT_FLOOR_DEFAULT
+
+
 def fit(d: dict) -> int:
     if "fit" in d:
         return d["fit"]
@@ -48,8 +60,15 @@ def in_pipeline(d: dict) -> bool:
             and d.get("pais") in config.SPANISH_LATAM)
 
 
+def is_qualified(d: dict) -> bool:
+    """KPI principal: en tesis, nuevo para el fondo y al menos tan afín como su inversión
+    menos afín. Excluye el portafolio actual y las evaluadas a mano en eventos."""
+    return (in_pipeline(d) and not d.get("en_portafolio") and not d.get("manual")
+            and fit(d) >= fit_floor())
+
+
 def is_priority(d: dict) -> bool:
-    return in_pipeline(d) and fit(d) >= fit_threshold()
+    return in_pipeline(d) and not d.get("en_portafolio") and fit(d) >= fit_threshold()
 
 
 def kpis(deals: list[dict], runs: list[dict]) -> dict:
@@ -58,23 +77,27 @@ def kpis(deals: list[dict], runs: list[dict]) -> dict:
     # El KPI mide lo que la herramienta encontró sola: las evaluadas a mano (eventos) no cuentan
     recent = [d for d in deals if d.get("first_seen", "") >= since and not d.get("manual")]
     p30 = [d for d in recent if in_pipeline(d)]
+    q30 = [d for d in p30 if is_qualified(d)]
     weeks: Counter = Counter()
     for d in deals:
-        if in_pipeline(d) and d.get("first_seen") and not d.get("manual"):
+        if is_qualified(d) and d.get("first_seen"):
             y, w, _ = date.fromisoformat(d["first_seen"]).isocalendar()
             weeks[f"{y}-S{w:02d}"] += 1
     return {
         "evaluadas_total": len(deals),
         "evaluadas_evento": sum(1 for d in deals if d.get("manual")),
         "evaluadas_30d": len(recent),
-        "pipeline_30d": len(p30),
-        "prioridad_30d": sum(1 for d in p30 if is_priority(d)),
+        "pipeline_30d": len(p30),                 # en tesis (definición amplia)
+        "calificados_30d": len(q30),              # KPI principal
+        "bajo_piso_30d": len(p30) - len(q30),
+        "prioridad_30d": sum(1 for d in q30 if is_priority(d)),
         "descartadas_30d": len(recent) - len(p30),
         "baseline_mensual": config.BASELINE_DEALS_PER_MONTH,
-        "incremento_pct": round(100 * len(p30) / config.BASELINE_DEALS_PER_MONTH, 1),
+        "incremento_pct": round(100 * len(q30) / config.BASELINE_DEALS_PER_MONTH, 1),
+        "incremento_amplio_pct": round(100 * len(p30) / config.BASELINE_DEALS_PER_MONTH, 1),
         "meta_pct": 10,
-        "por_pais": Counter(d.get("pais", "?") for d in p30).most_common(),
-        "por_sector": Counter(d.get("sector", "?") for d in p30).most_common(),
+        "por_pais": Counter(d.get("pais", "?") for d in q30).most_common(),
+        "por_sector": Counter(d.get("sector", "?") for d in q30).most_common(),
         "por_semana": sorted(weeks.items()),
         "costo_total_usd": round(sum(r.get("cost_usd", 0) for r in runs), 2),
         "corridas": len(runs),
@@ -97,6 +120,7 @@ def publish(deals_map: dict, state: dict, stats: dict, out_root: Path | None = N
     payload = {
         "generado": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "umbral_fit": fit_threshold(),
+        "piso_fit": fit_floor(),
         "kpis": k,
         "ultima_corrida": stats,
         "corridas": state["runs"][-30:],
@@ -118,7 +142,7 @@ def publish(deals_map: dict, state: dict, stats: dict, out_root: Path | None = N
 
 
 def _csv(deals: list[dict], path: Path) -> None:
-    cols = ["nombre", "prioridad", "fit", "score", "accion", "pais", "ciudad", "sector", "etapa",
+    cols = ["nombre", "calificado", "prioridad", "fit", "score", "accion", "pais", "ciudad", "sector", "etapa",
             "estado_ronda", "descripcion", "modelo_comparable", "fundadores", "ultima_ronda",
             "traccion", "tesis_match", "riesgos", "website", "origen", "first_seen",
             "en_portafolio", "fuente"]
@@ -128,6 +152,7 @@ def _csv(deals: list[dict], path: Path) -> None:
         for d in deals:
             row = dict(d)
             row["prioridad"] = "sí" if is_priority(d) else ""
+            row["calificado"] = "sí" if is_qualified(d) else ""
             row["fundadores"] = "; ".join(f"{x['nombre']} ({x['antecedentes']})"
                                           for x in d.get("fundadores", []))
             row["fuente"] = (d.get("menciones") or [{}])[0].get("url", "")
@@ -160,19 +185,21 @@ def _digest(deals: list[dict], k: dict, stats: dict) -> str:
     new_keys = set(stats.get("new_keys", []))
     new = [d for d in deals if d["key"] in new_keys]
     top = [d for d in new if is_priority(d)]
-    pipe = [d for d in new if in_pipeline(d) and not is_priority(d)]
+    pipe = [d for d in new if is_qualified(d) and not is_priority(d)]
+    low = [d for d in new if in_pipeline(d) and not is_qualified(d) and not is_priority(d)]
     out = [d for d in new if not in_pipeline(d)]
-    thr = fit_threshold()
+    thr, floor = fit_threshold(), fit_floor()
     L = [
         f"# Dealflow Latin Leap — {stats['date']}",
         "",
-        f"Esta corrida: **{len(top) + len(pipe)} deals nuevos al pipeline**, "
+        f"Esta corrida: **{len(top) + len(pipe)} deals calificados nuevos** (fit ≥ {floor}/80), "
         f"**{len(top)} de prioridad** (fit ≥ {thr}/80). "
         f"Se investigaron {stats.get('evaluated', 0)} startups de {stats.get('articles', 0)} artículos.",
         "",
-        f"Últimos 30 días: **{k['pipeline_30d']} deals nuevos** = "
+        f"Últimos 30 días: **{k['calificados_30d']} deals calificados** = "
         f"**+{k['incremento_pct']}%** sobre el baseline de {k['baseline_mensual']}/mes "
-        f"(meta: +{k['meta_pct']}%), de los cuales {k['prioridad_30d']} son prioridad.",
+        f"(meta: +{k['meta_pct']}%). Calificado = en tesis, nuevo para el fondo y al menos tan afín "
+        f"como su inversión menos afín.",
         "",
         f"Dashboard completo: {dashboard_url()}",
         "",
@@ -182,12 +209,17 @@ def _digest(deals: list[dict], k: dict, stats: dict) -> str:
         for d in top:
             L += _detail(d)
     if pipe:
-        L += ["## Nuevos al pipeline", "",
+        L += ["## Calificados", "",
               "| Fit | Startup | País | Sector | Acción |", "|---:|---|---|---|---|"]
         for d in pipe:
             name = f"[{d['nombre']}]({d['website']})" if d.get("website") else d["nombre"]
             L.append(f"| {d['fit']} | {name} | {d['pais']} | {d['sector']} | "
                      f"{ACTION_LABEL.get(d['accion'], d['accion'])} |")
+        L.append("")
+    if low:
+        L += ["## En tesis, bajo el piso", ""]
+        for d in low:
+            L.append(f"- {d['nombre']} ({d['pais']}, fit {d['fit']}): {d['riesgos']}")
         L.append("")
     if out:
         L += ["## Descartadas", ""]

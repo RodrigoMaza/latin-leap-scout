@@ -108,15 +108,21 @@ estimó US$1.16 y el gasto real fue US$0.52, así que una corrida completa cuest
 
 ## Cómo se mide el +10%
 
-Dos niveles, para comparar peras con peras:
+**KPI = deals calificados en 30 días ÷ 60** (el baseline mensual del reto). Un deal calificado
+cumple tres condiciones:
 
-- **Deals nuevos al pipeline:** pasan los filtros de tesis y no se descartan. Es lo
-  comparable con los 60 deals/mes que hoy entran al pipeline de Latin Leap.
-  **KPI = deals nuevos en 30 días ÷ 60.**
-- **Prioridad:** además superan el umbral de fit calibrado con el portafolio.
+1. **En tesis:** LATAM hispanohablante, pre-seed/seed, base tecnológica, no descartado.
+2. **Nuevo para el fondo:** no es empresa del portafolio ni una evaluada a mano en un evento.
+3. **Fit ≥ piso:** encaja al menos tan bien como la inversión menos afín que el fondo ya hizo
+   (hoy 38/80). Regla: nada cuenta si encaja peor que algo en lo que Latin Leap ya invirtió.
 
-Esto supone que esas startups no estaban ya en el pipeline del fondo. **Siguiente paso natural:** marcar en el dashboard las que el equipo
-ya conocía y retroalimentar al calificador con las que sí avanzan a primera llamada.
+Además se reporta la **prioridad**: los calificados con fit ≥ umbral (hoy 49/80, el nivel que
+superan 3 de cada 4 inversiones reales). La definición amplia ("en tesis", sin piso) se
+muestra como referencia, pero no es el KPI: incluye empresas que el fondo no tomaría.
+
+Dos advertencias: la primera corrida revisó 30 días de noticias de golpe, así que el ritmo
+real se mide a partir de las corridas semanales; y no sabemos si el fondo ya conocía esas
+startups. **Siguiente paso natural:** marcar en el dashboard las que el equipo ya conocía.
 
 ## Limitaciones conocidas
 

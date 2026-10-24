@@ -104,7 +104,7 @@ select{font:inherit;font-size:14px;padding:8px 10px;border-radius:10px;border:1p
   </div>
 
   <h1>Cómo se fija el umbral de fit</h1>
-  <p class="lead">El umbral no es un número arbitrario: sale del portafolio real de Latin Leap. Es el nivel de fit que superan 3 de cada 4 inversiones que el fondo ya hizo.</p>
+  <p class="lead">Las dos líneas de corte salen del portafolio real de Latin Leap, no de un número arbitrario. El <b>piso</b> define qué cuenta como deal calificado (el KPI); el <b>umbral</b> define qué es prioridad.</p>
 
   <div id="app"><p class="sub">Cargando calibración…</p></div>
 </div>
@@ -113,7 +113,7 @@ select{font:inherit;font-size:14px;padding:8px 10px;border-radius:10px;border:1p
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const RUB = [["equipo","Equipo",30],["sector","Sector",20],["modelo","Modelo",10],["traccion","Tracción",20]];
-let C = null, D = null;
+let C = null, D = null, FLOOR = null;
 
 async function getJSON(u){ try { const r = await fetch(u, {cache:"no-store"}); return r.ok ? await r.json() : null; } catch { return null; } }
 
@@ -126,19 +126,20 @@ async function load(){
   const manual = (D?.deals || []).filter(d => d.manual).sort((a,b) => String(b.evaluada).localeCompare(String(a.evaluada)));
   let sel = manual.find(d => d.key === new URLSearchParams(location.search).get("empresa")) || manual.at(0) || null;
   const thr = C.umbral_fit, asc = port.map(r => r.fit).sort((a,b) => a - b);
+  FLOOR = C.piso_fit ?? asc.at(0);
 
   $("#app").innerHTML = `
   <div class="hero">
     <div class="card big">
       <div class="label">Umbral de prioridad</div>
       <div class="val">${thr}<small>/80</small></div>
-      <p>Percentil 25 del fit del portafolio</p>
+      <p>Lo superan 3 de cada 4 inversiones del portafolio</p>
     </div>
     <div class="stats">
+      <div class="card stat"><div class="n">${FLOOR}</div><div class="l">piso de deal calificado: la inversión menos afín del portafolio</div></div>
       <div class="card stat"><div class="n">${C.fit_promedio_portafolio}</div><div class="l">fit promedio del portafolio real</div></div>
-      <div class="card stat"><div class="n">${C.fit_promedio_controles}</div><div class="l">fit promedio de controles fuera de tesis</div></div>
+      <div class="card stat"><div class="n">${C.fit_promedio_controles}</div><div class="l">fit promedio de controles fuera de tesis (${esc(C.controles_rechazados)} rechazados)</div></div>
       <div class="card stat"><div class="n">${esc(C.portafolio_aprobado)}</div><div class="l">inversiones reales sobre el umbral</div></div>
-      <div class="card stat"><div class="n">${esc(C.controles_rechazados)}</div><div class="l">controles rechazados</div></div>
     </div>
   </div>
 
@@ -192,7 +193,7 @@ async function load(){
     <div class="steps">
       <div class="card step"><span class="k">01</span><b>Mismo flujo</b><span>Cada empresa del portafolio pasa por la misma investigación web y la misma rúbrica que una startup nueva.</span></div>
       <div class="card step"><span class="k">02</span><b>Sin timing</b><span>Se califica como era en su ronda semilla, para medir solo qué tan bien encaja con la tesis.</span></div>
-      <div class="card step"><span class="k">03</span><b>Percentil 25</b><span>Ordenados los fits de menor a mayor (${asc.join(", ")}), el umbral es el valor que deja 3 de cada 4 por encima: ${thr}.</span></div>
+      <div class="card step"><span class="k">03</span><b>Piso y umbral</b><span>Ordenados los fits de menor a mayor (${asc.join(", ")}): el piso es el menor (${FLOOR}) y el umbral, el que deja 3 de cada 4 por encima (${thr}).</span></div>
       <div class="card step"><span class="k">04</span><b>Se recalcula</b><span>Al correr el workflow "Calibrar" el umbral se actualiza solo y el dashboard lo aplica en la siguiente corrida.</span></div>
     </div>
     <p class="note">Calibración del ${esc(C.generado.slice(0,10))} · costo estimado US$${Number(C.costo_usd).toFixed(2)}. La inversión menos afín (${esc(asc.length ? port.at(-1).nombre : "")}, fit ${asc.at(0)}) muestra que el fondo también decide por factores que no están en fuentes públicas: el umbral es un primer filtro, no una decisión.</p>
@@ -264,6 +265,7 @@ function strip(port, ctrl, deals, t, manual = [], sel = null){
       s += `<circle cx="${X(r.fit)}" cy="${y + dy}" r="${me ? 9 : 6.5}" fill="${color}" fill-opacity="${me ? 1 : r.fit >= t ? 0.95 : 0.35}" stroke="${me ? "var(--ink)" : color}" stroke-width="${me ? 2 : 1}"><title>${esc(r.nombre)}: fit ${r.fit}</title></circle>`;
       if (me) s += `<text x="${X(r.fit)}" y="${y + 26}" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--ink)">${esc(r.nombre)} · ${r.fit}</text>`; });
   });
+  if (FLOOR != null && FLOOR !== t) { s += `<line x1="${X(FLOOR)}" x2="${X(FLOOR)}" y1="18" y2="${base + 2}" stroke="var(--muted)" stroke-width="1.25" stroke-dasharray="2 4"/><text x="${X(FLOOR) - 6}" y="20" text-anchor="end" font-size="12" fill="var(--muted)">piso ${FLOOR}</text>`; }
   s += `<line x1="${X(t)}" x2="${X(t)}" y1="18" y2="${base + 2}" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 4"/>`;
   s += `<text x="${X(t) + 6}" y="20" font-size="12.5" font-weight="600" fill="var(--ink)">umbral ${t}</text>`;
   $("#strip").innerHTML = s + "</svg>";
