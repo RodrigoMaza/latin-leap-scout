@@ -7,6 +7,7 @@ equipo, sin operación manual.
 
 **Dashboard:** https://rodrigomaza.github.io/latin-leap-scout/
 **Digest semanal:** pestaña [Issues](../../issues) (GitHub lo envía por correo)
+**Proceso y decisiones:** [PROCESO.md](PROCESO.md), la bitácora de las 48 horas
 
 ---
 
