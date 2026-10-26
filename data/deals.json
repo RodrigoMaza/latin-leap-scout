@@ -866,6 +866,69 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Qontact",
+  "website": "https://qontact.com.ar",
+  "pais": "Argentina",
+  "ciudad": "sin info",
+  "sector": "HR-tech",
+  "descripcion": "Plataforma SaaS de RR.HH. que opera íntegramente por WhatsApp: asistencia, licencias y firma de recibos para pymes y empresas de hasta ~1.000 colaboradores.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Federico Viale",
+    "antecedentes": "CEO y fundador. Ex Globant; antes trabajó en una compañía de software para Recursos Humanos. Sin exits conocidos."
+   },
+   {
+    "nombre": "Javier Loucim",
+    "antecedentes": "CTO. Ex Globant, más de 30 años en tecnología según su LinkedIn. Sin exits conocidos."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "Inversión inicial de ~US$100K en 2023, parte propia y parte de un ángel no identificado. Sin otras rondas conocidas.",
+  "traccion": "Más de 100 clientes, unos 25.000 usuarios y facturación de $120M ARS (~US$80K). Habría triplicado ingresos en 2025. El 10% de la facturación viene del exterior.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 15,
+   "sector": 14,
+   "modelo": 2,
+   "traccion": 12,
+   "etapa_timing": 10
+  },
+  "tesis_match": "Es HR-tech con SaaS B2B para personal distribuido, cerca de Magneto y Talently. Tiene tracción temprana real con un equipo CEO/CTO complementario, y podría ser candidata a seed.",
+  "riesgos": "Ingresos aún pequeños (~US$80K), sin señales de que esté levantando y con fuentes que discrepan en países y cifras. WhatsApp es una dependencia de plataforma y el producto puede ser fácil de copiar.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Federico, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos lo que están construyendo en Qontact: gestión de RR.HH. por WhatsApp con más de 100 clientes y expansión regional. Nos gustaría conocer su visión de producto y sus planes de financiamiento. ¿Tendrías 30 minutos para una llamada breve esta semana o la próxima?",
+  "confianza": "media",
+  "score": 53,
+  "fit": 43,
+  "key": "qontact",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Firma argentina Qontact gestiona personal por WhatsApp y factura $120M",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUllUalNUSEdHdFpOYl9ZOHZLTVBFMllUblh5bG13Z2tDNXowN3I4alRQdzlZMmthSDY2OENqVHQwQXBmeENGTk5rdUlyajFOTmlaUzVNal90RXpvaTdLbDc5VEVmYVBLMGdnaUJvRVNncmVTTVJqLVBkM3VCWG5HRU5vd2lkUW9KWXY5M29JNHlzUno2X1hBUUJaeF9tekR0TlRiWVJIV3RDcDjSAbABQVVfeXFMT1RWMXVWWmJ1Q2ZTSnQxWDNqTmV1VVgxUWwyVGRKdkgyaGNfNnNma3NBMzhfZTBRY3lWLTZTbnJfc3k2d291eFp0Sk9vUlNlQndUOVF4NDVHVW5WUmxWVjhlNW9IVUFpRlVNd0dWOV81LVZzUnVCdjFQV01MMHVyMDREYlAxTzhYbEt4UUJpbVpHbXEwYjJMMi1uUWRCcEdHZ0llMXR0cTJGcDVhNVp6bVg?oc=5",
+    "source": "iProUP",
+    "date": "2026-10-24"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/qontact-rrhh-por-whatsapp-y-us80-000-de-facturacion/",
+   "https://www.iprofesional.com/negocios/451982-se-conocieron-en-globant-y-crearon-el-control-de-personal-mas-simple-del-mercado",
+   "https://noticias.perfil.com/noticias/espacio-no-editorial/como-una-startup-argentina-resuelve-el-control-de-asistencia-via-whatsapp.phtml",
+   "https://www.iproup.com/startups/72568-firma-argentina-qontact-gestiona-personal-por-whatsapp-y-factura-120m",
+   "https://ar.linkedin.com/in/javierloucim",
+   "https://www.iprofesional.com/negocios"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Sintropix",
   "website": "https://sintropix.com/",
   "pais": "Chile",
@@ -976,6 +1039,12 @@
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOXFxT1ZDNHFKSk1OaDNHcktFTXFKQTdZcGw0M09lOVotdkNZUEZ0bE1rU204T2NXd0NxLVRBUXlfdWM5ZUF5T1VJT3pkakhMMDdRLXNFaTk0a3pEN2tUTFA4LWpQX1pNMVNpOHJoa0RST0ZBanREZ05aREZpZFlEMDI0RjlFcWhIU281MzdNWlBTU3c4anZfSVBSbm9vTko2a1F1UjRYb1V1VlF3NXp6Z0M0VFFNUW5NRHfSAb8BQVVfeXFMUEoyZGlMZ080d1FkdnNLWmwwRDJ4akozckx4a1NtSW02Ty1rRk5zRkp2Y3VHc21Zd2hEUFVwOVQ4Ql9vdG5MaktxWC1uT3RfUGhUN1hpWlpROG9TdlVjNGRyMW41RFY1d3ZwMDBadWFoeXJSQTBLVUhWVmtQdWgyeW55Tm5QZ2hTOUR3OFFqaFQ0cFZTTEQ0YVp5VFRpa2JRa0ZFeDRtejFhRHFtdWNpQTV1SWxWSFpWcEJ1MVRtVjA?oc=5",
     "source": "iProUP",
     "date": "2026-10-21"
+   },
+   {
+    "title": "Salame quiere levantar USD 1,5 millones para masificar su plataforma en Argentina",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOXFxT1ZDNHFKSk1OaDNHcktFTXFKQTdZcGw0M09lOVotdkNZUEZ0bE1rU204T2NXd0NxLVRBUXlfdWM5ZUF5T1VJT3pkakhMMDdRLXNFaTk0a3pEN2tUTFA4LWpQX1pNMVNpOHJoa0RST0ZBanREZ05aREZpZFlEMDI0RjlFcWhIU281MzdNWlBTU3c4anZfSVBSbm9vTko2a1F1UjRYb1V1VlF3NXp6Z0M0VFFNUW5NRHfSAb8BQVVfeXFMUEoyZGlMZ080d1FkdnNLWmwwRDJ4akozckx4a1NtSW02Ty1rRk5zRkp2Y3VHc21Zd2hEUFVwOVQ4Ql9vdG5MaktxWC1uT3RfUGhUN1hpWlpROG9TdlVjNGRyMW41RFY1d3ZwMDBadWFoeXJSQTBLVUhWVmtQdWgyeW55Tm5QZ2hTOUR3OFFqaFQ0cFZTTEQ0YVp5VFRpa2JRa0ZFeDRtejFhRHFtdWNpQTV1SWxWSFpWcEJ1MVRtVjA?oc=5",
+    "source": "iProUP",
+    "date": "2026-10-21"
    }
   ],
   "fuentes_investigacion": [
@@ -987,7 +1056,7 @@
    "https://www.threads.com/@iproup/post/Dex4o6TCC9L/la-startup-comenzo-con-una-inversion-inicial-de-u-s-se-acerca-a-los-usuarios-y/"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-23",
+  "last_seen": "2026-10-26",
   "en_portafolio": false
  },
  {
@@ -1317,6 +1386,77 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Tachi",
+  "website": "",
+  "pais": "Chile",
+  "ciudad": "La Serena",
+  "sector": "AgTech",
+  "descripcion": "Bioinsumo a base de la microalga Chlorella vulgaris para regenerar la microbiología del suelo, aplicado por fertirriego a productores agrícolas de exportación.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Carlos Araya",
+    "antecedentes": "Cofundador, reportado como CEO; experiencia previa y exits no encontrados."
+   },
+   {
+    "nombre": "Johanna Contreras",
+    "antecedentes": "Cofundadora, reportada como CTO/directora tecnológica; experiencia previa no encontrada."
+   },
+   {
+    "nombre": "Jonathan García",
+    "antecedentes": "Cofundador con PhD en Microbiología; trayectoria adicional no encontrada."
+   },
+   {
+    "nombre": "Felipe Araya",
+    "antecedentes": "COO; sin información de experiencia previa."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "levantando",
+  "ultima_ronda": "sin info",
+  "traccion": "Más de 400 hectáreas en exportación, más de 20 fotobiorreactores de 1.000 L en Coquimbo, presencia en 5 regiones, ensayos con 8-10% de mejora productiva. Sin ingresos reportados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 12,
+   "sector": 6,
+   "modelo": 0,
+   "traccion": 10,
+   "etapa_timing": 20
+  },
+  "tesis_match": "Está levantando capital en etapa temprana en Chile, con tracción física real y un equipo con perfil científico. Sin embargo, el sector biotech agrícola queda lejos de los patrones del portafolio (fintech pyme, comercio, IA/SaaS).",
+  "riesgos": "Biotecnología agrícola intensiva en capital y ciclos largos, fuera del foco del fondo; el componente de IA está respaldado por una sola fuente y no hay datos de ingresos ni de experiencia de los fundadores.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Carlos, soy del equipo de Latin Leap. Vimos la nota sobre Tachi y las más de 400 hectáreas ya en operación con sus microalgas; nos parece un avance notable desde La Serena. Entendemos que están levantando capital: ¿podrían compartirnos el deck y contarnos cómo usan la IA en el proceso de producción? Nuestro foco principal es otro, pero nos interesa conocer mejor el negocio.",
+  "confianza": "media",
+  "score": 48,
+  "fit": 28,
+  "key": "tachi",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Tachi: microalgas con IA desde La Serena a Boston",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMEJaQVJ6LVR6N3FHcUhWQ09oNklGLTVVektkc3BBS1NaTkFHMl84a1lPYmhDV0YzSmYxelRfMlgzWllYOTJVZFJBSmpHM1ljUFY5Yzk5dno2OW5mSXhONW9HU0VGTjVUZ1J6Rk84OGd2ZGZiMHJwekVySENmN3BKNDV6aTdkdw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-25"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/tachi-microalgas-con-ia-desde-la-serena-a-boston/",
+   "https://www.cienciaenchile.cl/tachi-la-startup-que-transforma-microalgas-de-agua-dulce-en-la-solucion-contra-la-crisis-hidrica-y-climatica-en-el-agro/",
+   "https://www.tourinnovacion.cl/emprendimiento/tachi-la-startup-que-transforma-microalgas-de-agua-dulce-en-la-solucion-contra-la-crisis-hidrica-y-climatica-en-el-agro/",
+   "https://www.diarioeldia.cl/noticias/2026/08/21/148438-startup-regional-apuesta-por-microalgas-para-recuperar-los-suelos",
+   "https://www.diariochiloe.cl/noticia/actualidad/2026/06/tachi-la-startup-que-transforma-microalgas-de-agua-dulce-en-la-solucin-contra-la-crisis-hdrica-y-climtica-en-el-agro",
+   "https://ecosistemastartup.com/tachi-bio-400-hectareas-validan-bioestimulantes-con-microalgas-en-2026/"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Bulltrack",
   "website": "bulltrack.com.ar",
   "pais": "Argentina",
@@ -1385,6 +1525,69 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Fina Presta",
+  "website": "",
+  "pais": "Venezuela",
+  "ciudad": "",
+  "sector": "Fintech",
+  "descripcion": "Software de inventario, ventas y cuentas para pymes venezolanas (US$35/mes) con crédito embebido de US$100 a US$3.000, sin garantías, para usuarios con 60+ días en la plataforma.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Enrique Rivas",
+    "antecedentes": "CEO. Cofundó Caracas Ron, e-commerce de delivery de licores, antes de Fina."
+   },
+   {
+    "nombre": "Diego Aponte",
+    "antecedentes": "Cofundador de Fina. También cofundó Caracas Ron junto a Rivas."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Producto en operación con suscripción de US$35/mes y créditos quincenales activos. No hay cifras de clientes, cartera, mora ni ingresos.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 12,
+   "sector": 16,
+   "modelo": 5,
+   "traccion": 6,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Fintech para pymes desatendidas con SaaS como canal de distribución y datos de scoring, cercano a Morado, Cubo y Rintin. Los fundadores vienen del e-commerce, un perfil afín al de Stefan.",
+  "riesgos": "Venezuela implica alto riesgo macro, cambiario y regulatorio para una cartera de crédito sin garantías, y no hay datos de mora, escala ni ronda.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Enrique, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed de fintech y SaaS para pymes en LATAM. Nos llamó la atención el modelo de Fina Presta, que combina software de gestión con crédito embebido para pymes venezolanas. ¿Podrías compartirnos cifras de clientes activos, cartera y mora, y si están levantando capital? Con gusto agendamos una llamada corta.",
+  "confianza": "baja",
+  "score": 47,
+  "fit": 39,
+  "key": "finapresta",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Fina Presta: crédito embebido para pymes venezolanas",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdXg4WTAya25odklESkc1VXN3S2tJOFpXMEJOOExqSlowR05SUGdBNzFiaTNCQWlBMmhXOHNFdHVtX0FOMEVDMTJ6Y1N3aFF5OWdibF9FeDNxeVQ4MHBNZGFTUEItSzJ1VFJILVJQZUhXdXJTckQ4cUgtZDFXV1RVb3RfU2tUSFVnakE?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-20"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://elestimulo.com/elinteres/empresas/2026-10-24/fina-presta-el-cashea-de-las-pymes/",
+   "https://ecosistemastartup.com/fina-presta-credito-embebido-para-pymes-venezolanas/",
+   "https://lacalle.com.ve/fina-lanza-fina-presta-creditos-inmediatos-de-hasta-3-000-dolares-para-pymes-y-comercios-en-venezuela/",
+   "https://ultimasnoticias.com.ve/tecnologia/fina-lanza-servicio-de-prestamos-para-pymes-en-venezuela/",
+   "https://contrapunto.com/economia/fina-lanza-fina-presta-y-convierte-su-sistema-de-gestion-para-pymes-en-acceso-al-credito/",
+   "https://noticierodigital.com/2026/10/plataforma-de-gestion-administrativa-da-creditos-a-las-pymes-de-hasta-3-000-dolares/"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
   "en_portafolio": false
  },
  {
@@ -1598,6 +1801,65 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Neolift",
+  "website": "https://neolift.com.ar",
+  "pais": "Argentina",
+  "ciudad": "Desconocida (opera desde la Patagonia; entidad LLC en Katy, Texas)",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "IA y hardware para bombeo mecánico en pozos no convencionales de Vaca Muerta; ajusta la operación en cada ciclo y cobra por alquiler con servicio integral.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Eugenio Ferrigno",
+    "antecedentes": "CEO. Ingeniero mecánico con MBA del IAE; ex responsable de tecnología de operaciones upstream en YPF; lideró energía en Globant; tiene patentes."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Tecnología operando en pozos de varias operadoras en Vaca Muerta; ganó Rising Star y People's Choice en SPE/Rice Houston 2026. Sin datos de ingresos ni clientes.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 16,
+   "sector": 9,
+   "modelo": 1,
+   "traccion": 8,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Fundador con experiencia operativa profunda en el sector, IA aplicada con modelo de ingresos recurrentes y primeras señales de uso real. Encaja parcialmente con la ambición en IA, pero el vertical energético industrial está lejos de los patrones del portafolio.",
+  "riesgos": "Sin información de ronda, ingresos ni cofundadores; el negocio intensivo en hardware, con ciclo de ventas largo y concentrado en pocas operadoras, y el foco declarado en EE.UU. puede alejarlo de LATAM.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Eugenio, felicitaciones por los premios Rising Star y People's Choice en Houston. En Latin Leap invertimos en pre-seed y seed en LATAM, con interés en IA aplicada, y nos llamó la atención su trabajo en Vaca Muerta. ¿Están levantando capital o planean hacerlo pronto? Nos gustaría conocer la tracción con operadoras y el equipo en una llamada corta.",
+  "confianza": "media",
+  "score": 42,
+  "fit": 34,
+  "key": "neolift",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Neolift: startup argentina de IA para pozos gana en Houston",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ2xPc0xDNnNoSWV6UFF3eFgyLXpGdGhJN3pEYkNNWlBBRDh4TF8xMXBkR2lhcEY2Y0tvaWRhZExvd1Jid2ZCZmx2aDBBOW40V1U2LXY3eUYtUmtIM0tWdWQyVWtZWG5HdHBtcGRkN1pQbDR4UWNjREM1Z1g1bFMyYVU3N3A4T1hFaTlLNTl4bm1acjg?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-26"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/neolift-startup-argentina-de-ia-para-pozos-gana-en-houston/",
+   "https://www.ambito.com/energia/tecnologia-nacida-vaca-muerta-que-gano-dos-premios-una-competencia-global-houston-n6337220",
+   "https://vacamuertanews.com/actualidad/tecnologia-argentina-de-vaca-muerta-fue-premiada-en-houston-por-la-society-of-petroleum-engineers-y-rice-university.htm",
+   "https://www.ambito.com/energia/son-argentinos-convierten-gas-pozos-petroleros-datos-y-buscan-desembarcar-vaca-muerta-n6258241",
+   "https://vacamuerta.ar/tecnologia-argentina-de-vaca-muerta-conquisto-houston/",
+   "https://zapalaya.com.ar/vaca-muerta/innovacion-de-vaca-muerta-se-destaca-en-competencia-internacional-de-energia-en-houston"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Reuse",
   "website": "https://reuse.pe",
   "pais": "Chile",
@@ -1759,6 +2021,73 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Pasito",
+  "website": "",
+  "pais": "Argentina",
+  "ciudad": "Buenos Aires (CABA)",
+  "sector": "Consumo / Marketplace",
+  "descripcion": "App que premia a los usuarios por caminar: cada 1.000 pasos suman un 'pasito', canjeable en comercios adheridos que pagan un fee.",
+  "modelo_comparable": "El Sweatcoin de LATAM (comparación no verificada en las fuentes)",
+  "fundadores": [
+   {
+    "nombre": "Santiago Schamberger",
+    "antecedentes": "Lideró el desarrollo tecnológico de la plataforma; 26 años al lanzamiento; sin experiencia previa ni exits documentados."
+   },
+   {
+    "nombre": "Lisandro Schamberger",
+    "antecedentes": "Creador de contenido gastronómico (@comentino); aportó su red de contactos y audiencia."
+   },
+   {
+    "nombre": "Renata Poletti",
+    "antecedentes": "Licenciada en Economía Empresarial; a cargo de marca y marketing."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "Sin rondas externas; ~US$10.000 de capital propio. Los fundadores descartan levantar inversión externa.",
+  "traccion": "1,1M de perfiles (889K en Argentina), +240K canjes, +1.100 comercios activos, lanzamiento en Uruguay. Facturación de US$40K/mes reportada por La Nación, contradicha por otra fuente y sin verificar.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 9,
+   "sector": 8,
+   "modelo": 5,
+   "traccion": 15,
+   "etapa_timing": 3
+  },
+  "tesis_match": "Tracción de adopción muy fuerte con capital mínimo y una red de comercios locales que sugiere un canal digital hacia el comercio pequeño. El equipo es complementario (tecnología, marca, audiencia), pero joven y sin trayectoria operativa.",
+  "riesgos": "Los fundadores descartan capital externo y la monetización es incierta (fuentes contradictorias), así que puede no haber un cheque que colocar ni un negocio sostenible.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Santiago, Lisandro y Renata: soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Nos llamó la atención lo que lograron con Pasito: más de 1 millón de perfiles y 240 mil canjes en pocos meses con capital propio. Sabemos que hoy no planean levantar inversión, pero nos gustaría conocerlos y contarles cómo apoyamos a founders en la región, por si más adelante les interesa expandirse a otros países. ¿Tienen 20 minutos esta semana o la próxima?",
+  "confianza": "media",
+  "score": 40,
+  "fit": 37,
+  "key": "pasito",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Pasito, la app argentina que premia por caminar",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaDFLV1hWaVhfTno4TW9WNkdtMDNDSjI5VmJfdzdmUzBhUWU1RlVYRzJFOUV5TnlTRkJoeDBrdzAzTUk3MnRtQUJjQ2tVbzg2enNKSlc0cFBhX0gycHlOS3hITG1waGM4VW53XzZfVUFZVW5LODVMVjVrUDFzcjFveFdndw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-23"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.lmneuquen.com/ciencia-y-vida/pasito-la-app-argentina-que-premia-descuentos-y-productos-caminar-n1239632",
+   "https://www.iprofesional.com/tecnologia/454430-pasito-app-argentina-premia-caminar-cafes-comidas",
+   "https://noticias.mitelefe.com/informes-especiales/pasito-la-app-que-premia-con-cafes-y-comidas-a-los-que-caminan-pid2552189",
+   "https://www.youtube.com/watch?v=5npQiJmFaw8",
+   "https://www.elobservador.com.uy/cafe-y-negocios/pasito-asi-funciona-la-app-argentina-que-da-premios-caminar-desembarco-uruguay-y-ya-suma-mas-20000-usuarios-n6048026",
+   "https://diarioneuquino.com.ar/pasito-ya-supero-las-110-mil-descargas-con-su-sistema-que-premia-por-caminar"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Bioplaster",
   "website": "",
   "pais": "México",
@@ -1901,6 +2230,65 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Kiri",
+  "website": "",
+  "pais": "Argentina",
+  "ciudad": "Córdoba",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Software B2B para gestionar ventas, pedidos y distribución (suite Conquer) con tablero SmartPanel con chat de IA y gamificación para equipos comerciales.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Víctor Marqués Acosta",
+    "antecedentes": "CEO y fundador de Kiri (2012). Sin información sobre experiencia previa, exits ni cofundadores."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info (solo premio de US$10.000 en CCU Innpacta 2026, no es una ronda)",
+  "traccion": "Más de 350 cuentas corporativas en 5-6 países, facturación proyectada ~US$750K y crecimiento de 30% (autorreportado); piloto con CCU Chile (Mi Carro, ~80K clientes).",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 6,
+   "sector": 12,
+   "modelo": 3,
+   "traccion": 12,
+   "etapa_timing": 4
+  },
+  "tesis_match": "SaaS B2B con capa de IA para la cadena comercial y la distribución, con tracción regional y un piloto con un corporativo grande. Encaja parcialmente con el sector, pero no con el perfil de equipo ni de ronda.",
+  "riesgos": "Empresa de 14 años, aparentemente bootstrapped y con ingresos por desarrollos a medida y mantenimiento. No hay señales de que levante capital ni de que escale como venture, y falta información del equipo.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Víctor, soy del equipo de Latin Leap, un fondo con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos el piloto de Kiri con CCU y la presencia en varios países, y nos interesa mucho la combinación de IA y gamificación aplicada a equipos comerciales. ¿Están considerando levantar capital o abrir una ronda próximamente? Nos gustaría conocer mejor el equipo, el modelo de ingresos recurrentes y la hoja de ruta del producto.",
+  "confianza": "baja",
+  "score": 37,
+  "fit": 33,
+  "key": "kiri",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Kiri, la startup cordobesa que gana un piloto con CCU",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZDFCNFhab05MNDFLbkVTYU9kMU84WG1iSzZfZENDMGZob3Raa0pUVlRyTURBdFBKMDUzQjlrM1dGVFAzdWYwdXJ5dm5oLTNCbTZVdlJlTXJaa0lTZ05aQi12czIzNkpVQkVMdVdkV1RsZlRoVkM5ak9CVjRNQnJXTTJDajd0Mjh0QkNF?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-20"
+   }
+  ],
+  "fuentes_investigacion": [
+   "http://fortunaweb.com.ar/blog/startup-cordobesa-kiri-elegida-entre-70-candidatas-para-llevar-su-plataforma-a-g",
+   "https://www.iprofesional.com/negocios/466658-startup-cordobesa-fue-elegidan-por-ccu-para-desarrollar-un-negocio-clave",
+   "https://ecosistemastartup.com/kiri-la-startup-cordobesa-que-gana-un-piloto-con-ccu/",
+   "https://www.tourinnovacion.cl/emprendimiento/startup-kiri-gana-ccu-innpacta-2026-y-piloteara-su-solucion-junto-a-la-compania/",
+   "https://www.ccu.com.ar/talento-local-de-exportacion-la-startup-argentina-kiri-gana-el-certamen-regional-de-la-novena-edicion-de-ccu-innpacta/",
+   "https://ecosistemastartup.com/kiri-gana-ccu-innpacta-2026-us10k-y-piloto-con-ccu/"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Giraffe Bio",
   "website": "giraffe-bio.com",
   "pais": "Argentina",
@@ -2002,6 +2390,73 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-24",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Gisens Biotech",
+  "website": "gisensbiotech.com",
+  "pais": "Argentina",
+  "ciudad": "Berkeley (sede); operación en Argentina",
+  "sector": "HealthTech",
+  "descripcion": "Diagnósticos portátiles con biosensores de grafeno sin reactivos; su kit KF4+ mide parámetros renales desde casa en unos cinco minutos.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Luis Pierpauli",
+    "antecedentes": "Cofundador y CEO; sin experiencia previa ni exits verificados."
+   },
+   {
+    "nombre": "Esteban Piccinini",
+    "antecedentes": "Cofundador y CSO; investigador de CONICET, perfil científico."
+   },
+   {
+    "nombre": "María Florencia Piccinini",
+    "antecedentes": "Cofundadora; rol poco claro (CFO o CEO según la fuente); sin antecedentes verificados."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "Cifras inconsistentes: entre US$150K (ANPCyT, 2021) y US$220-340K acumulados vía aceleradoras (Techstars, CDL, gener8tor y otras); no verificado",
+  "traccion": "Estudio clínico con ~70 pacientes en diálisis (97,5% de exactitud) en el Hospital San Martín de La Plata. Sin clientes ni ingresos verificados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 10,
+   "sector": 6,
+   "modelo": 1,
+   "traccion": 6,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Hay base tecnológica y etapa temprana, con operación en Argentina. Pero es deep tech de salud con hardware, lejos de los patrones del portafolio (fintech pyme, comercio, logística, IA/SaaS) y sin un modelo replicado.",
+  "riesgos": "Dispositivo médico con ciclos regulatorios (FDA) largos y alta intensidad de capital, mercado objetivo en EE.UU., sin datos comerciales y con cifras de financiación contradictorias.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Luis, soy del equipo de Latin Leap. Seguimos con interés el trabajo de Gisens y el estudio clínico del KF4+ en La Plata. Hoy nuestra tesis se centra en fintech, comercio, logística e IA aplicada en LATAM, así que no vemos un encaje directo para invertir. Nos encantaría seguir su avance y, si más adelante hay tracción comercial en la región, conversamos.",
+  "confianza": "media",
+  "score": 31,
+  "fit": 23,
+  "key": "gisensbiotech",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Gisens Biotech: el test renal portátil creado en Argentina",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZS1Kc2UzTFBsSWxzY1J5a0x5YUthaHZ1OGRQUGxJVnVDSmpLVVFMUzctTGVHV091NmQ5QU9lbzU2UkFpajkwZnN5ZDBYQnk2T2c5Z1FzVW1DSDBEeXhEN2xVYXNtQVdJUDM0YWZ5ZVVvelRRWk53RkV1V2hoV1YwcjZCanFob2xROGJoRmdwaVJmZw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-25"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://creativedestructionlab.com/companies/gisens-biotech/",
+   "https://www.crunchbase.com/organization/gisens-biotech",
+   "https://www.zoominfo.com/c/gisens-biotech/535490996",
+   "https://pitchbook.com/profiles/company/468037-36",
+   "https://tracxn.com/d/companies/gisens-biotech/__i6npFqFIREvs5a5lIpDxIS7fLbOfwnZuoM2iBjKkQVw",
+   "https://www.youtube.com/watch?v=ktTGnfE4pS0"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
   "en_portafolio": false
  },
  {
@@ -2143,6 +2598,69 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "GoTrendier",
+  "website": "https://www.gotrendier.com",
+  "pais": "México",
+  "ciudad": "Ciudad de México",
+  "sector": "E-commerce / Retail",
+  "descripcion": "Marketplace C2C de segunda mano con app y web, que integra pago, logística y protección de compra. Empezó con moda femenina y ahora vende hogar y entretenimiento.",
+  "modelo_comparable": "El Vinted / Poshmark de LATAM",
+  "fundadores": [
+   {
+    "nombre": "Belén Cabido",
+    "antecedentes": "CEO en 2019; cofundadora o ejecutiva de la empresa. Sin detalle verificado de su trayectoria previa."
+   },
+   {
+    "nombre": "Ana Jiménez",
+    "antecedentes": "Se presenta como cofundadora. La empresa dice que su equipo viene de emagister, Trivago, Inditex o Privalia, sin atribuirlo a cada persona."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Opera en México y Colombia desde 2016 y lanzó nuevas categorías en octubre de 2026. No hay cifras de GMV, usuarios ni ingresos en la evidencia.",
+  "filtros": {
+   "geografia": true,
+   "etapa": false,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 12,
+   "sector": 12,
+   "modelo": 8,
+   "traccion": 10,
+   "etapa_timing": 2
+  },
+  "tesis_match": "Es un marketplace de consumo con fuerte canal digital y un modelo probado en Europa y EE.UU. ejecutado en LATAM, cercano al ADN Rocket del fondo. Tiene equipo con trasfondo en scale-ups europeas de e-commerce.",
+  "riesgos": "Con 10 años de operación y escala de 'gigante' del sector, probablemente ya superó el seed y está en etapa Series A o posterior; no hay datos de ronda que lo desmientan.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Belén, soy del equipo de Latin Leap, un VC studio en Medellín y CDMX que invierte en pre-seed y seed en e-commerce y consumo digital en LATAM. Seguimos con interés la expansión de GoTrendier a hogar y entretenimiento. Aunque su etapa parece estar más avanzada que nuestro foco, nos encantaría conocer su visión y cómo ven el mercado de segunda mano en la región. ¿Tendrían 20 minutos para conversar?",
+  "confianza": "baja",
+  "score": 30,
+  "fit": 20,
+  "key": "gotrendier",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "GoTrendier, el gigante de la segunda mano, evoluciona y ahora vende hogar y entretenimiento",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYjR6czkzN3lHWlUzUXRVRWpST1NxSDVxcVR4Y3J2NmZzU09jTWc5OGVza3M2NFd4ZXkxVGtMazRvRzRnNlJxNm9xM3lSeS0wb1dmb1BhVmdDdnpSYXd3YnpqMnlTMlptWVY1S3NlUEZhRE1NWXVMUVBsNTVmNzVWY056VzVkVWRFN0JxeFlKd0U5VEJlM1ExMkJOLUpRSEdjNXF6elJNZkc4MXoxWjFtc3J5NUdmM3ZnRTRDeUdYS0c2UlVPQ0VRVlBNeVZNQVRzdFNfWWZCd9IB8gFBVV95cUxPVGQyWUxvOEdraW96OVA2MUZKLW5SNnN0dzZyVTVMQ2lPYUlxQmp6M0NtWHFiRk1zM2xnOWZRVFNqRExKcTA2MUdnNmowTzlDTzVjWGYxNzNhRUhnMXFZUk8yU05fM203N3hfT3NWSXZGdk1ra3VnSEFMR2piYUpDakZnTmdkR01EZl9nazRCSElycV9GRFphaHhaV0NqUmNyR0RUa0ZBYlNDSFNoNVR2eExJZDNEN3Y0U1pjWnd4MWtNTU1FV3FZS3BTU3ZsVEotSDJYY25JdmdWRXZxU0YxcTUtamtENzNLSGtJSWNaVExwQQ?oc=5",
+    "source": "El Cronista",
+    "date": "2026-10-20"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://mx.linkedin.com/company/gotrendier",
+   "https://www.linkedin.com/company/gotrendier",
+   "https://www.cronista.com/mexico/finanzas-economia/gotrendier-el-gigante-de-la-segunda-mano-evoluciona-y-ahora-vende-hogar-y-entretenimiento/",
+   "https://www.tiendanube.com/blog/gotrendier-mexico/",
+   "https://portalgeek.co/gotrendier-marketplace/",
+   "https://mx-trendier.en.uptodown.com/android"
+  ],
+  "first_seen": "2026-10-26",
+  "last_seen": "2026-10-26",
   "en_portafolio": false
  },
  {
