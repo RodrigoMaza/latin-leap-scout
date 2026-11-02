@@ -202,6 +202,73 @@
   "en_portafolio": true
  },
  {
+  "nombre": "Xtract",
+  "website": "https://www.xtract.app",
+  "pais": "Argentina",
+  "ciudad": "Buenos Aires",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Software modular de gestión de facturas para empresas: contabilización, pago a proveedores, aprobaciones, digitalización y gastos, integrado al ERP vía API o archivo plano.",
+  "modelo_comparable": "El Bill.com / Basware de LATAM (automatización de cuentas por pagar)",
+  "fundadores": [
+   {
+    "nombre": "Tomás Marconi",
+    "antecedentes": "Venía de una empresa tecnológica de automatización de procesos administrativos; perfil comercial. Trabajó con Bezdjian."
+   },
+   {
+    "nombre": "Alejandro Bezdjian",
+    "antecedentes": "Perfil de desarrollo; rehízo en menos de una semana lo que un freelancer no logró en seis meses."
+   },
+   {
+    "nombre": "Jesús De Gruttola",
+    "antecedentes": "Cofundador; sin antecedentes encontrados en la investigación."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "levantando",
+  "ultima_ronda": "sin info (primera ronda en curso, objetivo US$2,5M pre-Serie A)",
+  "traccion": "Clientes corporativos como YPF, Nike, Arcos Dorados, MODO, Deloitte y Día; también figuran Pan American Energy, Galicia y Pomelo. Sin cifras de ingresos ni modelo de cobro.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 14,
+   "sector": 13,
+   "modelo": 5,
+   "traccion": 14,
+   "etapa_timing": 16
+  },
+  "tesis_match": "SaaS B2B con componente de IA/automatización para finanzas de empresas en LATAM, con clientes corporativos de peso antes de su primera ronda. Encaja en la etapa y en la ambición de IA aplicada, aunque el ticket de la ronda excede el cheque habitual.",
+  "riesgos": "Sin exits ni paso por scale-ups conocidos; no hay datos de ingresos ni modelo de cobro, y las fuentes se contradicen sobre si la ronda ya cerró.",
+  "accion": "contactar_ya",
+  "mensaje_contacto": "Hola Tomás, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos que están levantando US$2,5M y nos llamó la atención la lista de clientes (YPF, Nike, Arcos Dorados). Nos gustaría conocer mejor el modelo de cobro, los ingresos recurrentes y el estado de la ronda. ¿Tendrían 30 minutos esta semana o la próxima para conversar?",
+  "confianza": "media",
+  "score": 62,
+  "fit": 46,
+  "key": "xtract",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Xtract, software argentino de facturas, va por US$2,5M",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVkpLeUN5LWt3Q2pNTVVkcmQwX0tmMlE2QjlndnpNV2Z6QXBOSmxQbmh4eFlab2twMW14OEo5YzF4NEoxdXBPUEhENzJNTXdiTUZzNXJvbC02YjlGZ0xhU0NqZWE3QzRBd2NpY3NrNHNhUXhKc01iX0d6a2pYNXBUQmdoUTRmeUU4?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-31"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/xtract-startup-argentina-levanta-us2-5m-para-automatizar-facturas/",
+   "https://ecosistemastartup.com/xtract-software-argentino-de-facturas-va-por-us25m/",
+   "https://www.iproup.com/startups/71400-startup-argentina-automatiza-facturas-para-gigantes-como-nike-y-deloitte",
+   "https://norteenlinea.com/en-contabilidad-casi-bien-es-mal-la-startup-argentina-que-le-enseno-a-leer-facturas-a-arcos-dorados-y-modo-sin-depender-de-openai-o-antropic/",
+   "https://www.rionegro.com.ar/tecnologia/del-papel-al-dato-el-software-argentino-que-automatiza-facturas/",
+   "https://www.iprofesional.com/negocios/465163-que-es-y-como-funciona-la-plataforma-contable-xtract"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Kiggu",
   "website": "",
   "pais": "Colombia",
@@ -664,6 +731,12 @@
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYWF0Vl9QaVlZdDBiTHZOWkpEUkdYUUJ5N3dydnI4dVJDTThOUlFRY1QtLTNsNzVnbVp6ZlR1LWFsQnhPWkN4M3FrelhlcDhuMHpyMlBOS0dRVVVsVnJYNXBBX0RldGJTWGlyeWNjRGRSVEQyMHE3R0ltOWtZZDV1bE0yd0xCdmVUSWhr?oc=5",
     "source": "El Ecosistema Startup",
     "date": "2026-09-27"
+   },
+   {
+    "title": "UIN: startup argentina levanta US$2M para retener usuarios",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNa1dpWl8xTXNMNEtRcENEeTdxMEJqSENUcjhXaTRXNEJaeVh6cHNGWGdKNlBwNm0taUFvMG1wQjZnZ1p3MGRBSktPeUUzRWR4YV81UGQyLXFIOWROOTZMODVvbEY0REVYM0JmWWhZYWVxeEp1QnZWUXJWNTRTRTkyRnlBTW10OTV6MEFBSmlhSG4?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-28"
    }
   ],
   "fuentes_investigacion": [
@@ -675,7 +748,7 @@
    "https://ecosistemastartup.com/uin-startup-argentina-de-ia-para-fintech-levanta-us2m/"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-23",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
@@ -739,6 +812,85 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Nebula Medical",
+  "website": "nebula.med",
+  "pais": "Colombia",
+  "ciudad": "",
+  "sector": "HealthTech",
+  "descripcion": "NebulaScribe escucha la consulta médico-paciente y genera la nota clínica SOAP con codificación CIE-11, recetas y órdenes de laboratorio; el médico revisa y aprueba.",
+  "modelo_comparable": "El Abridge / Nuance DAX de LATAM (referentes en EE. UU., comparación no verificada en fuentes)",
+  "fundadores": [
+   {
+    "nombre": "Mateo Uribe Gaviria",
+    "antecedentes": "Cofundador y CEO, médico colombiano. Experiencia previa, exits o estudios: no encontrado."
+   },
+   {
+    "nombre": "Valentina Velasco Muñoz",
+    "antecedentes": "Cofundadora, médica colombiana. Sin experiencia previa documentada."
+   },
+   {
+    "nombre": "Santiago Suárez Gómez",
+    "antecedentes": "Cofundador, médico colombiano. Sin experiencia previa documentada."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "levantando",
+  "ultima_ronda": "SAFE de inversionistas externos; monto, fecha e inversionistas sin info. La ronda sigue abierta y no publican cifras.",
+  "traccion": "Médicos independientes usan el producto, sin cifras publicadas. Tres cartas de intención con prestadores (Sogamoso, Popayán, Cúcuta), evaluación formal en noviembre 2026. Sin ingresos verificados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 10,
+   "sector": 15,
+   "modelo": 6,
+   "traccion": 5,
+   "etapa_timing": 18
+  },
+  "tesis_match": "IA aplicada B2B con ronda pre-seed abierta en Colombia, encaja con la ambición de Latin Leap en IA y con el timing. HealthTech no es un patrón central del portafolio.",
+  "riesgos": "Equipo 100% médico, sin perfil técnico ni operativo escalable evidenciado, y sin ingresos verificados; el precio y la prueba gratuita se contradicen en la web.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Mateo, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos la nota sobre NebulaScribe y nos interesa el enfoque de IA aplicada a la documentación clínica. ¿Podemos hablar 30 minutos para conocer el equipo, el avance con médicos y hospitales y los planes de la ronda abierta? Nos ayudaría saber cuántos médicos pagan hoy y quién lidera el desarrollo técnico.",
+  "confianza": "media",
+  "score": 54,
+  "fit": 36,
+  "key": "nebulamedical",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Nebula Medical, la startup colombiana que plantea sumar tiempo de atención a los pacientes",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcXJ0WkRBZTV2d1NuRG9wbDdIRmxieXRZZmxLTU01SDVROEg5ZjJIWEJQREpaaVlmSF9IZ0h1ejBpTUJLWnlEdGFiX1ptUm9ydVNLeHN6dlliekQ0STg2c3oxRFBUNVVoNGxUdHpNRnQwSlFWaDVOUlNBUE5mTkdBb3M4VDNXdDMyNjNvMWNYZlB1SE5zTU1BX1FkUDBZcF9tVmhqa0s3Rm5mN3VmVC1SLWxnSDZoNVU1WGhWSjlHWkdlSW5z?oc=5",
+    "source": "contxto.com",
+    "date": "2026-10-29"
+   },
+   {
+    "title": "Nebula Medical, la IA colombiana que documenta consultas",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcEpDUXJHSWhrY2Q0Ny1QUGFoOWU4OE5OVlZ3bUVvc2lwRlNiQmtqVEJnMm1KbzBWYW1UUHNYenlFMXF4bS1fODY4aTJXSkdWTnJjT0p0eTN5SElSZXdwUi1RY1BRQTBBdDhQcVo4ZFdMRHYtVnFVcXptNTJadjh0LUpLWFpUM1ZEb013QThnaw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-29"
+   },
+   {
+    "title": "Nebula Medical: IA colombiana para la nota clínica",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDZsMmdtamRWUjcxVDgyaGhoVld2YlljVi0ySktzNXEtZVI3NDZDM2h3bVBoMzZRREdUczlGUElyREVrTXZfTXpEOExmcXJDLVFpcnRtd3RXNWcyVVVKXzMxVUZtak9LR3FjUmdPNlpDVzdVWnhNbXhQREFIN2pyVXZ4N3JVXzQ?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-30"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.contxto.com/es/healtech/nebula-medical-la-startup-colombiana-que-plantea-sumar-tiempo-de-atencion-a-los-pacientes/",
+   "https://ecosistemastartup.com/nebula-medical-ia-colombiana-para-la-nota-clinica/",
+   "https://ecosistemastartup.com/nebula-medical-la-ia-colombiana-que-documenta-consultas/",
+   "https://nebula.med/pricing",
+   "https://nebula.med/legal/cumplimiento-normativo-ia-salud",
+   "https://nebula.med/faq/preguntas-frecuentes/%C2%BFc%C3%B3mo-funciona-scribe"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
@@ -1045,6 +1197,12 @@
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOXFxT1ZDNHFKSk1OaDNHcktFTXFKQTdZcGw0M09lOVotdkNZUEZ0bE1rU204T2NXd0NxLVRBUXlfdWM5ZUF5T1VJT3pkakhMMDdRLXNFaTk0a3pEN2tUTFA4LWpQX1pNMVNpOHJoa0RST0ZBanREZ05aREZpZFlEMDI0RjlFcWhIU281MzdNWlBTU3c4anZfSVBSbm9vTko2a1F1UjRYb1V1VlF3NXp6Z0M0VFFNUW5NRHfSAb8BQVVfeXFMUEoyZGlMZ080d1FkdnNLWmwwRDJ4akozckx4a1NtSW02Ty1rRk5zRkp2Y3VHc21Zd2hEUFVwOVQ4Ql9vdG5MaktxWC1uT3RfUGhUN1hpWlpROG9TdlVjNGRyMW41RFY1d3ZwMDBadWFoeXJSQTBLVUhWVmtQdWgyeW55Tm5QZ2hTOUR3OFFqaFQ0cFZTTEQ0YVp5VFRpa2JRa0ZFeDRtejFhRHFtdWNpQTV1SWxWSFpWcEJ1MVRtVjA?oc=5",
     "source": "iProUP",
     "date": "2026-10-21"
+   },
+   {
+    "title": "Salame: app argentina de usados ya tiene 50.000 usuarios",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeTBKM3BfU1RMTWpWOXVEZDlJTkhWbWZaRkoybW5RMEpjVWVMWHpPVlZsMG1xaXdVRWZoemVOMXpGWDRVOVcyTlUtclB4cE54QmY5Z2VyUU1nUklhSUZDYzJiME4tYnR4R1kxaEVHOVMxZFFQSm53YVZ4ZTY1Rkd4UGx3NnlKOFdWZGNQd0VFUQ?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-02"
    }
   ],
   "fuentes_investigacion": [
@@ -1056,7 +1214,96 @@
    "https://www.threads.com/@iproup/post/Dex4o6TCC9L/la-startup-comenzo-con-una-inversion-inicial-de-u-s-se-acerca-a-los-usuarios-y/"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-26",
+  "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Viatik",
+  "website": "https://viatik.com/uy",
+  "pais": "Uruguay",
+  "ciudad": "Desconocida",
+  "sector": "Logística / Movilidad",
+  "descripcion": "Plataforma de carpooling interurbano que conecta conductores con asientos libres y pasajeros para dividir gastos de viaje en Uruguay y Argentina; cobra comisión por reserva.",
+  "modelo_comparable": "El BlaBlaCar de LATAM",
+  "fundadores": [
+   {
+    "nombre": "Renzo Costanzo (CEO)",
+    "antecedentes": "Cofundador, estudiante del interior de Uruguay en 2022; sin experiencia previa ni exits encontrados."
+   },
+   {
+    "nombre": "Gonzalo Aszyn (CTO)",
+    "antecedentes": "Cofundador técnico; sin experiencia previa documentada."
+   },
+   {
+    "nombre": "Germán Mazzarino",
+    "antecedentes": "Cofundador; sin antecedentes encontrados."
+   },
+   {
+    "nombre": "Renzo Battaglia",
+    "antecedentes": "Cofundador; sin antecedentes encontrados."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$600.000 en SAFEs (meta inicial US$500K), octubre 2026; Plug and Play, Picante, ANII y ángeles vinculados a PedidosYa y Uber. Acumulado >US$850K.",
+  "traccion": "Más de 40.000 asientos vendidos en 2026 (proyección >60.000); Argentina ya es ~90% de las transacciones; ticket ~US$15 con comisión 15-20%.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 11,
+   "sector": 10,
+   "modelo": 9,
+   "traccion": 13,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Modelo probado (BlaBlaCar) ejecutado en LATAM con marketplace digital y tracción real en Argentina, afín al ADN Rocket del fundador. Equipo completo con CTO y respaldo de ángeles de PedidosYa y Uber.",
+  "riesgos": "Fundadores jóvenes sin experiencia operativa previa documentada, y el negocio de carpooling interurbano tiene ingresos pequeños, riesgo regulatorio y de liquidez entre oferta y demanda.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Renzo, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Felicitaciones por la ronda de US$600K y por la tracción en Argentina. Nos gusta cómo están llevando un modelo probado como BlaBlaCar a la región. Nos encantaría conocerlos y seguir de cerca su evolución, ¿te parece una llamada corta en las próximas semanas?",
+  "confianza": "media",
+  "score": 51,
+  "fit": 43,
+  "key": "viatik",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Viatik, app uruguaya de viajes compartidos, suma US$600.000",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaDU2RlV1U056QmJ3a3ZQbVpfR0Y2UjUzbHE4VnUyZ0g4RDRNUmM0VTBXbm9nM0RveXRzMXYxMEU1YWgzX2JRWlVzOWUyNXAzazhONUIxVjBSN0RqSUN6RnZ0ZDNxTTczSjBIeXJkSVJwZENBTGE5ejI3cDJ3ZjczY013RHRZcG90RFNBS3MzcEg?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-28"
+   },
+   {
+    "title": "Viatik, la startup uruguaya de viajes compartidos, levanta US$ 600.000 con un cofundador de PedidosYa y el ex número uno de Uber en Argentina",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOd0IyZ2U4T052a3dad3RwRng2aGwyVFpXUU5zS2h2TkRoT2RFLWJYb0lCTGxHLVgyakN2YzV1UldXMGlMZEZqcnJyTW1BcDlJSjNXZ092cTQ2Tng3TUN4NXNPSHRwS3ExaU1IUjI5cXZVeGlZcFkwRFJWMW9sMWt3ZzQxTEVzT0JkSFRCREl3SnNWakdJRndpeEhhTkZoakkwR00yZjVZODE1TkxaYXRBLVcxZU1hbWpMcXhqdVdjM3RWYkV1emk1aDlGNmR0UGJxVVBUWkVFenZvaXZrNVRmNVFkYmd5QnkycVIydE9R0gHzAUFVX3lxTFBKSXNJUzhYeFVnWlpPcGY4MlhuVlp3Q2lSQlRMa2ZuTjNlSkdRMTFMMHlEYi1xUmFnUGFUVTlBV3BpMmNOQ0hGSVVaSlZXNDBwa3c0VmNtWXN2TDM5bXdzQ3VPVkZEYU11WXhSRTY0WmNIOTk1dzF0STZzaGxvQ2huRU41eXNRUmZ4OFZjQjlRX2t5MGJvbGtUbmxCTWdvRGRYeVVvd21YWEtKb3FsMUZiVUFaT2ZzeHVsZHRjYkppWXBnbVpYakpmY1lLYVo3d1REX0ZQempiT3o3ZXJiY3lheXR0eldXY2dkMXRqZnUtQmlOdw?oc=5",
+    "source": "Forbes Uruguay",
+    "date": "2026-10-28"
+   },
+   {
+    "title": "Viatik, startup uruguaya de viajes compartidos, captó US$ 600.000 en ronda de inversión",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPXzlhQVN2OTZLNlFVVTVNRU1oS2pOeHQ3NGtjS2Zmck42OWwzb2FjZEpSQ0trLVZGMW5OTXVNSFJVZ1c3SnZfcE9zNEVtRFN0R0xJU1RWM195R3JmN0FYQ1pUQXQ3TGR5NGQ5aDlwell1ejZBLXRaRkxob25NUUplanQ1MUxvOUE4d3RHMTRBM3YzRnVVanJXZ255aE9OVm1qQTA3amZzckJ1TUdSOUo5akRVUWhUcXBzTXF6YlJFVDI2UQ?oc=5",
+    "source": "EL PAÍS Uruguay",
+    "date": "2026-10-28"
+   },
+   {
+    "title": "Viatik levantó US$ 600.000 con inversores vinculados a PedidosYa y Uber (la startup uruguaya acelera su expansión en Argentina)",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOc1Y5aHk2enp1YTJWckh6X2Y4a0lSZEk5c2hzekZQX09GRWdNbE9WZGdidk5IWVhLdUhGNWwwVTZscy0xZXFwaUJVeVFHWWNHWF85VHJyaHpab2JRX25lU1l2UnF3NXBPSWY2aGg5dnJEalVKREUwcGJ6RWV5QlJSVERuWXdXZm45azR2Mk0yNEU1ZnZSRlJFTFp5T1JMdkxHczV3ZmlaVmVydC04SVl0dmQ4RUZZT1JKTUw4QjMycHpWZ3lzWW1jcll3a19jbk92ME9PaTh4NlROVFJYNmI5WFo4b3hITHlIN1HSAfwBQVVfeXFMTUNoUWNIM1VJX1YxSUszX2xsMlc1Nk9zOHZRR0c1ZUdWS180SkFyTnVabmdfTm9lOEJXNlhpckxZdzMyUjhsNW12S2ZvY2d1QkVHU2EyeWQ1YnZWODFxWlJta28yVWhGZHpYMldGLTVOd1luZi1uQ21GLWh6S0pkTmM0bVpiTTB5TUpjbDR6WG1aU29ULWJKRFJIdFBFdU1CRkczLVlTbGxXZkR0bnpGcFplREdob05RdlJ0cFJsSUhSTHNzUkRfMlFJVUdyNG1VT09UaGlEOEJLU1FqemhMM2pXdk9lMDZqZW1kaEJSbE9XSEdBeXlLVzM4b3dq?oc=5",
+    "source": "InfoNegocios Uruguay",
+    "date": "2026-10-28"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.elobservador.com.uy/cafe-y-negocios/app-uruguaya-viajes-compartidos-desembarco-argentina-y-cinco-dias-ya-suma-7500-usuarios-n5978195",
+   "https://ecosistemastartup.com/viatik-app-uruguaya-de-viajes-levanta-us600-000/",
+   "https://www.ambito.com/negocios/viajes-compartidos-un-negocio-que-crece-el-pais-y-busca-transformar-la-forma-moverse-ciudades-n6339824",
+   "https://www.iprofesional.com/actualidad/420524-verano-2025-app-uruguaya-de-viajes-compartidos-es-furor-en-argentina",
+   "https://semanariodejunin.com.ar/nota/69535/de-uruguay-a-la-argentina-viatik-la-aplicacion-que-desafia-al-transporte-tradicional/",
+   "https://startupslatam.com/la-uruguaya-viatik-levanta-us600-000-en-su-segunda-ronda-para-escalar-los-viajes-compartidos-entre-ciudades-en-argentina/"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
@@ -1513,6 +1760,12 @@
     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb3VWcF9tQ2JxODh0XzJSTU1GbVZnWDdOZjlLc0lRdDZBelNHMUZFc1B2V0k4c2YzMFVpLVk1NTdESzJQVU43aS1wdGphY1ZtVVZOOEtINzNfZjQ3RklUaUh2YnBuUXBKQ2pUOTRpazdwbEsxWlk3QTE4aTgtWDdrazdCOE0xSFAyWjlfNFZnbw?oc=5",
     "source": "El Ecosistema Startup",
     "date": "2026-10-10"
+   },
+   {
+    "title": "Bulltrack: la startup argentina que rankea genética bovina",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRFhSLWFBSVVxTDFNZ1BrdXJBQml5d2Vib0N4dmVvYThkZHI3NUlsaVNVQ3QwRzJqN09XbktmblljVDhESzFzbS1XU1BRWjcyQmJsSDJ1d1p0cUg0UklWakhCczBEZUtwaVVfTEtJOHNTdFNNLTVQYlZiMHRENExkRDFKSmdlc1JfSENvc2gxUG5xZw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-01"
    }
   ],
   "fuentes_investigacion": [
@@ -1524,7 +1777,7 @@
    "https://nuevonortedigital.com.ar/secciones/marcas/bulltrack-la-startup-argentina-que-une-tecnologia-y-ganaderia-para-potenciar-el-negocio-de-la-carne/"
   ],
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-23",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
@@ -1588,6 +1841,83 @@
   ],
   "first_seen": "2026-10-26",
   "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Give Zero",
+  "website": "givezero.co",
+  "pais": "Argentina",
+  "ciudad": "",
+  "sector": "HealthTech",
+  "descripcion": "App de inteligencia de salud con asistente de IA (Nova) para mujeres en perimenopausia y menopausia; vende a la usuaria y a aseguradoras como beneficio.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Pía Mancini",
+    "antecedentes": "Cofundadora y CEO; fue CEO de Open Collective."
+   },
+   {
+    "nombre": "Lucas Lain",
+    "antecedentes": "Cofundador; experiencia previa no encontrada."
+   },
+   {
+    "nombre": "Delfina Peydro",
+    "antecedentes": "Cofundadora; experiencia previa no encontrada."
+   },
+   {
+    "nombre": "Deborah Laks Dubois",
+    "antecedentes": "Cofundadora; experiencia previa no encontrada."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$600K pre-semilla en septiembre (2026), liderada por Sancor Seguros Ventures con ángeles; sin más detalle",
+  "traccion": "Sancor Seguros como primer cliente corporativo y expansión a Brasil con partners; sin datos de ingresos, usuarios ni crecimiento.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 16,
+   "sector": 10,
+   "modelo": 3,
+   "traccion": 6,
+   "etapa_timing": 12
+  },
+  "tesis_match": "Cumple los filtros duros: Argentina, pre-seed y tecnología con IA aplicada. Pía Mancini aporta experiencia como CEO de Open Collective. El canal B2B2C con aseguradoras es interesante. Podría ser candidata a seed cuando tenga ingresos recurrentes.",
+  "riesgos": "HealthTech femenina de consumo queda lejos de los patrones del portafolio y no hay evidencia de ingresos, retención ni de la experiencia del resto del equipo.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Pía, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos la ronda de Give Zero con Sancor Seguros Ventures y nos interesa el enfoque B2B2C con aseguradoras. Nos encantaría conocer la tracción del primer cliente corporativo y sus planes para la ronda semilla. ¿Tendrías 20 minutos en las próximas semanas?",
+  "confianza": "media",
+  "score": 47,
+  "fit": 35,
+  "key": "givezero",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Agrology y Give Zero: US$300K y US$600K en Argentina",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQnFETENtM0trU0h5bzRNbHdtLTd4ZzZwUnNDU2dYOUp4RjVhTjhyRVd4YzFGUnNKdVRiRmNxVnRHaENrSmRyV2JGTEY3LThtdG1uNTFzWnhObVpoVVNJQlFhZjlFVkF5Q2I2NFFmdnVwSzFoWjNxMmlzeEFQR01BRG5zQUt2Ylk?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-01"
+   },
+   {
+    "title": "Agrology, Give Zero y Odycell: el capital semilla argentino",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb0kxN1p0NFhxcGM3NHNHV01uZGtfYTcwWDZ2eVJqSDFhOGJUcVd1NzRMYkJndllEeTIzWENyM1pfR0U2bC1Gdml2aWlHbjRQVnZRVVhSQllPb3JVYUlKOHZkV1d1WDI0QkREY2x3ekE5cUN2ZHVCM0wwTXFUc0F1MEFna3VRY3lrWDliNGgtTHl0Zw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-01"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/agrology-give-zero-y-odycell-el-capital-semilla-argentino/",
+   "https://ecosistemastartup.com/agrology-y-give-zero-us300k-y-us600k-en-argentina/",
+   "https://www.bloomberglinea.com/latinoamerica/argentina/startup-argentina-de-inteligencia-artificial-levanta-us2m-en-ronda-liderada-por-fondo-mexicano/",
+   "https://eleconomista.com.ar/negocios/rondas-inversion-startups-son-seed-serie-a-b-c-empresas-argentinas-ya-transitaron-n94603",
+   "https://startupeable.com/capital-semilla/",
+   "https://rosariofinanzas.ar/noticias/agro-y-salud-startups-argentinas-reciben-inversiones-a-pesar-del-contexto-macroeconomico"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
@@ -2021,6 +2351,69 @@
   "en_portafolio": false
  },
  {
+  "nombre": "BordexPay",
+  "website": "https://www.bordexpay.com",
+  "pais": "Colombia",
+  "ciudad": "",
+  "sector": "Fintech",
+  "descripcion": "PSP colombiano que centraliza recaudo y pagos B2B, B2C y B2B2C, convirtiendo valor a USDC/USDT para liquidar internacionalmente; recién lanzó en México.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Johanna Polania Pascuas",
+    "antecedentes": "CEO y cofundadora; operaciones comerciales y alianzas de pagos en Banco Caja Social, Efecty, Cobre, Refácil y Monnet Payments."
+   },
+   {
+    "nombre": "Ana Milena Fernández",
+    "antecedentes": "COO; junto a la CEO suma más de 35 años de experiencia en pagos. Exits y estudios no encontrados."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Sin clientes, ingresos ni volumen publicados. Solo el anuncio de lanzamiento en México; las fuentes se contradicen sobre los países de operación.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 16,
+   "sector": 13,
+   "modelo": 2,
+   "traccion": 3,
+   "etapa_timing": 6
+  },
+  "tesis_match": "Fintech de pagos en LATAM con fundadoras de experiencia comercial en el ecosistema de pagos colombiano (Cobre, Efecty, Refácil), cercana al patrón fintech del portafolio. La expansión a México puede ser una señal de timing, aunque sin evidencia de ronda.",
+  "riesgos": "Sin evidencia verificable de tracción, financiación ni perfil técnico del equipo, y con competencia fuerte en pagos transfronterizos con stablecoins.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Johanna, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos el anuncio de la expansión de BordexPay a México y nos interesó su enfoque en pagos con stablecoins. Nos gustaría conocer mejor el producto, el volumen procesado y sus planes de financiación. ¿Tendrías 30 minutos para una llamada?",
+  "confianza": "baja",
+  "score": 40,
+  "fit": 34,
+  "key": "bordexpay",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Fintech colombiana BordexPay se expande a México con soluciones de pagos transfronterizos basadas en stablecoins",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNU1JGUHM3Y0dPVVBodnl2enpaMDFUeFdrYzh4cEpHNUdyWkxxT0lMZEprNFNiXy1xeHJWcVBjODRIel9iRHdwNWMwUzdhc2ZtYW91Q3dabVJEclRrbXFoUlJhc0lMN01udVJkbS1aLW44eEFBTnQ0R1d0WVh2RjE3YVJlQXZTSVBtdi13R2dVdUlYU0RqZEwtRjBQT05kTS1fb3JsaERPZENNYW1KcGNsZ25rYmNxVEdOY2N0SnJ5bjFmNzR2TVoxRy03LWh6NWw0Wmd3a0k4SWMyX3BaSXBhUHppWQ?oc=5",
+    "source": "Latam Fintech Hub",
+    "date": "2026-10-29"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.latamfintech.co/",
+   "https://www.latamfintech.co/countries/colombia?348faa77_page=5&37c39cab_page=2&840c0738_page=1&efc2c3cc_page=13",
+   "https://www.latamfintech.co/articles/fintech-colombiana-bordexpay-se-expande-a-mexico-con-soluciones-de-pagos-transfronterizos-basadas-en-stablecoins",
+   "https://sucursal.substack.com/p/208-binance-hace-templar-al-ecosistema",
+   "https://www.latamfintech.co/companies/bordexpay",
+   "https://www.latamfintech.co/articles/nace-bordexpay-una-paytech-colombiana-liderada-por-mujeres-que-busca-transformar-los-pagos-digitales-en-america-latina"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Pasito",
   "website": "",
   "pais": "Argentina",
@@ -2230,6 +2623,66 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Agrology",
+  "website": "",
+  "pais": "Argentina",
+  "ciudad": "",
+  "sector": "AgTech",
+  "descripcion": "Plataforma de trazabilidad digital para la cadena de cereales y oleaginosas que integra datos para decisiones de producción, comercialización y financiamiento.",
+  "modelo_comparable": "",
+  "fundadores": [],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$300K de Xperiment, cierre en octubre de 2026; otros inversionistas sin info y la ronda no está etiquetada explícitamente como semilla",
+  "traccion": "Reporta más de US$1M de facturación con 9 personas (fuente única, sin verificar). Cobra por hectárea a productores y por certificación a exportadoras e insumos. Demanda impulsada por la normativa europea antideforestación.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 6,
+   "sector": 9,
+   "modelo": 2,
+   "traccion": 12,
+   "etapa_timing": 8
+  },
+  "tesis_match": "SaaS B2B con doble fuente de ingresos y un catalizador regulatorio claro (EUDR), con tracción aparente superior a la de un seed típico. AgTech está fuera de los patrones centrales del portafolio, y la ronda ya cerró, así que encaja más como seguimiento o follow-on.",
+  "riesgos": "No hay información verificable de fundadores, ni de clientes o crecimiento, y la cifra de US$1M proviene de un solo medio.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos la noticia de su ronda de US$300K con Xperiment y nos llamó la atención la tracción con la trazabilidad para la normativa europea antideforestación. Nos gustaría conocer al equipo fundador y entender mejor su modelo de cobro por hectárea y por certificación. ¿Tendrían 30 minutos esta semana o la próxima para conversar?",
+  "confianza": "baja",
+  "score": 37,
+  "fit": 29,
+  "key": "agrology",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Agrology y Give Zero: US$300K y US$600K en Argentina",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQnFETENtM0trU0h5bzRNbHdtLTd4ZzZwUnNDU2dYOUp4RjVhTjhyRVd4YzFGUnNKdVRiRmNxVnRHaENrSmRyV2JGTEY3LThtdG1uNTFzWnhObVpoVVNJQlFhZjlFVkF5Q2I2NFFmdnVwSzFoWjNxMmlzeEFQR01BRG5zQUt2Ylk?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-01"
+   },
+   {
+    "title": "Agrology, Give Zero y Odycell: el capital semilla argentino",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb0kxN1p0NFhxcGM3NHNHV01uZGtfYTcwWDZ2eVJqSDFhOGJUcVd1NzRMYkJndllEeTIzWENyM1pfR0U2bC1Gdml2aWlHbjRQVnZRVVhSQllPb3JVYUlKOHZkV1d1WDI0QkREY2x3ekE5cUN2ZHVCM0wwTXFUc0F1MEFna3VRY3lrWDliNGgtTHl0Zw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-01"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/agrology-give-zero-y-odycell-el-capital-semilla-argentino/",
+   "https://ecosistemastartup.com/agrology-y-give-zero-us300k-y-us600k-en-argentina/",
+   "https://es-us.finanzas.yahoo.com/noticias/startup-argentina-utiliza-inteligencia-artificial-121300075.html",
+   "https://ecosistemastartup.com/agtechs-argentinas-el-ajuste-fino-que-mueve-al-agro/",
+   "https://www.itsitio.com/software/la-startup-de-tecnologia-aplicada-al-agro-logra-su-ronda-semilla-por-1-1-m-usd/",
+   "https://es-us.noticias.yahoo.com/ciencia-argentina-frontera-startup-busca-101000903.html"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Kiri",
   "website": "",
   "pais": "Argentina",
@@ -2286,6 +2739,66 @@
   ],
   "first_seen": "2026-10-26",
   "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "FinMaq",
+  "website": "https://finmaq.com.co",
+  "pais": "Colombia",
+  "ciudad": "Bogotá",
+  "sector": "Fintech",
+  "descripcion": "Fintech de crédito y leasing que financia maquinaria y equipos a pymes y personas naturales, colocando el crédito en el punto de venta de distribuidores.",
+  "modelo_comparable": "",
+  "fundadores": [],
+  "etapa": "desconocida",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$6,5M, anunciada el 27-oct-2026; inversionistas sin info (no se sabe si incluye deuda)",
+  "traccion": "Sin métricas públicas de cartera, clientes o ingresos. Solo hay modelo operando con distribuidores y una ronda de US$6,5M como señal indirecta.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 5,
+   "sector": 16,
+   "modelo": 4,
+   "traccion": 4,
+   "etapa_timing": 6
+  },
+  "tesis_match": "Es fintech para pymes desatendidas en Colombia, con un canal de distribución tipo infraestructura para el comercio pequeño, cercano al patrón de Morado y Cubo. Sin embargo, la ronda ya cerró y no hay datos de equipo.",
+  "riesgos": "La ronda de US$6,5M podría ser ya una Serie A o parte deuda, y no hay información de fundadores ni de calidad de cartera, lo que debilita el encaje.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola, soy del equipo de Latin Leap, un VC studio en Medellín y CDMX que invierte en fintech y comercio para pymes en LATAM. Vimos el anuncio de su ronda de US$6,5M y nos interesa mucho el modelo de financiar maquinaria desde el punto de venta del distribuidor. Nos gustaría conocer al equipo fundador y entender mejor la cartera, la mora y los planes de crecimiento. ¿Tendrían 20 minutos para conversar en las próximas semanas?",
+  "confianza": "baja",
+  "score": 35,
+  "fit": 29,
+  "key": "finmaq",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "FinMaq, fintech de crédito pyme, cierra US$6,5M",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SOE00T2lIYUFrbTdUZmZ3S3RZMjRNVi1ob0tUU3dWVmp6dlVDV0VuSmFkTHZaV21NQl9MdEhJakhVZWRxVDc2ZC1MNkhaUjY4OU0zeldTMzYyZmZMX1k2Q1ZGTE5fQVVWdmtiZklOa0owaGVmRTZtX0pra25hR3M?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-27"
+   },
+   {
+    "title": "FinMaq recibe $6,5 millones de dólares para financiar maquinaria a pequeñas empresas en Colombia",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcHhxMUkwZXlvVUNfME15RnE2R3NHbWRsWWdDdU1uV3lVM3g5RzZqQU8xR1lfVzNvU24wM2liMDVVQ0RtaUpwWXJaOVJWN25ENElBTjZPczZzUTRqYzU2dDlYVlJZSEw2aWJ5T18xZ0NQQU5fWVdyLTBiSjA1VHFhX091dFlJMS0xbjl3S29JVG96X0N4STlHb2xDbjY5TFNmS3ZZbHAzekVqY2wtZXlmT2kxX1VGdmpqbXRUTzBGbDVaNXlrQ0E?oc=5",
+    "source": "contxto.com",
+    "date": "2026-10-27"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.latamfintech.co/companies/finmaq",
+   "https://startupslatam.com/la-colombiana-finmaq-levanta-us65-millones-en-una-serie-a-liderada-por-accion-para-financiar-maquinaria-de-pymes/",
+   "https://ecosistemastartup.com/finmaq-fintech-de-credito-pyme-cierra-us65m/",
+   "https://tekiosmag.com/2026/10/28/finmaq-cierra-serie-a-de-us65m-liderada-para-financiar-maquinaria-de-pymes-en-colombia/",
+   "https://www.portafolio.co/amp/emprendimiento/finmaq-fintech-de-credito-para-maquinaria-atrae-us-6-5-millones-505270",
+   "https://www.descubre.vc/finmaq"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
@@ -2532,6 +3045,79 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Celes",
+  "website": "celes.ai",
+  "pais": "Colombia",
+  "ciudad": "Barranquilla",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Agentes de IA que pronostican demanda, optimizan inventario y planifican la distribución diaria de tiendas físicas, integrados con ERP y POS como SAP u Oracle.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Luis Ricardo Almanza",
+    "antecedentes": "CEO; la empresa nació de una consultora de analítica de datos. Exits y trayectoria previa no encontrados."
+   },
+   {
+    "nombre": "Luis Ballestas",
+    "antecedentes": "COO; sin antecedentes verificados más allá de la consultora de analítica de origen."
+   },
+   {
+    "nombre": "David Florián",
+    "antecedentes": "CTO; sin antecedentes verificados públicamente."
+   }
+  ],
+  "etapa": "series-a-o-mas",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Serie A de US$5M, 30 oct. 2026, liderada por SP Ventures con Fulcrum Global Capital, 30N Ventures y Taram Capital. Seed previa reportada de ~US$3M con FEMSA Ventures (2024), con cifras inconsistentes entre fuentes.",
+  "traccion": "55M de pronósticos diarios para más de 8.500 tiendas en ocho países; clientes Olímpica, FEMSA Salud y Tiendas Neto; 69 empleados. Sin datos de ingresos ni ARR.",
+  "filtros": {
+   "geografia": true,
+   "etapa": false,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 9,
+   "sector": 15,
+   "modelo": 2,
+   "traccion": 12,
+   "etapa_timing": 0
+  },
+  "tesis_match": "Es IA aplicada a SaaS B2B para retail en LATAM, con clientes corporativos reales, lo que encaja con el interés en IA y comercio. Pero ya cerró su Serie A y queda fuera del rango pre-seed/seed.",
+  "riesgos": "Cerró Serie A, por lo que no cumple el filtro duro de etapa; además hay poca información de fundadores e ingresos y la expansión a Brasil agrega complejidad.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Luis, felicitaciones por la Serie A y por llegar a más de 8.500 tiendas con Celes. Somos Latin Leap, un VC studio en Medellín y CDMX enfocado en pre-seed y seed en LATAM, y seguimos de cerca la IA aplicada al retail. Hoy estamos fuera de su etapa, pero nos gustaría mantenernos en contacto y estar atentos a lo que viene.",
+  "confianza": "alta",
+  "score": 30,
+  "fit": 20,
+  "key": "celes",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Celes, la startup retail que levanta US$5M y va a Brasil",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNREtVNHJZT3RlWHRrMUpZZWhkSkFTSWFWeTNvUjI5NmJSbk5pVnB2ME9DQXVXd1lDRWhBMEFKbV9haV9ZLUFlaGJ2S2tMT1VnaUY4VnlabGd5UGhtT1ozZnBYaEhxSFhrWFZzTkdha001cmhvYW5BNzVBOENGV1hxQU1VWHBVRGM1OTVObUR3?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-27"
+   },
+   {
+    "title": "Celes, retailtech de Barranquilla, levanta US$5M",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcmNycjAwNDhQVDJKUWdXZXE3endBUzBJV29OQmdyVVBhSFBtVnEyZHJlZ2tjV0NDVE9nX2twN0lEdEhxbTkzQ2VyRW0tc25MWGR3eXRVd01nZ2hTTGMyTFVMUi1kYkZDVDJsUjUyc2NZMi1FUW92RmdrZEMyVXR0S2Jn?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-28"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/celes-retailtech-de-barranquilla-levanta-us5m/",
+   "https://co.linkedin.com/company/celes-retailtech",
+   "https://co.linkedin.com/company/celes-ai",
+   "https://ecosistemastartup.com/celes-la-startup-retail-que-levanta-us5m-y-va-a-brasil/",
+   "https://www.larepublica.co/empresas/celes-startup-innova-con-un-software-para-optimizar-inventarios-3658814",
+   "https://www.crunchbase.com/organization/celes"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
@@ -3068,6 +3654,136 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Odycell",
+  "website": "https://odycell.bio",
+  "pais": "Argentina",
+  "ciudad": "Buenos Aires",
+  "sector": "Otro",
+  "descripcion": "Biotech que diseña nanopartículas para tratar tumores sólidos resistentes, hoy cáncer de pulmón avanzado, con la tecnología Ithaca; modelo de licenciamiento a farmacéuticas.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Manuela Alanís",
+    "antecedentes": "Bioingeniera; sin información de experiencia operativa previa, exits ni scale-ups."
+   },
+   {
+    "nombre": "Romina Mitarotonda",
+    "antecedentes": "Especialista en inmuno-oncología y nanomedicina, investigadora del Iudpt; sin información de experiencia empresarial."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "levantando",
+  "ultima_ronda": "Unos US$100K acumulados de CITES y ángeles; montos y fechas por ronda sin info. Prepara ronda pre-seed.",
+  "traccion": "Sin ingresos ni clientes. Fase MVP, 2 personas. Premios: NAVES 2024, Nano Impact, seleccionada para BIO International.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": false
+  },
+  "puntajes": {
+   "equipo": 9,
+   "sector": 3,
+   "modelo": 0,
+   "traccion": 4,
+   "etapa_timing": 14
+  },
+  "tesis_match": "Está en pre-seed, en Argentina, y prepara ronda. Pero el desarrollo de fármacos oncológicos por licenciamiento queda lejos de los patrones del portafolio (fintech pyme, comercio, logística, IA/SaaS) y de la tecnología como catalizador de un negocio digital.",
+  "riesgos": "Biotech de largo plazo y alta intensidad de capital, con ciclos de I+D y regulatorios que superan lo que un cheque de US$250-500K y un equipo pequeño pueden cubrir.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Manuela y Romina, felicitaciones por los reconocimientos de Odycell y por su selección en BIO International. En Latin Leap invertimos en startups digitales de LATAM (fintech, comercio, IA/SaaS) y la biotecnología oncológica queda fuera de nuestra tesis. Les deseamos mucho éxito en la ronda pre-seed y con gusto las conectamos con inversionistas más afines si surge la oportunidad.",
+  "confianza": "media",
+  "score": 30,
+  "fit": 16,
+  "key": "odycell",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Agrology, Give Zero y Odycell: el capital semilla argentino",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb0kxN1p0NFhxcGM3NHNHV01uZGtfYTcwWDZ2eVJqSDFhOGJUcVd1NzRMYkJndllEeTIzWENyM1pfR0U2bC1Gdml2aWlHbjRQVnZRVVhSQllPb3JVYUlKOHZkV1d1WDI0QkREY2x3ekE5cUN2ZHVCM0wwTXFUc0F1MEFna3VRY3lrWDliNGgtTHl0Zw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-01"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.linkedin.com/in/mar%C3%ADa-victoria-tuttolomondo-b569aba2/",
+   "https://cancilleria.gob.ar/es/nuevas-tecnologias/next-from-argentina/odycell",
+   "https://ecosistemastartup.com/agrology-give-zero-y-odycell-el-capital-semilla-argentino/",
+   "https://www.linkedin.com/in/claudio-cocconi/",
+   "https://biobase.whitefordresearch.com/companies-db?technology=cell+therapy",
+   "https://www.sparklab.com.ar/ediciones-anteriores"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Pomelo",
+  "website": "https://pomelo.la",
+  "pais": "Argentina",
+  "ciudad": "Buenos Aires",
+  "sector": "Fintech",
+  "descripcion": "Infraestructura B2B para emitir, procesar y gestionar tarjetas de crédito, débito y prepago y cuentas virtuales para bancos, fintechs y empresas en LATAM.",
+  "modelo_comparable": "El Marqeta de LATAM",
+  "fundadores": [
+   {
+    "nombre": "Gastón Irigoyen",
+    "antecedentes": "CEO; fue CEO de Naranja X, con experiencia en el sector financiero argentino."
+   },
+   {
+    "nombre": "Hernán Corral",
+    "antecedentes": "CPO; experiencia previa en Mercado Pago, Naranja X y Mastercard."
+   },
+   {
+    "nombre": "Juan Fantoni",
+    "antecedentes": "CCO; experiencia previa en Mercado Pago, Naranja X y Mastercard."
+   }
+  ],
+  "etapa": "series-a-o-mas",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Serie C de US$55M en enero de 2026, co-liderada por Kaszek e Insight Partners, con Index, Adams Street, S32, Endeavor Catalyst, Monashees y TQ Ventures",
+  "traccion": "Más de 120 clientes (2024) como Itaú, Bancolombia y Rappi; seis países; volumen de pagos x7 y facturación x3 en 2023; US$160M levantados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": false,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 26,
+   "sector": 14,
+   "modelo": 7,
+   "traccion": 18,
+   "etapa_timing": 0
+  },
+  "tesis_match": "Fintech de infraestructura con equipo de primer nivel y modelo probado en otro mercado, pero está muy por encima del rango de pre-seed/seed de Latin Leap.",
+  "riesgos": "Ya es Serie C con US$160M levantados, fuera de la etapa objetivo y del tamaño de cheque del fondo.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Gastón, felicitaciones por la Serie C y por lo construido con Pomelo en la región. Desde Latin Leap invertimos en pre-seed y seed en LATAM, por lo que hoy no encajamos en su etapa. Nos encantaría mantenernos en contacto y, si les sirve, conectarlos con fundadores de nuestro portafolio que puedan ser clientes o aliados.",
+  "confianza": "alta",
+  "score": 30,
+  "fit": 20,
+  "key": "pomelo",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Startups argentinas: Pomelo y la obligacion de nacer global",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXdkZzJHWGQ0ZFJQZTVqc09IZVJpMXpqbGpFbDhTeDZKbi0zWXJZbDM4S1B5cENmQ2s3MS1ObkZTaTFyOEtBRGIxaERoRVVLNGI0SUNPcF9ITXhnbnNKMDA4TXZORk44U0RoMkxyanNXbGU1Z1VGV2I1bVNmR0dHcV9yU3V6RF9JYTR1a3dLYkV6RXc?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-10-30"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://techcrunch.com/2024/01/17/pomelo-stacks-40m-to-scale-its-payments-infra-business-in-latam/",
+   "https://www.bloomberg.com/news/articles/2026-01-20/argentina-s-pomelo-raises-55-million-in-series-c-to-boost-payment-offerings",
+   "https://www.bloomberglinea.com/latinoamerica/argentina/fintech-argentina-pomelo-levanta-us55-millones-para-acelerar-su-expansion-en-latam/",
+   "https://es-us.finanzas.yahoo.com/noticias/fintech-argentina-pomelo-recauda-us-140343725.html",
+   "https://www.infobae.com/economia/2024/01/17/una-fintech-argentina-recibio-usd-40-millones-de-inversores-globales-para-expandirse-en-america-latina/",
+   "https://www.fintechile.org/noticias/el-proximo-unicornio-la-fintech-pomelo-busca-duplicar-el-tamano-del-negocio-en-2025"
+  ],
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
   "en_portafolio": false
  },
  {
