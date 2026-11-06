@@ -408,6 +408,72 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Efex",
+  "website": "https://efexpay.com",
+  "pais": "México",
+  "ciudad": "",
+  "sector": "Fintech",
+  "descripcion": "Plataforma de tesorería global para empresas medianas: cuentas multimoneda, transferencias internacionales, cobertura cambiaria y crédito, enfocada en el corredor EE.UU.-México.",
+  "modelo_comparable": "El Wise/Airwallex para empresas del corredor EE.UU.-México y LATAM (inferencia sin respaldo en fuentes)",
+  "fundadores": [
+   {
+    "nombre": "Dimitri Zaninovich",
+    "antecedentes": "CEO. Exviceministro de Finanzas de Colombia, exCEO de la agencia de infraestructura ANI, ex Citibank (divisas) y Fitch; Harvard y Stanford."
+   },
+   {
+    "nombre": "Santiago Bustamante Villa",
+    "antecedentes": "CTO y cofundador. Experiencia previa no encontrada."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Seed de US$8M en feb. 2026, co-liderada por PayPal Ventures y Floodgate, con Contour Venture Partners y Nido Ventures (otras fuentes reportan US$10.6M; por verificar)",
+  "traccion": "Ingresos x6 en 2025 y más de US$1,000M procesados en volumen de pagos. Opera en México, EE.UU. y Colombia. Ingresos absolutos y clientes no encontrados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 18,
+   "sector": 14,
+   "modelo": 5,
+   "traccion": 15,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Fintech B2B transfronteriza con tracción real y un CEO con credenciales sólidas en finanzas y regulación; encaja con el patrón fintech del portafolio. Pero el seed ya está cerrado con inversionistas top, así que solo cabe como seguimiento o follow-on.",
+  "riesgos": "Seed recién cerrado con fondos de primer nivel, lo que limita el acceso y el tamaño del cheque; CTO sin antecedentes verificados y sin ingresos ni clientes en cifras absolutas.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Dimitri, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX. Felicitaciones por el seed y por haber multiplicado por seis los ingresos en 2025. Nos interesa mucho lo que construyen en tesorería y pagos transfronterizos para empresas medianas en el corredor EE.UU.-México. ¿Tendrían 20 minutos en las próximas semanas para conocernos y explorar cómo podríamos apoyarlos más adelante?",
+  "confianza": "media",
+  "score": 60,
+  "fit": 52,
+  "key": "efex",
+  "origen": "evento",
+  "nota_evento": "Prueba 2",
+  "manual": true,
+  "menciones": [
+   {
+    "title": "Evaluada a mano · Prueba 2",
+    "url": "https://efexpay.com",
+    "source": "Evento",
+    "date": "2026-11-06"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://efexpay.com",
+   "https://startupeable.com/directorio/startups/efex/",
+   "https://www.descubre.vc/efex",
+   "https://parsers.vc/startup/efexpay.com/",
+   "https://www.crunchbase.com/organization/ventu-25e2",
+   "https://www.linkedin.com/company/efexpay"
+  ],
+  "first_seen": "2026-11-06",
+  "last_seen": "2026-11-06",
+  "evaluada": "2026-11-06T00:22+00:00",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Puente OS",
   "website": "",
   "pais": "Chile",
