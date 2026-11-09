@@ -202,6 +202,89 @@
   "en_portafolio": true
  },
  {
+  "nombre": "Fina",
+  "website": "",
+  "pais": "Venezuela",
+  "ciudad": "Caracas",
+  "sector": "Fintech",
+  "descripcion": "Software en la nube para pymes venezolanas (inventario, ventas, cobros, pagos, conciliación) con agente de IA NINA para diagnósticos, y crédito para clientes activos.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Enrique Rivas",
+    "antecedentes": "CEO. Cofundó Caracas Ron, e-commerce de delivery. Sin exits ni scale-ups previos encontrados."
+   },
+   {
+    "nombre": "Sebastián Sánchez",
+    "antecedentes": "COO y cofundador. Sin antecedentes adicionales encontrados."
+   },
+   {
+    "nombre": "Diego Aponte",
+    "antecedentes": "CMO. Cofundó Caracas Ron junto a Rivas. Sin otros antecedentes encontrados."
+   },
+   {
+    "nombre": "Alejandro Fariña",
+    "antecedentes": "CTO y cofundador. Sin antecedentes adicionales encontrados."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$1M semilla, anunciada el 24 de agosto de 2026 (la prensa la replica el 2 de nov. de 2026). Co-lideran SquareOne Capital y Tomorrow Capital, con Norte VC, Platanus y Neer. Ángeles: Marcelo Lombardo (Omie), Jorge Ulloa (Bold), Rodrigo Tognini (Contasimple) y Gabriel Monroy.",
+  "traccion": "Más de 5.000 comercios activos pagando suscripción de US$35/mes. Lanzó crédito en 2026 solo para clientes con más de dos meses de uso. El dato de ARR llegó truncado.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 18,
+   "sector": 16,
+   "modelo": 5,
+   "traccion": 16,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Fintech y SaaS para pymes con capa de IA y crédito embebido, cercano a Rintin, Cubo y Keybe/Dapta. Hay equipo fundador completo y tracción real de pago en un mercado desatendido.",
+  "riesgos": "Riesgo país y macro de Venezuela (bolívar, regulación, salida de capital), y la ronda seed ya está cerrada con fondos conocidos de la región.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Enrique, felicitaciones por el cierre de la ronda de US$1M y por superar los 5.000 comercios activos con Fina. En Latin Leap invertimos en pre-seed y seed en LATAM, con foco en fintech para pymes e IA aplicada, y nos llamó la atención NINA y el paso al crédito. Nos gustaría conocer su hoja de ruta y mantenernos cerca de cara a la próxima ronda. ¿Tendrían 30 minutos en las próximas semanas?",
+  "confianza": "media",
+  "score": 63,
+  "fit": 55,
+  "key": "fina",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Fina, la fintech de pymes venezolanas, levanta US$1M",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTU85U1ZfWmxRSV9FS2NrWnBWTTh2elVQajRMLUJsdjVnY1FXNUVYTUtmZVpvMUg1ZXk4emNKN0poMVBLQU9lczVfZjNXQS1keTBjQUxOUHZsTGpHVFZXSFlqSHVtbWhtN2F1U0hSOWhQejZwUEtPazBMRFg3cy1JbEhqU2NWZU0?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-02"
+   },
+   {
+    "title": "La startup Fina levanta US$1 millón en ronda de inversión para acelerar la digitalización de las pymes venezolanas",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOR2pmZzlZcFNtVEpKRjdnNl9ma1ZWVWVtLU9VaF9nXzRheFVFOWkxYXQ1NFlFRVA5YVR2cnFlVUZ1ZnZqRTJCaE10QlFsSlM1WlhscjNsTTVOSE1CYVlERHY2bTdnUHEtRVhDS0RlZmwxb3dKT0NPVTR5TE0zcnFiQzJ2RjlJRzhLSEw4R0p1Q0lZLXEzbFhsX2ZHTGdmTWRIeS1YeVJvZzhHVnY3MFc1ZmZkN0trb3QxQ1E3amVDZjZYSlRKd042bHVQa1kyWXByVUJ3M0VkcVhYZDZHMG9renJIZw?oc=5",
+    "source": "AlbertoNews",
+    "date": "2026-11-02"
+   },
+   {
+    "title": "Venezuela | La startup Fina cierra ronda de capital de US$1M para impulsar el comercio",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa210emcwRmlmSU1YRm9DUDdYeTU5eWppR0tyS1pGLTEteUdmVDM1WXRSSDZLVWRKT0o5WmZNRmRaYUVhS3BFcHd5VVEycnlSWHRvMTRHSWFvb3hhRGpCcFMzZ0NYTDhDTWlhQUdkVlBtM1JQVmVZQ2RQWUJIOWFoRmpNakIwYjRyejRreUZKc0xJTVJyUF9GaTFIYWZSQ2pQN3o0eGNQVQ?oc=5",
+    "source": "DPL News",
+    "date": "2026-11-02"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/fina-la-fintech-de-pymes-venezolanas-levanta-us1m/",
+   "https://ecosistemastartup.com/fina-levanta-us1m-para-digitalizar-el-comercio-venezolano/",
+   "https://elestimulo.com/elinteres/empresas/2026-10-24/fina-presta-el-cashea-de-las-pymes/",
+   "https://albertonews.com/nacionales/la-startup-fina-levanta-us1-millon-en-ronda-de-inversion-para-acelerar-la-digitalizacion-de-las-pymes-venezolanas/",
+   "https://www.mscnoticias.com.ve/2026/08/fina-el-saas-venezolano-que-atrae-inversion-internacional/",
+   "https://www.estamosenlinea.com.ve/2026/08/24/fina-la-startup-venezolana-cierra-ronda-de-capital-de-us-1-m-para-impulsar-el-comercio-en-venezuela/"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Xtract",
   "website": "https://www.xtract.app",
   "pais": "Argentina",
@@ -726,6 +809,101 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Takenos",
+  "website": "",
+  "pais": "Argentina",
+  "ciudad": "Desconocida",
+  "sector": "Fintech",
+  "descripcion": "Billetera digital en dólares para cobrar desde el exterior, pagar con tarjeta y ahorrar; también ofrece pagos transfronterizos para empresas en Latinoamérica.",
+  "modelo_comparable": "El Payoneer / Wise de LATAM",
+  "fundadores": [
+   {
+    "nombre": "Lucas Posada",
+    "antecedentes": "CEO; ex director de producto en Invertir Online (IOL). Sin exits previos encontrados."
+   },
+   {
+    "nombre": "Joaquín Herrera",
+    "antecedentes": "COO; trayectoria legal en el Ministerio Público Fiscal."
+   },
+   {
+    "nombre": "Francisco Goulu",
+    "antecedentes": "CPO; ex analista de producto en IOL."
+   },
+   {
+    "nombre": "Simón Bouché",
+    "antecedentes": "CMO; sin antecedentes encontrados."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Extensión de seed por US$7M anunciada en noviembre de 2026, liderada por North Island Ventures y Road Capital Management, con Variant, Lattice y Reverie. Seed previa de US$5M en octubre de 2025 (total US$12M).",
+  "traccion": "Reporta más de US$5.000M procesados al año, clientes como LATAM Airlines y operación en Argentina, Bolivia, Ecuador y Perú. Ingresos y crecimiento no verificados; cifras de empresas contradictorias.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 15,
+   "sector": 14,
+   "modelo": 6,
+   "traccion": 14,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Fintech de pagos transfronterizos para freelancers y empresas, con perfil afín a las apuestas de Latin Leap en fintech para segmentos desatendidos y con expansión en LATAM hispanohablante. Pero ya cerró una extensión de seed de US$7M con fondos norteamericanos, así que solo cabría seguimiento o un eventual follow-on.",
+  "riesgos": "La ronda ya está cerrada y bien liderada, y el equipo no muestra exits ni paso por scale-ups regionales. Además, el volumen reportado de US$5.000M/año no está verificado y los ingresos tampoco.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Lucas, felicitaciones por la extensión de seed de US$7M y por el avance de Takenos hacia más de 15 países. En Latin Leap invertimos en pre-seed y seed en fintech y en infraestructura para pymes en LATAM, y nos interesa mucho lo que están construyendo en pagos transfronterizos. Nos gustaría conocer mejor el modelo de ingresos y la hoja de ruta de expansión, y mantenernos cerca para futuras rondas. ¿Tendrías 20 minutos para conversar en las próximas semanas?",
+  "confianza": "media",
+  "score": 57,
+  "fit": 49,
+  "key": "takenos",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Takenos levanta US$7M y apunta a 15 países en 2027",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdVpuNF9zYy1xQzFPSlluWmxoaTdQMFhLVWdXZERndmstdGZPb2hibF9IZ29PRnVQbUFtQ2lWYmp3cEZET0J2Vkg5Y29nZjMtTG5IWVFxamJXaW5XVk0xaURLMHE0ZEd5STJVRVFlM1dScGZ2d2UxWjJCVWluRW1kVGJHV1dmVXc?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "Fintech argentina Takenos levanta US$7M para expandir su plataforma de transacciones internacionales en Latam",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSEM4Mm10T254cWt3UmxHWjFzeTdKQ2lBOWVHYnZIbEl2ZjI5U05PbWVESU4wazhuZ0d1LTBLNWp4U0tIYkJvTTJZMXVTTXRIN1EwWUpLcWt0NDhLM0UwN1JFd2Rydy1NdVlaM3FLX3ptZUtXYzlvQ2hrcVVYalhWVzRoQlFzUFZCZVJxRTd2S3JiUzJjTGk5NV94VWpOODdIT2tUcHd2bE40ZDFxWF9aajRxa01Bd1RJemlTeGZUQjBtMWYwRy15ekdRSDRLWEctZGNxdVFmTjV3ZnhlQWww?oc=5",
+    "source": "Latam Fintech Hub",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "Takenos suma US$ 7 millones y acelera su expansión: apunta a más de 15 países de América Latina",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLVBLLWhVbi1CeS1US2JQUURMdG9lVXNFajdVUHFjbjd0Sk9JR0kwdnp1TVNtV0dNV1BocDktbzF0bkFSVjRENFdPc1lHd09zSXZHbDloaG1TYldNaktXQ3F3Q0VzRkhheXlJM2RXR21zSU9mZUg3MzdrSmtMdk9nU1l2cFJpUEdaUzRHZzRMWVNZdTZMaXBWMm8zU090Y1FNQ1hwRzdDai1iSVZYWUtaNUhKM2tQUDIybUxSeDNJa1VMNV9WNFpLSkc0NknSAdIBQVVfeXFMUEtkT05wZG1LNzEtYnZxRTVfZ01iV2FmSGpVcUZ6TVc4U1BuTGdzWGVwNlppU0pDSWU5WjhlMGJwc2UwcTBWMEFSTUxvdm51OFdRb3Q1ZGY1R0NfUFVtaDVVVzVCZTNlMHVtMDZLV2hpdDUzZ1hKLTN2dWQ1MEE4cGdLQUFYRllxUzJaQ19PVzlua3dCeVZBOXZiUjNYRVZ1b1dmRTVUUnUxd2VBSl9JRTBtTFFPS0tYMVp4LWlKQldSTzNZYXpZQUdsMGZ3WmdKQXFR?oc=5",
+    "source": "Forbes Argentina",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "Fintech argentina consigue u$s7 millones para expandirse por Latinoamérica",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRV9oNHBzTW1IcUtiMXRISmdNMS1lZWJUV1hQX2lCV3hQQW9ReU1ucXEyMi16M01LV2p2TGdrWVZNVEtZV3MxNkZGVlBDVXpxUzZ2anE1dXA2R1JWTHp6VmtZekI1QkIzYXVnNjBTeFl1bTNLVDkwTW5XWnNZMXNqdWhfSDdrLXJ3eV9qc0NITjl3dnZ0Mm10V3Z1a0s2Wmt6aFhUa1BOdjllYzJZWE5MSdIBtgFBVV95cUxNOW1vMEdvblo4Q1JOZkIxbC1OUG1RS2VfOFJMX0czMUpiT3BKeXZVb1VVdGVNZm5ocERiU2xKTENScHNla3R4eU9JTkpiUTlaYU1wQ1VqTld1OUU3STZmWTZQYnpZMTg2b1pIN1VFU1l4RXplM0ZjeVdXbE44VXVPYUdxV3FLRFhKVmpMZkNvTGVLUVpjdzlrYkM2WUthM1U0aGZueWs5S3Q0ejBnS1FqWEYteTZTUQ?oc=5",
+    "source": "iProUP",
+    "date": "2026-11-04"
+   },
+   {
+    "title": "Una fintech argentina levantó U$S 7 millones y se prepara para llegar a más de 15 países en 2027",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVC0xZEpKbGJWX2VZZy05NG1Rdy1hRVNXSU5qU1k5MElpaGlEU1VRcW0xME5RdHpMRUdxSnAyT1hMcjhGQ2xnVjZjYWRfMlFqdzZ2cks4aG5ObkxtQ2lXWXV0SUFJc2pGRGd3RkhadEJWcEtXTjM3Xy1FaHZrQVRLU1FiNFVRSHJ0RnQxYkVHcnpCcXZLaWZqdTUtVW5pUUNwQXV5Tmx5bm1SYzRQdURjS21fWFgzQ196a2VjaThR?oc=5",
+    "source": "La Voz del Interior",
+    "date": "2026-11-05"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://kucoin.com/es/news/flash/takenos-completes-7m-seed-round-follow-on-total-funding-reaches-12m",
+   "https://larazon.bo/energias-negocios/2026/11/07/takenos-como-pasar-a-ser-una-etf-regulada-impacta-en-los-usuarios",
+   "https://www.latamfintech.co/articles/fintech-argentina-takenos-levanta-us-7m-para-expandir-su-plataforma-de-transacciones-internacionales-en-latam",
+   "https://camarafintech.org/ronda-de-inversion-de-takenos-usd-7-millones/",
+   "https://www.startupjournal.io/article/takenos-extension-seed-7-millones-expansion-15-paises",
+   "https://sceniuslatam.substack.com/p/why-cant-a-mexican-fintech-ipo-at"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
+  "en_portafolio": false
+ },
+ {
   "nombre": "UIN",
   "website": "",
   "pais": "Argentina",
@@ -1081,6 +1259,73 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Efy Finance",
+  "website": "https://efyfinance.com",
+  "pais": "Panamá",
+  "ciudad": "Desconocida",
+  "sector": "Fintech",
+  "descripcion": "Plataforma de pagos transfronterizos con cuentas multimoneda, tarjetas Visa, OTC y rampas USDT para importadores, exportadores y empresas, con liquidación local en 17 países.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Andrés Tobón",
+    "antecedentes": "CEO y cofundador; estudió en Universidad del Norte. Experiencia previa y exits no encontrados."
+   },
+   {
+    "nombre": "Alejandra Gaviria",
+    "antecedentes": "COO y cofundadora. Antecedentes no encontrados."
+   },
+   {
+    "nombre": "Peter Pinedo",
+    "antecedentes": "CTO y cofundador. Antecedentes no encontrados."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$5M seed anunciada el 13 de octubre de 2026, liderada por Tether con Astor Management AG y ángeles; Orbit Ventures participó en una ronda previa.",
+  "traccion": "Más de 25.000 cuentas activas y más de US$2.500M en volumen acumulado (según la empresa); unos US$1.000M en 2024; 75 personas. Ingresos no encontrados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 12,
+   "sector": 14,
+   "modelo": 3,
+   "traccion": 16,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Fintech de pagos para empresas con operación real en LATAM y buena tracción de volumen, cercana a los patrones de fintech para pymes del portafolio. Ya cerró su seed con un lead de peso (Tether), así que solo encaja como seguimiento o follow-on futuro.",
+  "riesgos": "La ronda seed de US$5M ya está cerrada y es demasiado grande para un cheque inicial de US$250-500K; además, el equipo fundador no muestra experiencia previa verificable y el modelo depende de stablecoins (riesgo regulatorio).",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Andrés, felicitaciones por la ronda seed liderada por Tether y por la tracción de Efy Finance en pagos transfronterizos en LATAM. Soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en fintech para pymes en la región. Nos gustaría conocer mejor la visión de Efy y mantenernos en contacto de cara a su próxima etapa. ¿Tendrías 20 minutos en las próximas semanas?",
+  "confianza": "media",
+  "score": 53,
+  "fit": 45,
+  "key": "efyfinance",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Panama-based Efy Finance raises $5M seed round led by Tether, to expand Latin American payments",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTENuX3FoSDc0YmtrdUZjVy1ya0Fvb05peUZmNFhFVm1NcUVTX24wWFhqZy1BczVycDlNY0JUcjkzdVh3bzJaY0t4azhHdW9mNUxGTHZJcENmTkEtdFRVMmpQQzJrVUtmUVQ5MHhTVTZIZW5YQzJ2bnZKbHl6T2hzWWI3bDZJam5jMzdCdEFwQ05UTndpWVMyWXcySHRNZUdJX2VvbUtBNWhJZlZWb1NCMGhPaE5ONEcyUTV4dFFFTkhzakVRNXFRUw?oc=5",
+    "source": "TNGlobal",
+    "date": "2026-11-05"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://latamlist.com/efy-finance-secures-investment-from-tether-to-expand-across-latin-america/amp/",
+   "https://www.crunchbase.com/organization/efinti/growth_outlook",
+   "https://www.crunchbase.com/organization/efinti",
+   "https://www.alchemy.com/dapps/efy-finance",
+   "https://colombiafintech.co/2025/10/09/efy-finance-impulsa-la-revolucion-de-los-pagos-transfronterizos-paraimportadores-y-exportadores-en-america-latina/",
+   "https://beinsure.com/news/tether-invests-in-efy-finance/"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
   "en_portafolio": false
  },
  {
@@ -2197,6 +2442,73 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Mozart",
+  "website": "",
+  "pais": "Colombia",
+  "ciudad": "",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Plataforma de agentes de IA con dispositivo físico y sistema operativo Linux que ejecutan tareas sobre las herramientas existentes de las empresas.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Camilo Ortiz",
+    "antecedentes": "CEO de Mozart; vinculado a Simphony Technologies (desde 2014, 120+ proyectos entregados). Sin exits ni scale-ups documentados."
+   },
+   {
+    "nombre": "Guido Vargas",
+    "antecedentes": "Director de ventas (CSO); relaciones con empresas durante diez años. Sin más antecedentes verificados."
+   },
+   {
+    "nombre": "Samuel Benjumea",
+    "antecedentes": "Director de marketing. Sin antecedentes verificados."
+   }
+  ],
+  "etapa": "desconocida",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Sin clientes, ingresos ni crecimiento verificados. Solo cobertura de prensa y relaciones previas de Simphony con empresas; foco inicial en Colombia.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 14,
+   "sector": 17,
+   "modelo": 2,
+   "traccion": 3,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Encaja con la ambición de Latin Leap en IA aplicada y SaaS B2B, con equipo colombiano y equipo comercial/ejecutivo ya formado. Falta evidencia de tracción, ronda y perfil técnico del equipo.",
+  "riesgos": "Competencia directa de OpenAI, Anthropic y Google, más un componente de hardware y sin evidencia de clientes, ronda ni fundador técnico claro.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Camilo, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed, con foco en IA aplicada. Leímos sobre Mozart y nos interesa su enfoque de agentes que operan sobre las herramientas que las empresas ya usan. ¿Podrían compartirnos cuántos clientes usan o prueban Mozart hoy y si están levantando capital? Con gusto agendamos 30 minutos para conocerlos.",
+  "confianza": "baja",
+  "score": 44,
+  "fit": 36,
+  "key": "mozart",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Mozart, la IA colombiana que ejecuta tareas en empresas",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZlViRi1XNkVXb29tMkVaZmE5OGFvWVhiWlFNTFRoZGg0Vnh1a2hJYmRVZ3BhcjVWSjVvaHBqTnlSNkY4cm5EYThFTDRfSmdEZE50WVBkZEc5M2JybU5JWFE5bWtaOUFwUkNIaHRfRkk1RWkzSWViX0pxSmlOV2M0bTBWdjNPVDVyMU1OTUJn?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-05"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.enter.co/startups/mozart-asi-funciona-la-inteligencia-artificial-colombiana-que-ejecuta-tareas-en-las-empresas/",
+   "https://www.portafolio.co/tecnologia/mozart-la-apuesta-colombiana-que-busca-competir-en-el-mercado-global-de-la-ia-empresarial-505767",
+   "https://ecosistemastartup.com/mozart-la-ia-colombiana-que-ejecuta-tareas-en-empresas/",
+   "https://www.crunchbase.com/organization/mozartai",
+   "https://ecosistemastartup.com/mozartai-llega-a-mexico-con-us10m-para-automatizar-la-salud/",
+   "https://es-us.noticias.yahoo.com/startup-salud-colombiana-mozartai-prepara-224000168.html"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Neolift",
   "website": "https://neolift.com.ar",
   "pais": "Argentina",
@@ -2544,6 +2856,65 @@
   ],
   "first_seen": "2026-10-26",
   "last_seen": "2026-10-26",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Club del Agua",
+  "website": "clubdelagua.cl",
+  "pais": "Chile",
+  "ciudad": "",
+  "sector": "ClimateTech",
+  "descripcion": "Telemetría IoT para monitorear niveles de agua en estanques, enviar alertas y automatizar bombas de forma remota, bajo suscripción mensual.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Francisco Correa Moller",
+    "antecedentes": "Ingeniero civil, fundador; sin información sobre experiencia previa, exits o scale-ups."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info",
+  "traccion": "Más de 100 dispositivos en 10 regiones de Chile, más de 800 usuarios finales, cerca de 1,2 millones de litros diarios monitoreados; ingresos no reportados, cifras sin auditar.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 8,
+   "sector": 8,
+   "modelo": 2,
+   "traccion": 11,
+   "etapa_timing": 10
+  },
+  "tesis_match": "IoT con suscripción recurrente para pymes y comunidades rurales desatendidas, con tracción temprana en 10 regiones de Chile. Se parece al patrón de infraestructura para segmentos pequeños, aunque no es fintech, comercio ni IA.",
+  "riesgos": "Equipo poco documentado (un solo cofundador identificado, sin experiencia previa visible), sin datos de ingresos ni de ronda y con sector hardware/agua alejado del núcleo del portafolio.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Francisco, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos el crecimiento de Club del Agua, con más de 100 dispositivos en 10 regiones de Chile, y nos pareció interesante el modelo de suscripción. Nos gustaría conocer más sobre el equipo, los ingresos recurrentes y sus planes de expansión y financiamiento. ¿Tendrías 20 minutos esta semana o la próxima?",
+  "confianza": "media",
+  "score": 39,
+  "fit": 29,
+  "key": "clubdelagua",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Club del Agua: startup chilena que monitorea agua con IoT",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNC1vOTQ0YVJ1cVhaZ1pXVS1qNzVoZzRBQk4zUWl3Z2RBLTZESmhUcm1BcmRUQk9oZmNlNDlhVjU0aExHa3JUd1lxajR3cVJ0dlhEYXdfWF9xaTNRZnJ3dXhQWk9LdHpNaE4temF2ZnE4QkdQamo1RFZWT3hobzhrblIzSGN6LWJFOThzVFFLVlE?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-03"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/club-del-agua-startup-chilena-que-monitorea-agua-con-iot/",
+   "https://ecosistemastartup.com/club-del-agua-la-startup-chilena-que-vigila-el-agua-con-iot/",
+   "https://ecosistemastartup.com/club-del-agua-startup-chilena-que-digitaliza-estanques/",
+   "https://ecosistemastartup.com/club-del-agua-telemetria-iot-para-el-agua-en-chile/",
+   "https://ecosistemastartup.com/club-del-agua-la-startup-chilena-que-digitaliza-el-agua/",
+   "https://3ie.usm.cl/startup-3ie-usm-busca-digitalizar-la-gestion-del-agua-en-condominios-sanitarias-y-empresas-con-tecnologia-iot/"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
   "en_portafolio": false
  },
  {
@@ -3184,6 +3555,69 @@
   ],
   "first_seen": "2026-11-02",
   "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Clip",
+  "website": "https://www.clip.mx",
+  "pais": "México",
+  "ciudad": "Ciudad de México",
+  "sector": "Fintech",
+  "descripcion": "Fintech de pagos con terminales punto de venta para pymes en México; adquirió Pulpos (POS, inventario, facturación CFDI) para ampliar su gestión empresarial.",
+  "modelo_comparable": "El Square de LATAM",
+  "fundadores": [
+   {
+    "nombre": "Adolfo Babatz",
+    "antecedentes": "CEO; antes Business Manager de PayPal México. Exits previos: no encontrado."
+   },
+   {
+    "nombre": "Vilash Poovala",
+    "antecedentes": "Cofundador; sin información de antecedentes en la investigación."
+   }
+  ],
+  "etapa": "series-a-o-mas",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "sin info en las fuentes; por su escala y por adquirir otra empresa, es una compañía de etapa avanzada",
+  "traccion": "Adquirió Pulpos (octubre 2026, monto no revelado), señal de escala y capacidad de M&A. Cifras de comercios o volumen no incluidas en las fuentes.",
+  "filtros": {
+   "geografia": true,
+   "etapa": false,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 18,
+   "sector": 15,
+   "modelo": 7,
+   "traccion": 14,
+   "etapa_timing": 0
+  },
+  "tesis_match": "El sector (fintech para pymes y POS) encaja con el portafolio, como Cubo y Rintin. Pero Clip es una empresa en etapa de crecimiento avanzada, muy por encima del pre-seed/seed y del tamaño de cheque del fondo.",
+  "riesgos": "Etapa Serie A o posterior: queda fuera del mandato de pre-seed/seed y de los cheques de US$250K-500K.",
+  "accion": "descartar",
+  "mensaje_contacto": "No aplica contacto de inversión: Clip está fuera de etapa. Como alternativa, se puede seguir a Pulpos y a otras startups de gestión para pymes, o explorar un contacto de ecosistema con el equipo de Clip para detectar founders que salgan de ahí.",
+  "confianza": "alta",
+  "score": 30,
+  "fit": 20,
+  "key": "clip",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Clip acquires Pulpos to expand business management services",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR0E5Y2hqOGEzTFpCZnA3bXBGRkdnN0J5eVRHUU1KYWxlT2NfblUtcTQzWExNeDJ2NWtXOURiSi1YaC1Rc0pCSU9YWE5IZXJHdHJJQmNtU2xhdDhKeU16T3hpQ2ptVDduSm1OTTdsYjNtUy1DRGNnYmlabnJ3ZTduVGpzQ21vZXd3N3fSAY8BQVVfeXFMT3dGMjdoQXNackNEMTdkN2ZIN2JYd3pTZXhWTU1yZHR2WklOMGsxUlBzYU15eU9TTGYtQ1ZiUnhFVVR0ZlI3QjRhdDFuTTI2M015UnNXaEFFZHJfX29USy00QlNjMUtxQ2pFa3lHYnJkYjNVYlpMNEFNeklBQVY3LTRyR1JRa3hJSjdKT1c5dWM?oc=5",
+    "source": "LatamList",
+    "date": "2026-11-02"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.latamfintech.co/articles/unicornio-clip-adquiere-pulpos-plataforma-de-gestion-de-negocios-en-la-nube-para-ampliar-sus-servicios-a-comercios-en-mexico",
+   "https://x.com/edomexaldia/status/2115458219267039723",
+   "https://www.cronista.com/mexico/finanzas-economia/clip-compra-la-firma-de-software-pulpos-y-amplia-su-negocio-mas-alla-de-los-pagos-digitales/",
+   "https://www.linkedin.com/in/santiago-alvarez-patron/",
+   "https://latamlist.com/clip-acquires-pulpos-to-expand-business-management-services/",
+   "https://dealroom.co/news/167677-clip-buys-pulpos-to-turn-payments-into-a-full-business-platform/"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
   "en_portafolio": false
  },
  {
@@ -3850,6 +4284,140 @@
   ],
   "first_seen": "2026-11-02",
   "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Pulpos",
+  "website": "https://pulpos.com",
+  "pais": "México",
+  "ciudad": "Ciudad de México",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "SaaS en la nube para comercios minoristas y mayoristas: punto de venta, inventario, facturación CFDI, catálogo en línea, crédito a clientes y agentes de IA en WhatsApp.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Franco Silvetti",
+    "antecedentes": "Cofundador (2023); experiencia previa y exits no encontrados."
+   },
+   {
+    "nombre": "Frank Martin",
+    "antecedentes": "Cofundador (2023); experiencia previa y exits no encontrados."
+   },
+   {
+    "nombre": "Lucas Cortés",
+    "antecedentes": "Cofundador (2023); experiencia previa y exits no encontrados."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Ronda de US$5M liderada por Dalus Capital (fecha en conflicto: 2025 o abril 2026); semilla de más de US$4M en abril de 2024 con a16z, H20 Capital, Latitud y Newtopia.",
+  "traccion": "Más de 12,000 comercios en 2026 según Wikipedia; crecimiento reportado de 300% anual en 2024; ingresos no encontrados; opera solo en México.",
+  "filtros": {
+   "geografia": true,
+   "etapa": false,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 8,
+   "sector": 15,
+   "modelo": 3,
+   "traccion": 14,
+   "etapa_timing": 0
+  },
+  "tesis_match": "Encaja en sector (SaaS B2B para pymes con IA en WhatsApp, cercano a Rintin y Keybe/Dapta) y tiene buena tracción. Sin embargo, fue adquirida por Clip (anuncio del 28 de octubre de 2026), así que ya no es invertible en pre-seed ni seed.",
+  "riesgos": "Ya fue adquirida por Clip, por lo que no hay ronda abierta ni oportunidad de inversión; además no hay datos verificados sobre el historial de los fundadores.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Franco, felicidades por la adquisición de Pulpos por parte de Clip; es un gran resultado para un equipo que construyó en tan poco tiempo. En Latin Leap invertimos en pre-seed y seed en LATAM, con foco en SaaS B2B, IA y herramientas para pymes. Nos gustaría conocer en qué estás trabajando ahora y mantenernos en contacto por si montas algo nuevo. ¿Tomamos un café virtual?",
+  "confianza": "alta",
+  "score": 30,
+  "fit": 20,
+  "key": "pulpos",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Clip acquires Pulpos to expand business management services",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR0E5Y2hqOGEzTFpCZnA3bXBGRkdnN0J5eVRHUU1KYWxlT2NfblUtcTQzWExNeDJ2NWtXOURiSi1YaC1Rc0pCSU9YWE5IZXJHdHJJQmNtU2xhdDhKeU16T3hpQ2ptVDduSm1OTTdsYjNtUy1DRGNnYmlabnJ3ZTduVGpzQ21vZXd3N3fSAY8BQVVfeXFMT3dGMjdoQXNackNEMTdkN2ZIN2JYd3pTZXhWTU1yZHR2WklOMGsxUlBzYU15eU9TTGYtQ1ZiUnhFVVR0ZlI3QjRhdDFuTTI2M015UnNXaEFFZHJfX29USy00QlNjMUtxQ2pFa3lHYnJkYjNVYlpMNEFNeklBQVY3LTRyR1JRa3hJSjdKT1c5dWM?oc=5",
+    "source": "LatamList",
+    "date": "2026-11-02"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://latamlist.com/clip-acquires-pulpos-to-expand-business-management-services/",
+   "https://app.dealroom.co/news/feed/clip-acquires-pulpos-and-appoints-ex-toast-cto-debra-chrapaty-to-its-board",
+   "https://dealroom.co/news/167677-clip-buys-pulpos-to-turn-payments-into-a-full-business-platform/",
+   "https://tracxn.com/d/companies/clip/__Uxg5yknGkxjSuIY6vJZQl9tRwtA6sTZmuJZzPzsDe20",
+   "https://edomexaldia.com/clip-fortalece-su-oferta-de-software-con-la-adquisicion-de-pulpos-e-incorpora-a-debra-chrapaty-a-su-consejo-de-administracion/",
+   "https://x.com/edomexaldia/status/2115458219267039723"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Yunno",
+  "website": "yunno.com.mx",
+  "pais": "México",
+  "ciudad": "Querétaro",
+  "sector": "Consumo / Marketplace",
+  "descripcion": "Desayunos instantáneos liofilizados, sin refrigeración y sin azúcar añadida, vendidos por DTC y B2B2C con producción tercerizada.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Carlos Jair Nara (CEO)",
+    "antecedentes": "Exalumno EXATEC del Tec campus Querétaro; sin exits ni experiencia previa relevante encontrada."
+   },
+   {
+    "nombre": "Jaqueline Gutiérrez (CMO)",
+    "antecedentes": "Exalumna EXATEC del Tec campus Querétaro; sin experiencia previa en scale-ups encontrada."
+   },
+   {
+    "nombre": "Miguel Ángel Bazúa (CCO)",
+    "antecedentes": "Exalumno EXATEC del Tec campus Querétaro; sin experiencia previa en scale-ups encontrada."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "levantando",
+  "ultima_ronda": "Busca US$850K de semilla a US$4,8M pre-money (~15%). Portafolio de WORTEV CAPITAL desde 2021 y apoyo de Marcus Dantus tras Shark Tank México; montos y fechas sin info.",
+  "traccion": "358 puntos de venta en la nota más reciente (otras fuentes dicen 500 y 750). Ingresos no auditados e inconsistentes entre fuentes. Pruebas en dos países.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": false
+  },
+  "puntajes": {
+   "equipo": 11,
+   "sector": 6,
+   "modelo": 2,
+   "traccion": 10,
+   "etapa_timing": 20
+  },
+  "tesis_match": "Levanta una semilla ahora en México, con canal DTC y presencia retail. Sin embargo, es un CPG de alimentos con manufactura tercerizada, lejos de la tesis de tecnología como catalizador, IA o infraestructura para comercio.",
+  "riesgos": "No es una empresa de base tecnológica (la ventaja es el producto de liofilización, no software), y las cifras de tracción son inconsistentes entre fuentes.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Carlos, felicitaciones por lo que están construyendo en Yunno y por la ronda en marcha. En Latin Leap invertimos en startups donde la tecnología es el motor del negocio, y por ahora Yunno se acerca más a un modelo de consumo tradicional, así que no daremos el paso en esta ronda. Nos encantaría seguir su evolución, sobre todo si el canal digital o los datos se vuelven una ventaja diferencial. ¡Mucho éxito con el cierre!",
+  "confianza": "media",
+  "score": 30,
+  "fit": 20,
+  "key": "yunno",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Yunno: desayuno instantáneo mexicano busca US$850K",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPT1ZFSlJwUTlnZjBOaENIWHV3RDh4NXQ1a3FSam5xX25WM2xnaDhHQUtMcGJCRmFGQmozLVV1b004TDRJZjFxR2doeVZTYjcyRk1RVkItNFh6ejBVS01jLUpFZXkxc3huOGM0Q3BlWFhuLVRBT1NZU3ZDa0IzMG12UklWMWVidw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-03"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.pronetwork.mx/yunno-la-startup-mexicana-que-quiere-reinventar-el-desayuno-instantaneo/",
+   "https://elporvenir.mx/joven/instantaneo-exatec-impulsan-un-desayuno-nutritivo-en-mexico/793847",
+   "https://ecosistemastartup.com/yunno-desayuno-instantaneo-mexicano-busca-us850k/",
+   "https://arturovillarrealtorres.substack.com/p/de-20-a-200-sucursales-cual-fue-la",
+   "https://www.linkedin.com/company/yunnomx",
+   "https://conecta.tec.mx/es/noticias/queretaro/emprendedores/alimento-saludable-exatec-crean-desayuno-instantaneo-y-nutricional"
+  ],
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
   "en_portafolio": false
  },
  {
