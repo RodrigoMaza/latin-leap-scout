@@ -968,6 +968,12 @@
     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOV0tDZWFPYzc3UWJyTktxS3RHNmMtUGdFSWp0aC1PaHlXVl9VdHNBaWEwb1JVSkZMWDBSOWNhbURCR2JtZnIwOWdPSmZ4TWJVMkpsS0ZIVUM0UVh6SWlHUkNqOEFMYmFXRlVoazJlN0lqcl9PRFF5cGw3cGdhUC11Sm9fN19yS1pQaWJNc19OM3F0Zw?oc=5",
     "source": "El Ecosistema Startup",
     "date": "2026-11-15"
+   },
+   {
+    "title": "Delfi, moda con IA argentina que llega a la Casa Blanca",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSTVIY083amJGMjdsY1ZGbHFkWnNWV3JRdVRBMWNoMDJoNGVaVTlaMjBlZlFpWkJURnBFbFFMbjI1R0tPU2lwR3prYlY1czNZbVo0cUdQTVJjTG1TRTVCYTBOSktHcEhBSXpKNU45dWxfeHRrcGFrb2I5MnY2WTBmbmZOZUVlelh0c3N0SVZR?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-19"
    }
   ],
   "fuentes_investigacion": [
@@ -979,7 +985,7 @@
    "https://bahiacesar.com/2026/05/12/una-inteligencia-artificial-argentina-transforma-el-comercio-electronico-de-la-moda/"
   ],
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-23",
   "en_portafolio": false
  },
  {
@@ -1123,6 +1129,24 @@
     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSURLaFlBcG5GazJmdk44LUZFNk5hdFplaUl6a1hVQmtpb3RMUXJnUXg0cjVNVXJvSkxEemhqSFd0NjR6SmxYNkdEMUo1SG01RnhzOVFKWU9TZFNkbTJmNHB6dkQxYnQyMnBXa2ozMkZsWlE4aTkyZm9MRVdmXzBmVE1YR2Z0Y2tfV1E?oc=5",
     "source": "El Ecosistema Startup",
     "date": "2026-11-14"
+   },
+   {
+    "title": "Vuun, startup fundada por un paisa, levanta US$525.000 para expandirse en México y Perú",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZE50VUh6V2tyaFBQVEE5RG5xalZuc2hlY1NpNU05TEhSLVFSUVlJdFhSaUEyLWx2ZEp6S3FWQ3FScTl6MUxZblkxUDJXbjZoZ0hjSjQ5TFEyWjFSRldnS3BXN2E4NnBMQ1hPRHh2ckZkLXpnVE02VVVzY1lFWjFmNnM0M0FNQU0zbU42QkNVdkR4LTNJajhveE1EM3hKVlVZMkZVQ2dNTkttVi1jaXlZRA?oc=5",
+    "source": "El Colombiano",
+    "date": "2026-11-21"
+   },
+   {
+    "title": "Vuun, proptech colombiana, levanta US$525.000 y va a México",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWi0zdzRFYTFHdmM3OG03Smc2cFUxbEh5ak05TGtBMU5KVlpKUzZTZ3Y5anY2eGZRcTMtZEszMUpZNFR5UWZmUzV2XzR6RmpmcmtSeC1SdkdpWkdOSk5QU2ZJLXVtR0F2b3Z5TjZfSzlKT0tjNHl5QmlBX2V5OUVtNFdhbmhTTnRYSlFGbzJwc2s?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-21"
+   },
+   {
+    "title": "Vuun, proptech colombiana, levanta US$525.000 en pre-seed",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWXZUU01YRkZlTnZJTl8wYUFnNHZuM25kLXJuWUw0Wi1NNURubGlOQ2VYZHNnRkdYV2M5T2k3cXZ0aG1GRng4MGdHcWM1Zk5uVmg4eE9RUDlnUnJnX1RlMlJEdU5SOWRZano1Z3pUUzhCbnE5MTNrOUF6MGR2V1k5QlNzSmdqYzQyU05oZjFB?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-22"
    }
   ],
   "fuentes_investigacion": [
@@ -1134,7 +1158,7 @@
    "https://app.dealroom.co/companies/vuun"
   ],
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-23",
   "en_portafolio": false
  },
  {
@@ -1597,6 +1621,73 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Akua",
+  "website": "",
+  "pais": "Uruguay",
+  "ciudad": "Montevideo",
+  "sector": "Fintech",
+  "descripcion": "Infraestructura cloud de adquirencia y pagos con IA para bancos y empresas de pagos, que busca reemplazar redes de pagos antiguas.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Carlos Marín",
+    "antecedentes": "CEO colombiano; roles clave en PayU, Mastercard y Jeeves."
+   },
+   {
+    "nombre": "Juan José Behrend",
+    "antecedentes": "CTO uruguayo; previamente en dLocal, Pomelo y PedidosYa."
+   },
+   {
+    "nombre": "Rodrigo Rodrigues",
+    "antecedentes": "Director de operaciones brasileño; trayectoria en PayU, Mastercard y Jeeves según la fuente."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Inversión estratégica de Itaú Ventures (monto no divulgado, 16 nov 2026). Antes: seed de US$8,5M en oct 2025 (Flourish Ventures y Cathay Latam, con Atlántico, Honey Island 4UM, Krealo y Simma Capital) y pre-seed/seed de US$4,3M en oct 2024 (Propel y H2O). Total ~US$13M.",
+  "traccion": "Itaú es el primer cliente piloto, empezando por Uruguay. Opera o planea operar en Brasil, Colombia y Chile. Sin ingresos ni volumen real divulgados; solo capacidad declarada de 50M de transacciones diarias.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 23,
+   "sector": 11,
+   "modelo": 2,
+   "traccion": 8,
+   "etapa_timing": 8
+  },
+  "tesis_match": "El equipo es muy sólido (dLocal, PayU, Mastercard, Pomelo, PedidosYa), completo y complementario, y el producto usa tecnología e IA en fintech. Sin embargo, es infraestructura B2B para bancos, no fintech para pymes, y la ronda ya está cerrada con inversionistas de primer nivel.",
+  "riesgos": "Han levantado ~US$13M con fondos líderes, así que un cheque de US$250-500K aportaría poco y la tracción comercial real (ingresos, más clientes aparte de Itaú) no está validada.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Carlos, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Seguimos con interés lo que están construyendo en Akua, y felicitaciones por la inversión de Itaú Ventures. Nos gustaría conocer cómo avanza el piloto con Itaú y sus planes de expansión. ¿Les parece una conversación breve en las próximas semanas para mantenernos en contacto?",
+  "confianza": "media",
+  "score": 52,
+  "fit": 44,
+  "key": "akua",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Itaú Ventures invierte en Akua, la paytech de Montevideo",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQmtEUUM4ejkxUnJyVzZYRXg1N3N3ZmpSZHdNMUtvLTFyYzhpWnBkOUJkSU55Wk55S29va3lxLXNrT1d3ekVVNmJiYlNKdW9zYVVnNzkzNm9ROGxpaE1SNHNISmV6dzVrLW93MmJEekUwd1ZTRU0yaS1VYm04SGRGMUpwZS1wSGJMMkJfME1EYw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-18"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.elobservador.com.uy/cafe-y-negocios/paytech-akua-da-el-batacazo-y-capta-inversion-us-85-millones-acelerar-su-expansion-latinoamerica-n6019802",
+   "https://ecosistemastartup.com/itau-ventures-invierte-en-akua-la-paytech-de-montevideo/",
+   "https://www.elobservador.com.uy/cafe-y-negocios/la-paytech-akua-cofundada-un-uruguayo-recibio-inversion-itau-ventures-impulsar-la-innovacion-los-pagos-ia-latinoamerica-n6064052",
+   "https://www.bloomberglinea.com/tecnologia/la-paytech-latina-akua-levanta-us43-millones-en-ronda-de-capital-semilla/",
+   "https://ecosistemastartup.com/itau-y-btg-pactual-apuestan-por-startups-en-uruguay/",
+   "https://www.forbesuruguay.com/negocios/itau-ventures-invierte-akua-paytech-desarrollo-montevideo-n102686"
+  ],
+  "first_seen": "2026-11-23",
+  "last_seen": "2026-11-23",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Sintropix",
   "website": "https://sintropix.com/",
   "pais": "Chile",
@@ -1657,6 +1748,73 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "CryptoMate",
+  "website": "https://cryptomate.me",
+  "pais": "Argentina",
+  "ciudad": "Buenos Aires",
+  "sector": "Fintech",
+  "descripcion": "Infraestructura en marca blanca que convierte efectivo en USDC vía MoneyGram y ofrece adelantos con Bitcoin como garantía a través de fintechs socias.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Alan Boryszanski",
+    "antecedentes": "CEO y cofundador; cofundador y director de tecnología de Lemon Cash, una de las crypto-fintech más grandes de Argentina."
+   },
+   {
+    "nombre": "Guido De Luca",
+    "antecedentes": "Cofundador; experiencia previa y exits no encontrados."
+   },
+   {
+    "nombre": "Paula Monticelli",
+    "antecedentes": "Cofundadora y CMO; experiencia previa y exits no encontrados."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "sin_info",
+  "ultima_ronda": "US$1.5M seed, febrero 2022, liderada por Stacks.ac, Flori Ventures, Gossamer Capital y Grand Park Ventures, con SBX Capital, Hashkey Capital y TVP; luego autofinanciada",
+  "traccion": "Dice procesar más de US$200M anuales en 12-13 países, con usuarios reales desde octubre 2026. Ingresos, clientes y crecimiento no verificados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 20,
+   "sector": 13,
+   "modelo": 2,
+   "traccion": 12,
+   "etapa_timing": 4
+  },
+  "tesis_match": "Fintech de infraestructura con un fundador técnico de una scale-up regional (Lemon Cash) y volumen declarado relevante. Encaja con el patrón de fintech para segmentos desatendidos, aunque con ángulo crypto/stablecoins.",
+  "riesgos": "No levanta capital ahora, cerró su seed en 2022 y se autofinancia. Su volumen declarado no está verificado y depende de MoneyGram. Los otros cofundadores no tienen antecedentes verificados.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Alan, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en fintech e infraestructura en LATAM. Vimos el anuncio de CryptoMate sobre efectivo a USDC con MoneyGram y los adelantos respaldados por Bitcoin, y nos pareció una propuesta muy interesante. ¿Están pensando en una nueva ronda en los próximos meses? Nos encantaría conocer mejor la tracción y los planes para 2027 en una llamada corta.",
+  "confianza": "media",
+  "score": 51,
+  "fit": 47,
+  "key": "cryptomate",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Startup argentina CryptoMate conecta efectivo con USDC y ofrece adelantos respaldados por Bitcoin",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOamhSMU1vdHBrQ25jSmhEcFR3cXpvV3JpQ3pfS08yenlpQVlqN3lqTklqZmRzNmJnVjNHZVhiekJnZHlkWUNfcFZySG4yOHNPbDVWRXlYTTVpam5BYXZnOGpWWFl6WTMwY0dlVVg5ZjBfMnNCRGtSaGxKVGtIOHlDRTJFcnNNbjB1d0N0bEw2Q2ZueHcwY3JXWkpMSTRDV3NrbVBlY2xQcGhuTXp2dWJkdVVqMGdvaDRTM0Zpc2FFa1Z1cW9laWQwMHFjTkpKb1QtSWpxZVoydVg1NVROWXk3bTgtYjJ3dw?oc=5",
+    "source": "DiarioBitcoin",
+    "date": "2026-11-19"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/cryptomate-convierte-efectivo-en-usdc-via-moneygram/",
+   "https://ecosistemastartup.com/cryptomate-efectivo-a-dolares-digitales-con-moneygram/",
+   "https://ecosistemastartup.com/cryptomate-la-fintech-que-une-efectivo-y-moneygram/",
+   "https://mercado.com.ar/ruta-digital/una-startup-argentina-reabre-la-puerta-del-efectivo-a-las-plataformas-cripto",
+   "https://www.diariobitcoin.com/argentina/startup-argentina-cryptomate-conecta-efectivo-con-dolares-digitales-y-ofrece-adelantos-respaldados-por-bitcoin/",
+   "https://ecosistemastartup.com/cryptomate-fintech-argentina-une-efectivo-y-stablecoins/"
+  ],
+  "first_seen": "2026-11-23",
+  "last_seen": "2026-11-23",
   "en_portafolio": false
  },
  {
@@ -2294,6 +2452,75 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-11-02",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "ByFy",
+  "website": "byfy.us",
+  "pais": "Argentina",
+  "ciudad": "Bahía Blanca",
+  "sector": "Logística / Movilidad",
+  "descripcion": "App de viajes y envíos en moto que sustituye la comisión fija por un aporte voluntario del conductor, de ~15% en promedio, como alternativa a Uber, DiDi y Cabify.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Juan Curcio",
+    "antecedentes": "CEO según iProfesional; experiencia previa, exits y estudios no encontrados. Spinoff de un equipo con 25+ años en desarrollo de software."
+   },
+   {
+    "nombre": "Bruno Palmieri",
+    "antecedentes": "Vinculado al proyecto en una nota de Bahía Blanca; rol exacto y trayectoria no encontrados."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "levantando",
+  "ultima_ronda": "Sin info de montos; financiamiento inicial de familiares, conocidos y ángeles. Seed en estructuración con Emprelatam, sin monto ni cierre.",
+  "traccion": "+20.000 pasajeros registrados y 1.000 conductores en Bahía Blanca y Punta Alta; 98% de viajes con aporte voluntario. Sin ingresos ni GMV, datos no auditados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 8,
+   "sector": 9,
+   "modelo": 3,
+   "traccion": 9,
+   "etapa_timing": 18
+  },
+  "tesis_match": "Cumple los filtros duros y está estructurando su seed, con tracción local temprana en movilidad. El encaje con la tesis es moderado: ride-hailing es adyacente a logística, no a los patrones de fintech pyme, IA o infraestructura para el comercio pequeño.",
+  "riesgos": "Modelo de ingresos basado en aportes voluntarios sin evidencia de sostenibilidad, en un mercado dominado por Uber y DiDi, con un equipo fundador poco documentado y tracción solo declarada.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Juan, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos la nota sobre ByFy y nos llamó la atención el modelo de aporte voluntario y la tracción en Bahía Blanca. ¿Podrían contarnos cómo van los ingresos por viaje, la retención de conductores y el estado de la ronda seed? Si les parece, agendamos una llamada de 30 minutos.",
+  "confianza": "baja",
+  "score": 47,
+  "fit": 29,
+  "key": "byfy",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "ByFy, la startup argentina que transforma el negocio de la movilidad",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVnM5VkljbWo3WFlib3JxLUZWaEFoOGc1U1llenRwUGlKY1pjeGx3UHZSU0ZMSmlOeS0wRUVET0huRmRtblRiV0dfVjlxa09hb0N4LWRkRzZJOGxGMEJZV0VoZkJWUWFqeElFQ1FyQnNwdTQyTGNiR2lqZ1ZZY3pLN1p1eDVfSmVyNTZfeDFRZmIwaW02blFhenowUXNneTZuVjVLc1Q3Nk56QXUycGV1aTJHZ3o?oc=5",
+    "source": "Agroempresario",
+    "date": "2026-11-16"
+   },
+   {
+    "title": "ByFy, la startup argentina de viajes sin comisión fija",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVmpGc19EWUNKN2ctVlpQVUtha25pUE94cDRxY1NNNDJ1ZTFPYS12bFE3QmNqS0xJZ0syNGVWZVJNTXZzbUdEa1EyV0FEVzFIVlRVQndRNTlMRjRlVDRMZERhV0o2OGtTV2J1R2UwMXZ4WXVkVVMxdVBVMFgwLVBZRWhOUjQ3ODdqX1p0VA?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-16"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/byfy-la-startup-argentina-de-viajes-sin-comision-fija/",
+   "https://www.linkedin.com/in/brunopalmieri/",
+   "https://agroempresario.com/publicacion/123816/byfy-la-startup-argentina-que-transforma-el-negocio-de-la-movilidad/",
+   "https://www.iprofesional.com/negocios/468950-el-modelo-de-movilidad-que-desafia-a-las-multinacionales-byfy-invierte-la-ecuacion-y-busc",
+   "https://apps.apple.com/ar/app/byfy-driver/id1582528286",
+   "https://apps.apple.com/ar/app/byfy/id1582871723"
+  ],
+  "first_seen": "2026-11-23",
+  "last_seen": "2026-11-23",
   "en_portafolio": false
  },
  {
@@ -3283,6 +3510,73 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Satellites on Fire",
+  "website": "https://www.satellitesonfire.com",
+  "pais": "Argentina",
+  "ciudad": "Desconocida",
+  "sector": "ClimateTech",
+  "descripcion": "Combina datos satelitales, cámaras e IA para detectar focos de incendio de forma temprana, sin infraestructura propia, con modelo freemium y seguros paramétricos.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Franco Rodríguez Viau (CEO)",
+    "antecedentes": "Cofundó el proyecto a los 16 años en 2020; el equipo representó a Argentina en la Olimpiada Internacional de Informática."
+   },
+   {
+    "nombre": "Joaquín Chamo",
+    "antecedentes": "Cofundador; mismo equipo fundador de origen escolar. Sin experiencia previa documentada."
+   },
+   {
+    "nombre": "Ulises López Pacholczak",
+    "antecedentes": "Cofundador; mismo equipo fundador de origen escolar. Sin experiencia previa documentada."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Seed de US$2,7M en abril de 2026, liderada por Dalus Capital con Draper Associates, Draper Cygnus, VitaminC y Savia Ventures; pre-seed previo de ~US$900K.",
+  "traccion": "92 millones de hectáreas cubiertas en 21 países, más de 70.000 usuarios, adopción por el Consejo Nacional de Bomberos de Argentina. Ingresos no reportados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 12,
+   "sector": 9,
+   "modelo": 1,
+   "traccion": 10,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Es una startup argentina de IA aplicada con base tecnológica sólida, en etapa seed y con respaldo de inversionistas de primer nivel. Encaja con la ambición en IA, pero no con los patrones del portafolio (fintech pyme, comercio pequeño, logística).",
+  "riesgos": "Seed de US$2,7M recién cerrado, sin ingresos verificados y con equipo joven sin experiencia operativa previa; el modelo de negocio (freemium y seguros paramétricos) aún no está probado.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Franco, felicitaciones por la final del Earthshot Prize y por el seed liderado por Dalus. Somos Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM, con interés en IA aplicada. Nos gustaría seguir de cerca la evolución de Satellites on Fire, sobre todo el lanzamiento de seguros paramétricos con AON, y conversar 20 minutos cuando sea buen momento.",
+  "confianza": "media",
+  "score": 40,
+  "fit": 32,
+  "key": "satellitesonfire",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Satellites on Fire: startup argentina en la final Earthshot",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcGVna2kwUHRROXpiMTl4NHNSSUhmRUIwQ3d6WDcxZHlxNmlmMlRtNFZhSWliTnJCN0FhQ2FINEhMeXZxSnFheDVYTEVYLWRmQ3REaFFtcG9KRUp5cnpPcTFqcEloeldwaVdTR3Q5eHM3ZU1DUV9zVkQweWJjejFxMW5BWmhKVldER2RLZ2ZfM1FxRUk?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-17"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.lacapital.com.ar/fnga/satellites-on-fire-tecnologia-argentina-anticiparse-al-fuego-n10290219.html",
+   "https://ecosistemastartup.com/satellites-on-fire-startup-argentina-en-la-final-earthshot/",
+   "https://thenextweb.com/news/satellites-on-fire-wildfire-ai-raises-2-7m",
+   "https://www.mdzol.com/sociedad/2026/11/19/la-startup-argentina-que-detecta-incendios-antes-que-la-nasa-y-sorprendio-al-principe-guillermo-1996609.html",
+   "https://es-us.noticias.yahoo.com/startup-argentina-detecta-incendios-nasa-104500446.html",
+   "https://kurrant.com/kurrantly-news/argentine-ai-startup-satellites-on-fire-raises-2-7m-to-beat-nasa-wildfire-alerts/"
+  ],
+  "first_seen": "2026-11-23",
+  "last_seen": "2026-11-23",
+  "en_portafolio": false
+ },
+ {
   "nombre": "Club del Agua",
   "website": "clubdelagua.cl",
   "pais": "Chile",
@@ -3603,6 +3897,69 @@
   "en_portafolio": false
  },
  {
+  "nombre": "Kunstig Aero",
+  "website": "https://kunstig.aero",
+  "pais": "Uruguay",
+  "ciudad": "sin info",
+  "sector": "IA / SaaS B2B",
+  "descripcion": "Deep tech uruguaya que instala sistemas de IA en aeropuertos para captar posiciones de aeronaves, voz y movimientos en superficie, con foco en seguridad aérea.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Lucca Ayerza",
+    "antecedentes": "Fundador y CEO, 18 años. Sin experiencia previa, exits ni estudios documentados."
+   },
+   {
+    "nombre": "Pedro Laborde",
+    "antecedentes": "Piloto comercial y licenciado en Negocios Digitales (ORT Uruguay). CPO / Chief Product and Technical Officer."
+   }
+  ],
+  "etapa": "pre-seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$920.000 (El Observador reporta US$925.000), nov 2026, liderada por Althing Ventures; antes US$725.000 en feb 2026 (Tim Draper ~US$625K, Shan Mehta US$100K)",
+  "traccion": "Observator instalado y facturando con un primer cliente pago en Watsonville (California); acuerdos preliminares con aeropuertos y alianza con Corporación América. Sin datos de ingresos.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 10,
+   "sector": 10,
+   "modelo": 1,
+   "traccion": 8,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Es IA aplicada de base tecnológica fuerte, con sede en Uruguay y en etapa pre-seed/seed, lo que encaja con la ambición del fondo en IA. Se aleja del patrón de portafolio (fintech pyme, comercio, logística) y del ADN de modelo probado.",
+  "riesgos": "Equipo muy joven y sin trayectoria operativa verificable, con mercado y cliente iniciales en EE. UU., ciclos de venta largos y regulados en aviación, y una ronda que acaba de cerrarse.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Lucca, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX. Vimos la noticia de su ronda y nos llamó la atención que Observator ya esté facturando en Watsonville. Nos gustaría conocer su visión hacia Guardian y cómo planean crecer en LATAM. ¿Les parece si conversamos 20 minutos en las próximas semanas para estar en contacto de cara a su próxima ronda?",
+  "confianza": "media",
+  "score": 37,
+  "fit": 29,
+  "key": "kunstigaero",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Kunstig Aero, IA uruguaya para aviación, suma US$920.000",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcUdyS2VaWmxYcWN0SHlnWlNPT0xTRFRfd0loY1doM3dYc0UzMVNRMm9ld0lYT3kyN3Y3a0dXeno2N2p3SFJBV1Z2R0hFUDhRYW5CbkdxU0QyY1I0YzloNHc1X0NvRkNQR0ZVcG5fZDdiVnBBdkVKc2RvNmEyOW96aENoVFFFRFBFTjhDTg?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-20"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://www.draper.vc/portfolio/kunstig-aero",
+   "https://ecosistemastartup.com/kunstig-aero-ia-uruguaya-para-aviacion-suma-us920-000/",
+   "https://x.com/UniversidadORT/status/2019757980523065576",
+   "https://www.elobservador.com.uy/empresa-uruguaya-cerro-una-ronda-us-925-mil-prevenir-accidentes-aereos-inteligencia-artificial-n6064500",
+   "https://www.elobservador.com.uy/ciencia-y-tecnologia/uruguayo-18-anos-capto-us-625000-del-famoso-inversor-tim-draper-su-startup-ia-y-aviacion-n6033509",
+   "https://es-us.noticias.yahoo.com/lucca-ayerza-uruguayo-18-a%C3%B1os-130000509.html"
+  ],
+  "first_seen": "2026-11-23",
+  "last_seen": "2026-11-23",
+  "en_portafolio": false
+ },
+ {
   "nombre": "FinMaq",
   "website": "https://finmaq.com.co",
   "pais": "Colombia",
@@ -3764,6 +4121,73 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-24",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Ainwater",
+  "website": "ainwater.com",
+  "pais": "Chile",
+  "ciudad": "Desconocida",
+  "sector": "ClimateTech",
+  "descripcion": "Software SaaS con IA para monitorear y optimizar plantas de tratamiento de aguas residuales de sanitarias y agroindustria, con cobro por suscripción mensual.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Camilo Huneeus",
+    "antecedentes": "CEO. Ingeniero industrial químico de la Universidad Católica. Sin experiencia previa ni exits encontrados."
+   },
+   {
+    "nombre": "Martín Concha",
+    "antecedentes": "CFO según Dealroom. Ingeniero en biotecnología. Sin experiencia previa encontrada."
+   },
+   {
+    "nombre": "Marcos Pérez",
+    "antecedentes": "CTO. Doctor en física teórica y cientista de datos. Sin experiencia previa encontrada."
+   }
+  ],
+  "etapa": "seed",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "US$1,34M (segunda ronda, noticia del 2026-11-23) liderada por iThink VC con Araucaria Venture, Südlich Capital, Imagine Ventures, Carbono3, Reciprocal, Prosper Global y un ángel. Antes: US$537K en agosto de 2024 (Südlich Capital, Imagine Group, Buildtech Ventures) y fondos Corfo.",
+  "traccion": "Sin cifras de ingresos ni clientes. Solo se sabe que tiene producto SaaS B2B con cobro mensual, a veces ligado al ahorro energético, y que levantó dos rondas.",
+  "filtros": {
+   "geografia": true,
+   "etapa": true,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 12,
+   "sector": 8,
+   "modelo": 1,
+   "traccion": 4,
+   "etapa_timing": 8
+  },
+  "tesis_match": "Es SaaS B2B con IA, un patrón que el fondo busca, con un equipo técnico y financiero completo en Chile. Cerró su seed hace poco, así que solo cabría un follow-on o seguimiento.",
+  "riesgos": "Sector industrial de agua y ciclos de venta largos a sanitarias, con equipo sin trayectoria operativa en scale-ups ni exits y sin tracción verificable.",
+  "accion": "seguimiento",
+  "mensaje_contacto": "Hola Camilo, soy del equipo de Latin Leap, un VC studio con base en Medellín y CDMX que invierte en pre-seed y seed en LATAM. Vimos la noticia de su ronda de US$1,34M y nos interesa lo que están construyendo con IA para plantas de tratamiento de agua. Nos gustaría conocer el avance comercial: clientes activos, ingresos recurrentes y el ahorro logrado. ¿Tendrían 30 minutos para una videollamada en las próximas semanas?",
+  "confianza": "media",
+  "score": 33,
+  "fit": 25,
+  "key": "ainwater",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Ainwater, startup chilena de agua, cierra US$1,34M",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaHNOU0U3cExnX0tEUVRaSDh2V3RMWUUzNy1ORGVPT0sxS3RlREtlSHVkMTlZcFNfUEJjM2FCbW5GLXJ1MjBEMG9UdEtuSHEwbmczOWdXNElVUHZSZVgybjFPc0t5MDdIWWtxNDhqWnhvU2Y0Q3BQWE4tQTVlM05Jaml3RQ?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-23"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://ecosistemastartup.com/ainwater-startup-chilena-de-agua-cierra-us134m/",
+   "https://www.df.cl/df-lab/innovacion-y-startups/ainwater-cierra-ronda-con-fondo-paraguayo-y-el-de-karina-von-baer-para",
+   "https://www.df.cl/df-lab/innovacion-y-startups/ainwater-cierra-su-primera-ronda-de-inversionpara-llegar-a-colombia-y",
+   "https://startupslatam.com/ainwater-capta-ronda-inicial-por-us-537-mil-busca-aterrizar-en-colombia-y-espana/",
+   "https://startupslatam.com/startup-chilena-ainwater-levanta-capital-y-cuadruplica-su-facturacion/",
+   "https://www.blogventurecapital.com/Ainwater-Cierra-Ronda-Inicial-de-537-Mil-USD-para-Expansion-en-Colombia-y-Espana_a550.html"
+  ],
+  "first_seen": "2026-11-23",
+  "last_seen": "2026-11-23",
   "en_portafolio": false
  },
  {
@@ -5249,6 +5673,77 @@
   ],
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-23",
+  "en_portafolio": false
+ },
+ {
+  "nombre": "Puna Bio",
+  "website": "https://www.puna.bio",
+  "pais": "Argentina",
+  "ciudad": "Buenos Aires",
+  "sector": "AgTech",
+  "descripcion": "Desarrolla bioinsumos agrícolas a partir de extremófilos de La Puna; productos Kunza (soja) y Kanzama (trigo) desplegados en cultivos de varios países.",
+  "modelo_comparable": "",
+  "fundadores": [
+   {
+    "nombre": "Franco Martínez Levis",
+    "antecedentes": "CEO y cofundador; experiencia previa, exits o estudios no encontrados en las fuentes."
+   },
+   {
+    "nombre": "María Eugenia Farías",
+    "antecedentes": "Cofundadora; antecedentes no detallados en las fuentes."
+   },
+   {
+    "nombre": "Carolina Belfiore",
+    "antecedentes": "Figura como cofundadora en LinkedIn; sin más información."
+   },
+   {
+    "nombre": "Elisa Violeta Bertini",
+    "antecedentes": "Figura como cofundadora en LinkedIn; sin más información."
+   }
+  ],
+  "etapa": "series-a-o-mas",
+  "estado_ronda": "cerro_recientemente",
+  "ultima_ronda": "Serie A liderada por Corteva Catalyst, con Gates Foundation, At One Ventures, SP Ventures, Dalus Capital, Grid Exponential y Builders VC; monto no revelado; anunciada en julio de 2025. Total histórico ~US$24.3M.",
+  "traccion": "Desplegado en más de 800.000 acres en Argentina, Brasil, Paraguay y EE.UU.; lanzó dos productos; ingresos y clientes no encontrados.",
+  "filtros": {
+   "geografia": true,
+   "etapa": false,
+   "tecnologia": true
+  },
+  "puntajes": {
+   "equipo": 10,
+   "sector": 6,
+   "modelo": 0,
+   "traccion": 6,
+   "etapa_timing": 0
+  },
+  "tesis_match": "Es deeptech/biotech agrícola con base tecnológica y operación en Argentina, pero queda fuera del enfoque de fintech, comercio, IA y SaaS del portafolio. Su etapa ya es Serie A.",
+  "riesgos": "Ya cerró una Serie A con inversionistas estratégicos, por lo que está fuera del rango pre-seed/seed y del tamaño de cheque de Latin Leap.",
+  "accion": "descartar",
+  "mensaje_contacto": "Hola Franco, felicitaciones por el avance de Puna Bio y por la Serie A con Corteva Catalyst y la Gates Foundation. En Latin Leap invertimos en pre-seed y seed en LATAM, así que hoy por etapa no encajamos como inversionistas. Nos encantaría seguir su trayectoria y quedar como contacto por si surge alguna colaboración en el ecosistema.",
+  "confianza": "alta",
+  "score": 22,
+  "fit": 20,
+  "key": "punabio",
+  "origen": "noticias",
+  "menciones": [
+   {
+    "title": "Bill Gates en Argentina: Puna Bio y su mapa de inversión",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRlRuUWRnVXowSHFUaUE1YXhqSXNxczlFdGpWTWxja1dPRk1renBfWXlQbW4xYlZVelN3VEhiQ19SVnBUTnBPeGM2cENnQWhDdHhQY25jYVd6M3JEQU9Dbzd3b1R3Z1pWUmNEMS1MNWJRQ05mQ2Rud3VsNmxxRHBXRld1SV9xX3MyVm85RURGaw?oc=5",
+    "source": "El Ecosistema Startup",
+    "date": "2026-11-20"
+   }
+  ],
+  "fuentes_investigacion": [
+   "https://globalaginvesting.com/argentinas-puna-bio-closes-series-a-with-gates-foundation-backing-for-climate-smart-ag/",
+   "https://agfundernews.com/gates-foundation-invests-in-puna-bio-to-bring-extremophile-based-ag-biologicals-to-africa",
+   "https://blog.mean.ceo/startups-argentina-news-november-2026/",
+   "https://agfundernews.com/puna-bio-lands-3-7m-to-fight-climate-change-with-extreme-bacteria",
+   "https://www.linkedin.com/company/punabio",
+   "https://www.zoominfo.com/c/puna-bio/566128839"
+  ],
+  "first_seen": "2026-11-23",
+  "last_seen": "2026-11-23",
   "en_portafolio": false
  },
  {
